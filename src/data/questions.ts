@@ -5264,7 +5264,7 @@ export const questions: Question[] = [
     "prompt": "x = 100; while x > 10: x = x DIV 2; print(x) (DIV means integer division)",
     "options": [
       { "id": "a", "text": "6" },
-      { "id": "b", "c", "text": "12" },
+      { "id": "b", "text": "12" },
       { "id": "c", "text": "10" },
       { "id": "d", "text": "25" }
     ],
