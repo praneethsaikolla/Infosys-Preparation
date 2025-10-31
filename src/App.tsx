@@ -8,6 +8,7 @@ import Practice from "./pages/Practice";
 import MockTest from "./pages/MockTest";
 import Result from "./pages/Result";
 import NotFound from "./pages/NotFound";
+import Formula from "@/components/Formula";  // Import the Formula component
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,15 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Formula /> {/* Display LaTeX formula on homepage */}
+              </>
+            }
+          />
           <Route path="/practice/:category" element={<Practice />} />
           <Route path="/mock-test" element={<MockTest />} />
           <Route path="/result" element={<Result />} />
