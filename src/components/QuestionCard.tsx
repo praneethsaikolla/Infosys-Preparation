@@ -1,10 +1,20 @@
 import { useState } from "react";
 import { Question } from "@/data/questions";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Lightbulb, CheckCircle2, XCircle, Eye } from "lucide-react";
-import { BlockMath } from 'react-katex';
+import {
+  Lightbulb,
+  CheckCircle2,
+  XCircle,
+  Eye,
+} from "lucide-react";
+import { BlockMath, InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 
 interface QuestionCardProps {
@@ -17,6 +27,19 @@ interface QuestionCardProps {
   isReview?: boolean;
   singleSelect?: boolean;
 }
+
+// Helper function to detect if text contains LaTeX
+const hasLaTeX = (text: string): boolean => {
+  return /[$][^$]+[$]|[$$][^$]+[$$]/.test(text);
+};
+
+// Helper function to render content with proper formatting
+const renderQuestionContent = (text: string) => {
+  if (hasLaTeX(text)) {
+    return <BlockMath math={text} />;
+  }
+  return <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">{text}</p>;
+};
 
 const QuestionCard = ({
   question,
@@ -33,77 +56,116 @@ const QuestionCard = ({
 
   const handleOptionClick = (optionId: string) => {
     if (showResult || isReview) return;
+
     if (singleSelect) {
       onAnswer(optionId);
     } else {
-      const currentAnswer = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+      const currentAnswer = Array.isArray(selectedAnswer)
+        ? selectedAnswer
+        : [];
       const newSelection = currentAnswer.includes(optionId)
-        ? currentAnswer.filter(id => id !== optionId)
+        ? currentAnswer.filter((id) => id !== optionId)
         : [...currentAnswer, optionId];
       onAnswer(newSelection);
     }
   };
 
   const isCorrectAnswer = (optionId: string) => {
-    return question.correct_options.includes(optionId);
+    if (singleSelect) {
+      return question.correctAnswer === optionId;
+    }
+    return (
+      Array.isArray(question.correctAnswer) &&
+      question.correctAnswer.includes(optionId)
+    );
   };
 
-  const isWrongAnswer = (optionId: string) => {
-    const answer = Array.isArray(selectedAnswer) ? selectedAnswer : [selectedAnswer];
-    return showResult && answer.includes(optionId) && !question.correct_options.includes(optionId);
-  };
-
-  const getOptionStyle = (optionId: string) => {
-    const answer = Array.isArray(selectedAnswer) ? selectedAnswer : selectedAnswer ? [selectedAnswer] : [];
-    if (!showResult && !isReview) {
-      return answer.includes(optionId)
-        ? "border-primary bg-primary/10"
-        : "border-border hover:border-primary/50";
+  const isSelected = (optionId: string) => {
+    if (singleSelect) {
+      return selectedAnswer === optionId;
     }
-    if (isCorrectAnswer(optionId)) {
-      return "border-success bg-success/10";
-    }
-    if (isWrongAnswer(optionId)) {
-      return "border-destructive bg-destructive/10";
-    }
-    return "border-border";
+    return (
+      Array.isArray(selectedAnswer) && selectedAnswer.includes(optionId)
+    );
   };
 
   return (
-    <Card className="w-full max-w-3xl mx-auto shadow-card animate-fade-in">
-      <CardHeader>
-        <div className="flex items-center justify-between mb-2">
-          <Badge className="text-sm" variant="outline">
-            Question {questionNumber} of {totalQuestions}
-          </Badge>
-          <Badge className="bg-gradient-primary text-primary-foreground">
-            {question.category}
-          </Badge>
+    <Card className="w-full animate-fade-in">
+      <CardHeader className="border-b border-border">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <div className="flex items-center gap-2 mb-2">
+              <Badge variant="outline">
+                Question {questionNumber} of {totalQuestions}
+              </Badge>
+              {question.category && (
+                <Badge variant="secondary">{question.category}</Badge>
+              )}
+              {question.difficulty && (
+                <Badge
+                  variant="outline"
+                  className={`${
+                    question.difficulty === "Easy"
+                      ? "bg-green-50 text-green-700 border-green-200"
+                      : question.difficulty === "Medium"
+                        ? "bg-yellow-50 text-yellow-700 border-yellow-200"
+                        : "bg-red-50 text-red-700 border-red-200"
+                  }`}
+                >
+                  {question.difficulty}
+                </Badge>
+              )}
+            </div>
+            <CardTitle className="text-lg font-semibold">
+              {renderQuestionContent(question.prompt)}
+            </CardTitle>
+          </div>
         </div>
-        <CardTitle className="text-xl md:text-2xl leading-relaxed">
-          <BlockMath math={question.prompt} />
-        </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="pt-6">
         <div className="space-y-3">
-          {question.options.map((option) => (
-            <button
-              key={option.id}
-              onClick={() => handleOptionClick(option.id)}
-              disabled={showResult || isReview}
-              className={`w-full text-left p-4 rounded-lg border-2 transition-all ${getOptionStyle(
-                option.id
-              )} ${!(showResult || isReview) && "cursor-pointer"} flex items-center justify-between group`}
-            >
-              <span className="flex-1">{option.text}</span>
-              {showResult && isCorrectAnswer(option.id) && (
-                <CheckCircle2 className="w-5 h-5 text-success ml-2" />
-              )}
-              {isWrongAnswer(option.id) && (
-                <XCircle className="w-5 h-5 text-destructive ml-2" />
-              )}
-            </button>
-          ))}
+          {question.options.map((option, index) => {
+            const optionId = String.fromCharCode(65 + index);
+            const isSelected_ = isSelected(optionId);
+            const isCorrect = isCorrectAnswer(optionId);
+
+            return (
+              <button
+                key={optionId}
+                onClick={() => handleOptionClick(optionId)}
+                disabled={showResult || isReview}
+                className={`w-full p-3 text-left border rounded-lg transition-all ${
+                  showResult || isReview
+                    ? isCorrect
+                      ? "border-green-500 bg-green-50"
+                      : isSelected_ && !isCorrect
+                        ? "border-red-500 bg-red-50"
+                        : "border-gray-200 bg-gray-50"
+                    : isSelected_
+                      ? "border-primary bg-primary/5"
+                      : "border-border hover:border-primary/50 hover:bg-accent"
+                }`}
+              >
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded border border-current flex items-center justify-center text-sm font-medium">
+                    {optionId}
+                  </div>
+                  <div className="flex-1 text-sm text-foreground">
+                    {renderQuestionContent(option)}
+                  </div>
+                  {showResult && (
+                    <div className="flex-shrink-0">
+                      {isCorrect ? (
+                        <CheckCircle2 className="w-5 h-5 text-green-600" />
+                      ) : isSelected_ ? (
+                        <XCircle className="w-5 h-5 text-red-600" />
+                      ) : null}
+                    </div>
+                  )}
+                </div>
+              </button>
+            );
+          })}
         </div>
         <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
           <Button
@@ -132,7 +194,9 @@ const QuestionCard = ({
             <div className="flex items-start gap-2">
               <Lightbulb className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm text-warning-foreground mb-1">Hint:</p>
+                <p className="font-semibold text-sm text-warning-foreground mb-1">
+                  Hint:
+                </p>
                 <p className="text-sm text-foreground">{question.hint}</p>
               </div>
             </div>
@@ -143,7 +207,9 @@ const QuestionCard = ({
             <div className="flex items-start gap-2">
               <Eye className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm text-primary mb-1">Explanation:</p>
+                <p className="font-semibold text-sm text-primary mb-1">
+                  Explanation:
+                </p>
                 <p className="text-sm text-foreground">{question.explanation}</p>
               </div>
             </div>
