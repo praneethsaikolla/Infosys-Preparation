@@ -6265,7 +6265,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "70" },
       { "id": "b", "text": "65" },
       { "id": "c", "text": "68" },
-      { "id": "d": "text": "72" }
+      { "id": "d", "text": "72" }
     ],
     "correct_options": ["a"],
     "hint": "The differences are decreasing squares: $1, 4, 9, 16$.",
@@ -6340,7 +6340,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "30" },
       { "id": "b", "text": "32" },
       { "id": "c", "text": "36" },
-      { "id": "d": "text": "40" }
+      { "id": "d", "text": "40" }
     ],
     "correct_options": ["c"],
     "hint": "The numbers are perfect squares.",
@@ -6355,7 +6355,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "96" },
       { "id": "b", "text": "100" },
       { "id": "c", "text": "120" },
-      { "id": "d": "text": "150" }
+      { "id": "d", "text": "150" }
     ],
     "correct_options": ["c"],
     "hint": "The pattern is multiplication by consecutive integers: $\times 2, \times 3, \times 4, \dots$",
@@ -6370,7 +6370,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "100" },
       { "id": "b", "text": "110" },
       { "id": "c", "text": "120" },
-      { "id": "d": "text": "130" }
+      { "id": "d", "text": "130" }
     ],
     "correct_options": ["b"],
     "hint": "The differences between consecutive terms are increasing by $10$.",
@@ -6400,7 +6400,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24" },
       { "id": "b", "text": "28" },
       { "id": "c", "text": "30" },
-      { "id": "d": "text": "32" }
+      { "id": "d", "text": "32" }
     ],
     "correct_options": ["d"],
     "hint": "The pattern is multiplication by 2 (powers of 2).",
@@ -6415,7 +6415,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "35" },
       { "id": "b", "text": "36" },
       { "id": "c", "text": "37" },
-      { "id": "d": "text": "38" }
+      { "id": "d", "text": "38" }
     ],
     "correct_options": ["b"],
     "hint": "The differences are decreasing by one each time: $+8, +7, +6, \dots$",
@@ -6430,7 +6430,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "6.25" },
       { "id": "b", "text": "6.75" },
       { "id": "c", "text": "7.5" },
-      { "id": "d": "text": "5.25" }
+      { "id": "d", "text": "5.25" }
     ],
     "correct_options": ["a"],
     "hint": "Each term is half of the previous term.",
@@ -6445,7 +6445,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "78" },
       { "id": "b", "text": "81" },
       { "id": "c", "text": "83" },
-      { "id": "d": "text": "86" }
+      { "id": "d", "text": "86" }
     ],
     "correct_options": ["b"],
     "hint": "The differences form a pattern of multiples of 5: $+5, +10, +15, +20, \dots$",
@@ -6460,7 +6460,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "15" },
       { "id": "b", "text": "16" },
       { "id": "c", "text": "17" },
-      { "id": "d": "text": "18" }
+      { "id": "d", "text": "18" }
     ],
     "correct_options": ["b"],
     "hint": "The differences are increasing by one each time: $+1, +2, +3, +4, \dots$",
@@ -6475,7 +6475,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "16" },
       { "id": "b", "text": "24" },
       { "id": "c", "text": "32" },
-      { "id": "d": "text": "40" }
+      { "id": "d", "text": "40" }
     ],
     "correct_options": ["b"],
     "hint": "Set up an equation using $3x$ and $5x$ for the original numbers.",
@@ -6490,7 +6490,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹1800$" },
       { "id": "b", "text": "$₹2400$" },
       { "id": "c", "text": "$₹2700$" },
-      { "id": "d": "text": "$₹3000$" }
+      { "id": "d", "text": "$₹3000$" }
     ],
     "correct_options": ["c"],
     "hint": "B's share (3 parts) is $₹900$. Find the value of one part.",
@@ -6505,7 +6505,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "6:9:15" },
       { "id": "b", "text": "8:12:15" },
       { "id": "c", "text": "2:3:5" },
-      { "id": "d": "text": "4:8:15" }
+      { "id": "d", "text": "4:8:15" }
     ],
     "correct_options": ["b"],
     "hint": "Make the value of B common in both ratios.",
@@ -6520,7 +6520,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "15 years" },
       { "id": "b", "text": "20 years" },
       { "id": "c", "text": "25 years" },
-      { "id": "d": "text": "28 years" }
+      { "id": "d", "text": "28 years" }
     ],
     "correct_options": ["b"],
     "hint": "Use the equation $\\frac{5x+4}{7x+4} = \\frac{3}{4}$ to find $x$.",
@@ -6535,7 +6535,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "210" },
       { "id": "b", "text": "252" },
       { "id": "c", "text": "336" },
-      { "id": "d": "text": "420" }
+      { "id": "d", "text": "420" }
     ],
     "correct_options": ["b"],
     "hint": "Convert all coin values to Rupees. Value $= 5x(1) + 6x(0.5) + 8x(0.25)$.",
@@ -6550,7 +6550,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "4:5" },
       { "id": "b", "text": "5:4" },
       { "id": "c", "text": "7:9" },
-      { "id": "d": "text": "8:15" }
+      { "id": "d", "text": "8:15" }
     ],
     "correct_options": ["a"],
     "hint": "Simplify $A:B$ and $B:C$ to whole number ratios first, then combine.",
@@ -6565,7 +6565,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "3 L" },
       { "id": "b", "text": "4 L" },
       { "id": "c", "text": "5 L" },
-      { "id": "d": "text": "6 L" }
+      { "id": "d", "text": "6 L" }
     ],
     "correct_options": ["c"],
     "hint": "Initial milk is $30$L and water is $10$L. The quantity of milk remains constant.",
@@ -6580,7 +6580,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "4:3:2" },
       { "id": "b", "text": "6:4:3" },
       { "id": "c", "text": "2:3:4" },
-      { "id": "d": "text": "3:4:6" }
+      { "id": "d", "text": "3:4:6" }
     ],
     "correct_options": ["b"],
     "hint": "Time is inversely proportional to speed. Use the inverse ratio $1/2 : 1/3 : 1/4$.",
@@ -6595,7 +6595,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "7:15" },
       { "id": "b", "text": "15:7" },
       { "id": "c", "text": "21:45" },
-      { "id": "d": "text": "1:2" }
+      { "id": "d", "text": "1:2" }
     ],
     "correct_options": ["a"],
     "hint": "Use $p/r = (p/q) \times (q/r)$.",
@@ -6610,7 +6610,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "25 cm" },
       { "id": "b", "text": "30 cm" },
       { "id": "c", "text": "10 cm" },
-      { "id": "d": "text": "35 cm" }
+      { "id": "d", "text": "35 cm" }
     ],
     "correct_options": ["a"],
     "hint": "Perimeter $P = 2(L+W)$.",
@@ -6625,7 +6625,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "5 days" },
       { "id": "b", "text": "6 days" },
       { "id": "c", "text": "7.5 days" },
-      { "id": "d": "text": "8 days" }
+      { "id": "d", "text": "8 days" }
     ],
     "correct_options": ["b"],
     "hint": "Use the formula $1/A + 1/B = 1/T$.",
@@ -6640,7 +6640,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "4 days" },
       { "id": "b", "text": "5 days" },
       { "id": "c", "text": "6 days" },
-      { "id": "d": "text": "8 days" }
+      { "id": "d", "text": "8 days" }
     ],
     "correct_options": ["b"],
     "hint": "Find the sum of their individual daily work fractions.",
@@ -6655,7 +6655,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "16 days" },
       { "id": "b", "text": "18 days" },
       { "id": "c", "text": "20 days" },
-      { "id": "d": "text": "24 days" }
+      { "id": "d", "text": "24 days" }
     ],
     "correct_options": ["d"],
     "hint": "B's daily work $= (A \text{ and } B)'s \text{ daily work} - A's \text{ daily work}$.",
@@ -6670,7 +6670,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "30 days" },
       { "id": "b", "text": "25 days" },
       { "id": "c", "text": "40 days" },
-      { "id": "d": "text": "45 days" }
+      { "id": "d", "text": "45 days" }
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $M_1 D_1 = M_2 D_2$.",
@@ -6685,7 +6685,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24 hours" },
       { "id": "b", "text": "36 hours" },
       { "id": "c", "text": "30 hours" },
-      { "id": "d": "text": "42 hours" }
+      { "id": "d", "text": "42 hours" }
     ],
     "correct_options": ["b"],
     "hint": "The rate of emptying is subtracted from the rate of filling: $1/12 - 1/18$.",
@@ -6700,7 +6700,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "10 days" },
       { "id": "b", "text": "11.25 days" },
       { "id": "c", "text": "12 days" },
-      { "id": "d": "text": "13.5 days" }
+      { "id": "d", "text": "13.5 days" }
     ],
     "correct_options": ["b"],
     "hint": "A's efficiency is 3 times B's. Their combined efficiency is 4 times B's.",
@@ -6715,7 +6715,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "4.8 days" },
       { "id": "b", "text": "5.2 days" },
       { "id": "c", "text": "6 days" },
-      { "id": "d": "text": "7.5 days" }
+      { "id": "d", "text": "7.5 days" }
     ],
     "correct_options": ["a"],
     "hint": "Calculate the work done by A in 2 days and the remaining work to be done together.",
@@ -6730,7 +6730,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24 days" },
       { "id": "b", "text": "36 days" },
       { "id": "c", "text": "40 days" },
-      { "id": "d": "text": "45 days" }
+      { "id": "d", "text": "45 days" }
     ],
     "correct_options": ["b"],
     "hint": "Establish the relationship: $2 \text{ men} = 3 \text{ women}$. Then find the equivalent number of women for $1$ man and $1$ woman.",
@@ -6745,7 +6745,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "3 taps" },
       { "id": "b", "text": "5 taps" },
       { "id": "c", "text": "6 taps" },
-      { "id": "d": "text": "8 taps" }
+      { "id": "d", "text": "8 taps" }
     ],
     "correct_options": ["b"],
     "hint": "The number of taps and the time taken are inversely proportional.",
@@ -6760,7 +6760,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "20 days" },
       { "id": "b", "text": "22 days" },
       { "id": "c", "text": "24 days" },
-      { "id": "d": "text": "28 days" }
+      { "id": "d", "text": "28 days" }
     ],
     "correct_options": ["c"],
     "hint": "If $2/3$ of the work takes $16$ days, find the time for $1$ unit of work.",
@@ -6775,7 +6775,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹720$" },
       { "id": "b", "text": "$₹750$" },
       { "id": "c", "text": "$₹800$" },
-      { "id": "d": "text": "$₹900$" }
+      { "id": "d", "text": "$₹900$" }
     ],
     "correct_options": ["b"],
     "hint": "Selling Price (SP) is $80\%$ of the Cost Price (CP).",
@@ -6790,7 +6790,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹122.40$" },
       { "id": "b", "text": "$₹124.80$" },
       { "id": "c", "text": "$₹126.00$" },
-      { "id": "d": "text": "$₹130.00$" }
+      { "id": "d", "text": "$₹130.00$" }
     ],
     "correct_options": ["b"],
     "hint": "First find the Cost Price (CP) using the $25\%$ gain, then calculate the new Selling Price (SP) for $30\%$ gain.",
@@ -6805,7 +6805,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹700$" },
       { "id": "b", "text": "$₹720$" },
       { "id": "c", "text": "$₹740$" },
-      { "id": "d": "text": "$₹760$" }
+      { "id": "d", "text": "$₹760$" }
     ],
     "correct_options": ["b"],
     "hint": "The selling price is $90\%$ of the marked price.",
@@ -6820,7 +6820,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "28%" },
       { "id": "b", "text": "30%" },
       { "id": "c", "text": "27%" },
-      { "id": "d": "text": "32%" }
+      { "id": "d", "text": "32%" }
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $D = d_1 + d_2 - (d_1 d_2)/100$.",
@@ -6835,7 +6835,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "100%" },
       { "id": "b", "text": "125%" },
       { "id": "c", "text": "150%" },
-      { "id": "d": "text": "175%" }
+      { "id": "d", "text": "175%" }
     ],
     "correct_options": ["b"],
     "hint": "Calculate the CP and SP per article first.",
@@ -6850,7 +6850,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹18500$" },
       { "id": "b", "text": "$₹19000$" },
       { "id": "c", "text": "$₹20000$" },
-      { "id": "d": "text": "$₹20500$" }
+      { "id": "d", "text": "$₹20500$" }
     ],
     "correct_options": ["c"],
     "hint": "Expenditure represents $100\% - 15\% = 85\%$ of his income.",
@@ -6865,7 +6865,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "800" },
       { "id": "b", "text": "1000" },
       { "id": "c", "text": "1200" },
-      { "id": "d": "text": "1500" }
+      { "id": "d", "text": "1500" }
     ],
     "correct_options": ["b"],
     "hint": "The percentage difference in votes is $20\%$ (since B got $60\%$).",
@@ -6880,7 +6880,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "31.2 L" },
       { "id": "b", "text": "32.4 L" },
       { "id": "c", "text": "33.6 L" },
-      { "id": "d": "text": "34.2 L" }
+      { "id": "d", "text": "34.2 L" }
     ],
     "correct_options": ["b"],
     "hint": "Use the formula: $\text{Final Quantity} = \text{Initial Quantity} (1 - x/C)^n$, where $x=4$, $C=40$, $n=2$.",
@@ -6895,7 +6895,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "20%" },
       { "id": "b", "c": "25%" },
       { "id": "c", "text": "30%" },
-      { "id": "d": "text": "16.67%" }
+      { "id": "d", "text": "16.67%" }
     ],
     "correct_options": ["a"],
     "hint": "The reduction fraction is $x / (100+x)$ where $x$ is the percentage increase.",
@@ -6910,7 +6910,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "0% (No change)" },
       { "id": "b", "text": "1% decrease" },
       { "id": "c", "text": "1% increase" },
-      { "id": "d": "text": "10% decrease" }
+      { "id": "d", "text": "10% decrease" }
     ],
     "correct_options": ["b"],
     "hint": "Use the net percentage change formula: $a + b + (ab/100)$.",
@@ -6925,7 +6925,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "20%" },
       { "id": "b", "text": "25%" },
       { "id": "c", "text": "30%" },
-      { "id": "d": "text": "33.33%" }
+      { "id": "d", "text": "33.33%" }
     ],
     "correct_options": ["b"],
     "hint": "Profit percent $= (\text{Profit} / \text{CP}) \times 100$.",
@@ -6940,7 +6940,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹1000$" },
       { "id": "b", "text": "$₹1100$" },
       { "id": "c", "text": "$₹1200$" },
-      { "id": "d": "text": "$₹1250$" }
+      { "id": "d", "text": "$₹1250$" }
     ],
     "correct_options": ["a"],
     "hint": "Find the SP first, then relate SP to CP using the gain percentage.",
@@ -6955,7 +6955,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "70%" },
       { "id": "b", "text": "75%" },
       { "id": "c", "text": "80%" },
-      { "id": "d": "text": "85%" }
+      { "id": "d", "text": "85%" }
     ],
     "correct_options": ["b"],
     "hint": "Calculate the ratio of $90$ to $120$ and multiply by $100$.",
@@ -6970,7 +6970,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "5:4" },
       { "id": "b", "text": "4:5" },
       { "id": "c", "text": "3:4" },
-      { "id": "d": "text": "4:3" }
+      { "id": "d", "text": "4:3" }
     ],
     "correct_options": ["b"],
     "hint": "Convert percentages to fractions and solve for $B/A$.",
@@ -6985,7 +6985,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "4 hours" },
       { "id": "b", "text": "4.5 hours" },
       { "id": "c", "text": "5 hours" },
-      { "id": "d": "text": "5.5 hours" }
+      { "id": "d", "text": "5.5 hours" }
     ],
     "correct_options": ["c"],
     "hint": "Calculate the speed first: $150 \text{ km} / 2 \text{ h} = 75 \text{ km/h}$.",
@@ -7000,7 +7000,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "20 m/s" },
       { "id": "b", "text": "25 m/s" },
       { "id": "c", "text": "30 m/s" },
-      { "id": "d": "text": "35 m/s" }
+      { "id": "d", "text": "35 m/s" }
     ],
     "correct_options": ["b"],
     "hint": "Multiply the speed in km/h by $5/18$ to convert to m/s.",
@@ -7015,7 +7015,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "55 km/h" },
       { "id": "b", "text": "60 km/h" },
       { "id": "c", "text": "64 km/h" },
-      { "id": "d": "text": "72 km/h" }
+      { "id": "d", "text": "72 km/h" }
     ],
     "correct_options": ["b"],
     "hint": "Distance is constant: $D = S_1 T_1 = S_2 T_2$.",
@@ -7030,7 +7030,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "7.8 km/h" },
       { "id": "b", "text": "8.5 km/h" },
       { "id": "c", "text": "9.2 km/h" },
-      { "id": "d": "text": "10 km/h" }
+      { "id": "d", "text": "10 km/h" }
     ],
     "correct_options": ["a"],
     "hint": "Average speed $= \text{Total Distance} / \text{Total Time}$.",
@@ -7045,7 +7045,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "8 seconds" },
       { "id": "b", "text": "10 seconds" },
       { "id": "c", "text": "12 seconds" },
-      { "id": "d": "text": "15 seconds" }
+      { "id": "d", "text": "15 seconds" }
     ],
     "correct_options": ["b"],
     "hint": "First convert $54$ km/h to m/s.",
@@ -7060,7 +7060,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "0.5 km/h" },
       { "id": "b", "text": "1 km/h" },
       { "id": "c", "text": "1.5 km/h" },
-      { "id": "d": "text": "2 km/h" }
+      { "id": "d", "text": "2 km/h" }
     ],
     "correct_options": ["a"],
     "hint": "Upstream speed ($U$) and Downstream speed ($D$). Speed of current $S_c = (D-U)/2$.",
@@ -7075,7 +7075,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "88 seconds" },
       { "id": "b", "text": "99 seconds" },
       { "id": "c", "text": "110 seconds" },
-      { "id": "d": "text": "121 seconds" }
+      { "id": "d", "text": "121 seconds" }
     ],
     "correct_options": ["b"],
     "hint": "Relative speed is the difference of speeds. Total distance is the sum of lengths.",
@@ -7090,7 +7090,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "45 minutes" },
       { "id": "b", "text": "50 minutes" },
       { "id": "c", "text": "60 minutes" },
-      { "id": "d": "text": "75 minutes" }
+      { "id": "d", "text": "75 minutes" }
     ],
     "correct_options": ["c"],
     "hint": "If speed ratio is $a:b$, time ratio is $b:a$. Speed ratio $4:3$, Time ratio $3:4$.",
@@ -7105,7 +7105,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "8 minutes" },
       { "id": "b", "text": "10 minutes" },
       { "id": "c", "text": "12 minutes" },
-      { "id": "d": "text": "15 minutes" }
+      { "id": "d", "text": "15 minutes" }
     ],
     "correct_options": ["b"],
     "hint": "Time stopped per hour $= (\\text{Difference in Speeds} / \\text{Speed without stoppages}) \times 60$.",
@@ -7120,7 +7120,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24 km/h" },
       { "id": "b", "text": "25 km/h" },
       { "id": "c", "text": "26 km/h" },
-      { "id": "d": "text": "27 km/h" }
+      { "id": "d", "text": "27 km/h" }
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $S_{avg} = 2xy / (x+y)$ for equal distances.",
@@ -7135,7 +7135,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24 km/h" },
       { "id": "b", "text": "27 km/h" },
       { "id": "c", "text": "30 km/h" },
-      { "id": "d": "text": "32 km/h" }
+      { "id": "d", "text": "32 km/h" }
     ],
     "correct_options": ["b"],
     "hint": "Convert distance to km and time to hours, or convert m/s to km/h by multiplying by $18/5$.",
@@ -7150,7 +7150,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "2 minutes" },
       { "id": "b", "text": "3 minutes" },
       { "id": "c", "text": "4 minutes" },
-      { "id": "d": "text": "5 minutes" }
+      { "id": "d", "text": "5 minutes" }
     ],
     "correct_options": ["b"],
     "hint": "Use relative speed and convert the distance to km and time to minutes.",
@@ -7165,7 +7165,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "15 m/s" },
       { "id": "b", "text": "20 m/s" },
       { "id": "c", "text": "25 m/s" },
-      { "id": "d": "text": "30 m/s" }
+      { "id": "d", "text": "30 m/s" }
     ],
     "correct_options": ["c"],
     "hint": "Let $L$ be the length and $S$ be the speed. $L/S = 6$ and $(L+100)/S = 10$.",
@@ -7180,7 +7180,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "16%" },
       { "id": "b", "text": "20%" },
       { "id": "c", "text": "25%" },
-      { "id": "d": "text": "33.33%" }
+      { "id": "d", "text": "33.33%" }
     ],
     "correct_options": ["b"],
     "hint": "Speed ratio is $4:5$, so time ratio is $5:4$.",
@@ -7195,7 +7195,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "9:30 am" },
       { "id": "b", "text": "9:40 am" },
       { "id": "c", "text": "10:00 am" },
-      { "id": "d": "text": "10:15 am" }
+      { "id": "d", "text": "10:15 am" }
     ],
     "correct_options": ["b"],
     "hint": "Calculate the distance covered by Train A by $8$ am and then use relative speed on the remaining distance.",
@@ -7210,7 +7210,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "2:1" },
       { "id": "b", "text": "3:1" },
       { "id": "c", "text": "4:1" },
-      { "id": "d": "text": "5:1" }
+      { "id": "d", "text": "5:1" }
     ],
     "correct_options": ["a"],
     "hint": "Distance is constant: $D \times T_D = U \times T_U$, where $D = S_b + S_s$ and $U = S_b - S_s$.",
@@ -7225,7 +7225,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "36" },
       { "id": "b", "text": "38" },
       { "id": "c", "text": "40" },
-      { "id": "d": "text": "42" }
+      { "id": "d", "text": "42" }
     ],
     "correct_options": ["b"],
     "hint": "Excluded number $= (\text{Original Sum}) - (\text{New Sum})$.",
@@ -7240,7 +7240,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "30 years" },
       { "id": "b", "text": "36 years" },
       { "id": "c", "text": "40 years" },
-      { "id": "d": "text": "42 years" }
+      { "id": "d", "text": "42 years" }
     ],
     "correct_options": ["b"],
     "hint": "The new average is $16$ years for $21$ people. The teacher's age must be $15$ plus $1$ year for each of the $21$ people.",
@@ -7255,7 +7255,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "25" },
       { "id": "b", "text": "25.5" },
       { "id": "c", "text": "26" },
-      { "id": "d": "text": "26.5" }
+      { "id": "d", "text": "26.5" }
     ],
     "correct_options": ["b"],
     "hint": "The average of the first $n$ natural numbers is $(n+1)/2$.",
@@ -7270,7 +7270,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "60" },
       { "id": "b", "text": "66" },
       { "id": "c", "text": "69" },
-      { "id": "d": "text": "72" }
+      { "id": "d", "text": "72" }
     ],
     "correct_options": ["b"],
     "hint": "The sum of the first 6 and last 6 results includes the $6^{th}$ result twice.",
@@ -7285,7 +7285,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "1:2" },
       { "id": "b", "text": "2:3" },
       { "id": "c", "text": "3:2" },
-      { "id": "d": "text": "4:3" }
+      { "id": "d", "text": "4:3" }
     ],
     "correct_options": ["c"],
     "hint": "The CP of the mixture must be found first: $\text{CP}_{mix} = \text{SP} / 1.1$. Then use Alligation Rule.",
@@ -7300,7 +7300,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "39.8" },
       { "id": "b", "text": "40.2" },
       { "id": "c", "text": "41" },
-      { "id": "d": "text": "43" }
+      { "id": "d", "text": "43" }
     ],
     "correct_options": ["a"],
     "hint": "The prime numbers are $31, 37, 41, 43, 47$.",
@@ -7315,7 +7315,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹4000$" },
       { "id": "b", "text": "$₹4500$" },
       { "id": "c", "text": "$₹5100$" },
-      { "id": "d": "text": "$₹5500$" }
+      { "id": "d", "text": "$₹5500$" }
     ],
     "correct_options": ["a"],
     "hint": "Sum all three totals and divide by 2 to get $A+B+C$. Then subtract $B+C$ to find $A$.",
@@ -7330,7 +7330,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "100" },
       { "id": "b", "text": "105" },
       { "id": "c", "text": "110" },
-      { "id": "d": "text": "115" }
+      { "id": "d", "text": "115" }
     ],
     "correct_options": ["c"],
     "hint": "The total required score is $4 \times 90$.",
@@ -7345,7 +7345,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "47 kg" },
       { "id": "b", "text": "48 kg" },
       { "id": "c", "text": "49 kg" },
-      { "id": "d": "text": "50 kg" }
+      { "id": "d", "text": "50 kg" }
     ],
     "correct_options": ["b"],
     "hint": "New total weight $\text{Sum} + 52 + 44$. New number of boys is $8$.",
@@ -7360,7 +7360,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "275" },
       { "id": "b", "text": "280" },
       { "id": "c", "text": "285" },
-      { "id": "d": "text": "290" }
+      { "id": "d", "text": "290" }
     ],
     "correct_options": ["c"],
     "hint": "A month of $30$ days starting with a Sunday has $5$ Sundays and $25$ other days.",
@@ -7375,7 +7375,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "40" },
       { "id": "b", "text": "60" },
       { "id": "c", "text": "80" },
-      { "id": "d": "text": "120" }
+      { "id": "d", "text": "120" }
     ],
     "correct_options": ["b"],
     "hint": "This is a permutation of 5 items taken 3 at a time: $P(5,3)$.",
@@ -7390,7 +7390,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "50400" },
       { "id": "b", "text": "1663200" },
       { "id": "c", "text": "3326400" },
-      { "id": "d": "text": "39916800" }
+      { "id": "d", "text": "39916800" }
     ],
     "correct_options": ["c"],
     "hint": "Total letters $11$. 'O' appears $3$ times, 'R' appears $2$ times.",
@@ -7405,7 +7405,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "1/3" },
       { "id": "b", "text": "2/5" },
       { "id": "c", "text": "3/5" },
-      { "id": "d": "text": "4/5" }
+      { "id": "d", "text": "4/5" }
     ],
     "correct_options": ["c"],
     "hint": "Total number of balls is $15$. Not white means red or green.",
@@ -7420,7 +7420,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "1/4" },
       { "id": "b", "text": "3/8" },
       { "id": "c", "text": "1/2" },
-      { "id": "d": "text": "5/8" }
+      { "id": "d", "text": "5/8" }
     ],
     "correct_options": ["b"],
     "hint": "Total outcomes are $2^3=8$. The outcomes with exactly two heads are HHT, HTH, THH.",
@@ -7435,7 +7435,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "10" },
       { "id": "b", "text": "20" },
       { "id": "c", "text": "30" },
-      { "id": "d": "text": "40" }
+      { "id": "d", "text": "40" }
     ],
     "correct_options": ["c"],
     "hint": "Choose $1$ girl from $3$ and $2$ boys from $5$: $C(3,1) \times C(5,2)$.",
@@ -7450,7 +7450,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "24" },
       { "id": "b", "text": "60" },
       { "id": "c", "text": "120" },
-      { "id": "d": "text": "240" }
+      { "id": "d", "text": "240" }
     ],
     "correct_options": ["c"],
     "hint": "This is a simple permutation problem: $n!$.",
@@ -7465,7 +7465,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "1/12" },
       { "id": "b", "text": "1/6" },
       { "id": "c", "text": "1/4" },
-      { "id": "d": "text": "1/3" }
+      { "id": "d", "text": "1/3" }
     ],
     "correct_options": ["b"],
     "hint": "Total outcomes are $36$. Favorable outcomes are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).",
@@ -7480,7 +7480,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "34650" },
       { "id": "b", "text": "45300" },
       { "id": "c", "text": "55440" },
-      { "id": "d": "text": "110880" }
+      { "id": "d", "text": "110880" }
     ],
     "correct_options": ["a"],
     "hint": "Total letters $11$. Repeated letters: I (4), S (4), P (2).",
@@ -7495,7 +7495,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "9/15" },
       { "id": "b", "text": "3/7" },
       { "id": "c", "text": "5/14" },
-      { "id": "d": "text": "1/3" }
+      { "id": "d", "text": "1/3" }
     ],
     "correct_options": ["b"],
     "hint": "Use combinations: $\\frac{\\text{Ways to choose 2 good apples}}{\\text{Ways to choose 2 from total}}$.",
@@ -7510,7 +7510,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "210" },
       { "id": "b", "text": "240" },
       { "id": "c", "text": "5040" },
-      { "id": "d": "text": "10080" }
+      { "id": "d", "text": "10080" }
     ],
     "correct_options": ["a"],
     "hint": "This is a combination problem: $C(10,4)$.",
@@ -7525,7 +7525,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹1200$" },
       { "id": "b", "text": "$₹1500$" },
       { "id": "c", "text": "$₹1800$" },
-      { "id": "d": "text": "$₹2000$" }
+      { "id": "d", "text": "$₹2000$" }
     ],
     "correct_options": ["b"],
     "hint": "Simple Interest $I = (P \times R \times T)/100$.",
@@ -7540,7 +7540,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹1500$" },
       { "id": "b", "text": "$₹2000$" },
       { "id": "c", "text": "$₹2050$" },
-      { "id": "d": "text": "$₹2100$" }
+      { "id": "d", "text": "$₹2100$" }
     ],
     "correct_options": ["c"],
     "hint": "Amount $A = P(1+R/100)^T$. $CI = A-P$.",
@@ -7555,7 +7555,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "10%" },
       { "id": "b", "text": "12%" },
       { "id": "c", "text": "12.5%" },
-      { "id": "d": "text": "15%" }
+      { "id": "d", "text": "15%" }
     ],
     "correct_options": ["c"],
     "hint": "If the sum doubles, the interest equals the principal ($SI=P$). $R = 100/T$.",
@@ -7570,7 +7570,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹4000$" },
       { "id": "b", "text": "$₹5000$" },
       { "id": "c", "text": "$₹6000$" },
-      { "id": "d": "text": "$₹7500$" }
+      { "id": "d", "text": "$₹7500$" }
     ],
     "correct_options": ["b"],
     "hint": "For 2 years, the difference $\text{CI} - \text{SI} = P(R/100)^2$.",
@@ -7585,7 +7585,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "$₹360$" },
       { "id": "b", "text": "$₹400$" },
       { "id": "c", "text": "$₹480$" },
-      { "id": "d": "text": "$₹500$" }
+      { "id": "d", "text": "$₹500$" }
     ],
     "correct_options": ["a"],
     "hint": "The Simple Interest for the $2$ years between year $2$ and year $4$ is the difference between the amounts.",
@@ -7600,7 +7600,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "45 sq m" },
       { "id": "b", "text": "54 sq m" },
       { "id": "c", "text": "60 sq m" },
-      { "id": "d": "text": "72 sq m" }
+      { "id": "d", "text": "72 sq m" }
     ],
     "correct_options": ["b"],
     "hint": "Area of four walls $= 2(\text{Length} + \text{Width}) \times \text{Height}$.",
@@ -7615,7 +7615,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "22 cm" },
       { "id": "b", "text": "35 cm" },
       { "id": "c", "text": "44 cm" },
-      { "id": "d": "text": "49 cm" }
+      { "id": "d", "text": "49 cm" }
     ],
     "correct_options": ["c"],
     "hint": "Circumference $C = 2 \pi r$.",
@@ -7630,7 +7630,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "5 sq cm" },
       { "id": "b", "text": "25 sq cm" },
       { "id": "c", "text": "30 sq cm" },
-      { "id": "d": "text": "60 sq cm" }
+      { "id": "d", "text": "60 sq cm" }
     ],
     "correct_options": ["b"],
     "hint": "Volume $V = a^3$. Face area $A = a^2$.",
@@ -7645,7 +7645,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "20000" },
       { "id": "b", "text": "30000" },
       { "id": "c", "text": "60000" },
-      { "id": "d": "text": "90000" }
+      { "id": "d", "text": "90000" }
     ],
     "correct_options": ["c"],
     "hint": "Convert all measurements to the same unit (cm) before calculating areas. $1$m $= 100$ cm.",
@@ -7660,41 +7660,11 @@ export const questions: Question[] = [
       { "id": "a", "text": "9" },
       { "id": "b", "text": "25" },
       { "id": "c", "text": "30" },
-      { "id": "d": "text": "36" }
+      { "id": "d", "text": "36" }
     ],
     "correct_options": ["c"],
     "hint": "Check if the numbers are squares of integers.",
     "explanation": "All numbers except $30$ are perfect squares: $2^2=4, 3^2=9, 4^2=16, 5^2=25, 6^2=36$. $30$ is the odd one out.",
-    "difficulty": "Medium"
-  },
-  {
-    "id": "n101",
-    "category": "Numerical Puzzles",
-    "prompt": "If 'CODE' is written as 'DQEF', how is 'ROSE' written using the same logic?",
-    "options": [
-      { "id": "a", "text": "SPOT" },
-      { "id": "b", "text": "SPTF" },
-      { "id": "c", "text": "SQOF" },
-      { "id": "d": "text": "STPF" }
-    ],
-    "correct_options": ["b"],
-    "hint": "Each letter in the original word is shifted forward by one position.",
-    "explanation": "C $\to$ D, O $\to$ P, D $\to$ E, E $\to$ F (each letter $+1$). Applying the same logic to ROSE: R $\to$ S, O $\to$ P, S $\to$ T, E $\to$ F. The result is SPTF.",
-    "difficulty": "Medium"
-  },
-  {
-    "id": "n102",
-    "category": "Numerical Puzzles",
-    "prompt": "A clock shows $4:30$. If the minute hand points East, in which direction does the hour hand point?",
-    "options": [
-      { "id": "a", "text": "North" },
-      { "id": "b", "text": "North-East" },
-      { "id": "c", "text": "East" },
-      { "id": "d": "text": "South-East" }
-    ],
-    "correct_options": ["b"],
-    "hint": "Determine the position of 3, 6, 9, and 12 based on the minute hand pointing East.",
-    "explanation": "At $4:30$, the minute hand is on $6$, and the hour hand is exactly halfway between $4$ and $5$. If $6$ (minute hand) is East, then $3$ is North, $12$ is West, and $9$ is South. The hour hand is between North ($3$) and East ($6$), so it points North-East.",
     "difficulty": "Medium"
   },
 
