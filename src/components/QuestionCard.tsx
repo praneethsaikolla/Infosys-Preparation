@@ -161,4 +161,3 @@ const QuestionCard = ({
 };
 
 export default QuestionCard;
-Make it so that it should display in laTex format also the questions and the options and the hints and the explination
