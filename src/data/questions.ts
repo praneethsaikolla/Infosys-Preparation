@@ -6893,7 +6893,7 @@ export const questions: Question[] = [
     "prompt": "If the price of sugar is increased by $25\%$, by what percent should a family reduce its consumption to keep the expenditure the same?",
     "options": [
       { "id": "a", "text": "20%" },
-      { "id": "b", "c": "25%" },
+      { "id": "b", "text": "25%" },
       { "id": "c", "text": "30%" },
       { "id": "d", "text": "16.67%" }
     ],
