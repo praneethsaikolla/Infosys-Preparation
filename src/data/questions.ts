@@ -3886,7 +3886,7 @@ export const questions: Question[] = [
   {
     "id": "t051",
     "category": "Technical Ability",
-    "prompt": "What is the output of the Java code: `System.out.println(10 + 20 + \\"Javatpoint\\");`?",
+    "prompt": "What is the output of the Java code: `System.out.println(10 + 20 + \"Javatpoint\");`?",
     "options": [
       { "id": "a", "text": "30Javatpoint" },
       { "id": "b", "text": "1020Javatpoint" },
