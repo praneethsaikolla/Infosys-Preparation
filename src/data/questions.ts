@@ -4355,7 +4355,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "It forces the compiler to use the constructor." },
       { "id": "b", "text": "It prevents implicit conversion from one type to the class type." },
-      { "id": "c", "d", "text": "It allows the constructor to be called from a derived class." },
+      { "id": "c", "text": "It allows the constructor to be called from a derived class." },
       { "id": "d", "text": "It makes the constructor publicly accessible." }
     ],
     "correct_options": ["b"],
@@ -4475,7 +4475,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "To prevent a variable from being modified." },
       { "id": "b", "text": "To suggest to the compiler that the variable's value may change unexpectedly." },
-      { "id": "c", "d", "text": "To make a variable static." },
+      { "id": "c", "text": "To make a variable static." },
       { "id": "d", "text": "To ensure thread-safe access." }
     ],
     "correct_options": ["b"],
@@ -4565,7 +4565,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "A mechanism to speed up I/O operations." },
       { "id": "b", "text": "A simple integer variable used for signaling and synchronization." },
-      { "id": "c", "d", "text": "A technique for dynamic memory allocation." },
+      { "id": "c", "text": "A technique for dynamic memory allocation." },
       { "id": "d", "text": "A high-speed cache for process data." }
     ],
     "correct_options": ["b"],
