@@ -6,37 +6,32 @@ import Timer from "@/components/Timer";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { ChevronLeft, ChevronRight, Send, Settings } from "lucide-react";
+import { Settings, ChevronLeft, ChevronRight, Send } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 const MockTest = () => {
   const navigate = useNavigate();
   const [testStarted, setTestStarted] = useState(false);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>(categories);
-  const [questionCount, setQuestionCount] = useState(20);
   const [testQuestions, setTestQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [duration] = useState(30 * 60); // 30 minutes in seconds
 
-  const handleCategoryToggle = (category: string) => {
-    setSelectedCategories(prev =>
-      prev.includes(category)
-        ? prev.filter(c => c !== category)
-        : [...prev, category]
-    );
-  };
+  const questionCount = 30; // Fixed total number of questions
+  const questionsPerCategory = 5; // Fixed 5 per category
 
   const startTest = () => {
-    if (selectedCategories.length === 0) {
-      alert("Please select at least one category");
-      return;
-    }
-    const questions = getRandomQuestions(questionCount, selectedCategories);
-    setTestQuestions(questions);
+    // Ensure we have enough categories and questions
+    const selectedCategories = categories;
+    const questions: Question[] = [];
+
+    selectedCategories.forEach((category) => {
+      const categoryQuestions = getRandomQuestions(questionsPerCategory, [category]);
+      questions.push(...categoryQuestions);
+    });
+
+    setTestQuestions(questions.slice(0, questionCount)); // Limit to 30
     setCurrentIndex(0);
     setAnswers({});
     setTestStarted(true);
@@ -77,48 +72,25 @@ const MockTest = () => {
                 <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center">
                   <Settings className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle className="text-2xl">Configure Mock Test</CardTitle>
+                <CardTitle className="text-2xl">Mock Test Configuration</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
                 <Label className="text-base font-semibold mb-3 block">
-                  Select Categories
+                  Categories Included
                 </Label>
-                <div className="space-y-3">
+                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
                   {categories.map((category) => (
-                    <div key={category} className="flex items-center space-x-2">
-                      <Checkbox
-                        id={category}
-                        checked={selectedCategories.includes(category)}
-                        onCheckedChange={() => handleCategoryToggle(category)}
-                      />
-                      <Label
-                        htmlFor={category}
-                        className="text-sm font-normal cursor-pointer"
-                      >
-                        {category}
-                      </Label>
-                    </div>
+                    <li key={category}>{category}</li>
                   ))}
-                </div>
+                </ul>
               </div>
 
               <div>
-                <Label htmlFor="count" className="text-base font-semibold mb-2 block">
-                  Number of Questions
-                </Label>
-                <Input
-                  id="count"
-                  type="number"
-                  min="5"
-                  max="50"
-                  value={questionCount}
-                  onChange={(e) => setQuestionCount(parseInt(e.target.value) || 20)}
-                  className="max-w-xs"
-                />
-                <p className="text-sm text-muted-foreground mt-1">
-                  Test duration: 30 minutes
+                <p className="text-base font-semibold">Total Questions: 30</p>
+                <p className="text-sm text-muted-foreground">
+                  5 questions from each category · Duration: 30 minutes
                 </p>
               </div>
 
@@ -143,7 +115,7 @@ const MockTest = () => {
   return (
     <div className="min-h-screen bg-gradient-hero">
       <Navbar />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto space-y-6">
           {/* Timer and Progress */}
@@ -154,7 +126,9 @@ const MockTest = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm text-muted-foreground">
                     <span>Questions Answered</span>
-                    <span className="font-semibold">{answeredCount} / {testQuestions.length}</span>
+                    <span className="font-semibold">
+                      {answeredCount} / {testQuestions.length}
+                    </span>
                   </div>
                   <Progress value={progress} className="h-2" />
                 </div>
