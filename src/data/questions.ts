@@ -3950,7 +3950,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "One for enqueue, one for dequeue." },
       { "id": "b", "text": "One for storage, one for temporary reversal." },
-      { "id": "c", "d", "text": "One for LIFO, one for FIFO." },
+      { "id": "c", "text": "One for LIFO, one for FIFO." },
       { "id": "d", "text": "Two stacks are merged into one queue." }
     ],
     "correct_options": ["b"],
