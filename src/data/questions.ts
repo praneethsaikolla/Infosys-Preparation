@@ -448,7 +448,7 @@ export const questions: Question[] = [
       { id: "d", text: "63" }
     ],
     correct_options: ["c"],
-    hint: "The pattern is (Previous number $\\\times 2$) + 1. Check which number violates this rule.",
+    hint: "The pattern is (Previous number $\\times 2$) + 1. Check which number violates this rule.",
     explanation: "The pattern is $(n \\times 2) + 1$: $(3 \\times 2) + 1 = 7$; $(7 \\times 2) + 1 = 15$; $(15 \\times 2) + 1 = 31$. The given number is 30, so 30 is the wrong number. The next term would be $(31 \\times 2) + 1 = 63$.",
     difficulty: "Hard"
   },
@@ -919,7 +919,7 @@ export const questions: Question[] = [
   {
     id: "r057",
     category: "Reasoning Ability",
-    prompt: "If 'A $\\\times$ B' means A is the brother of B, and 'A + B' means A is the daughter of B, what is the relation of C to A in 'A + B $\\\times$ C'?",
+    prompt: "If 'A $\\times$ B' means A is the brother of B, and 'A + B' means A is the daughter of B, what is the relation of C to A in 'A + B $\\times$ C'?",
     options: [
       { id: "a", text: "Uncle" },
       { id: "b", text: "Aunt" },
@@ -927,7 +927,7 @@ export const questions: Question[] = [
       { "id": "d", text: "Cannot be determined" }
     ],
     correct_options: ["d"],
-    hint: "A is B's daughter. B is C's brother. So B is A's father, and C is B's brother (or sister, as $\\\times$ does not define B's gender, but C is the male sibling). C is A's uncle. **Correction: C is A's paternal uncle.**",
+    hint: "A is B's daughter. B is C's brother. So B is A's father, and C is B's brother (or sister, as $\\times$ does not define B's gender, but C is the male sibling). C is A's uncle. **Correction: C is A's paternal uncle.**",
     explanation: "$A+B$ means A is the daughter of B (B is A's parent). $B \\times C$ means B is the brother of C. Since B is the brother of C and B is A's parent, C is A's paternal uncle or aunt (since 'brother' is the only defined gender). Assuming $A \\times B$ defines A's gender, $B$ being the brother of $C$ means $B$ is male. $C$ is the sibling of $A$'s father ($B$). C is A's paternal uncle or aunt. Since $B$ is the brother of $C$, $C$ can be a sister or brother. The relation is Uncle or Aunt. Since only 'Uncle' and 'Aunt' are options, and we can't determine C's gender, the best answer is D.",
     difficulty: "Hard"
   },
@@ -1020,7 +1020,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["c"],
     hint: "Three of the pairs follow the pattern ($n^2, n^3$) or ($n, n^3$).",
-    explanation: "(1, 8) is $1^3$ and $2^3$ or $1^2$ and $2^3$. Let's use the simplest: The second number is a perfect square or cube. $1^3$ is 1, $2^3$ is 8. $4=2^2$, $64=4^3$. Let's use the power relationship: $1 \rightarrow 1^3$, $4 \rightarrow 4^3$, $16 \rightarrow 16^3$. (16, 256) is $16^2$. (9, 27) is $3^2, 3^3$. The pattern is (Square, Cube of the base number). $(3^2, 3^3)$. $(1^2, \text{Not } 1^3)$. (4, 64) is $2^2, 4^3$. The rule is (First number, $8 \\times$ first number). $1 \\times 8=8$, $4 \\times 8=32$ (64), $16 \\times 8=128$ (256). The simplest rule is: **First is $n^2$, Second is $m^3$.** (9, 27) is $3^2$ and $3^3$. All others do not fit. Let's use a simpler rule: **Three pairs have the second number as a cube.** $8=2^3$, $64=4^3$, $27=3^3$. $256$ is $16^2$. The odd one is (16, 256). **Corrected answer to 'd'.**",
+    explanation: "(1, 8) is $1^3$ and $2^3$ or $1^2$ and $2^3$. Let's use the simplest: The second number is a perfect square or cube. $1^3$ is 1, $2^3$ is 8. $4=2^2$, $64=4^3$. Let's use the power relationship: $1 \\rightarrow 1^3$, $4 \\rightarrow 4^3$, $16 \\rightarrow 16^3$. (16, 256) is $16^2$. (9, 27) is $3^2, 3^3$. The pattern is (Square, Cube of the base number). $(3^2, 3^3)$. $(1^2, \\text{Not } 1^3)$. (4, 64) is $2^2, 4^3$. The rule is (First number, $8 \\times$ first number). $1 \\times 8=8$, $4 \\times 8=32$ (64), $16 \\times 8=128$ (256). The simplest rule is: **First is $n^2$, Second is $m^3$.** (9, 27) is $3^2$ and $3^3$. All others do not fit. Let's use a simpler rule: **Three pairs have the second number as a cube.** $8=2^3$, $64=4^3$, $27=3^3$. $256$ is $16^2$. The odd one is (16, 256). **Corrected answer to 'd'.**",
     correct_options: ["d"],
     explanation: "8 ($2^3$), 64 ($4^3$), and 27 ($3^3$) are perfect cubes. 256 ($16^2$) is a perfect square, making (16, 256) the odd pair.",
     difficulty: "Hard"
@@ -1295,15 +1295,15 @@ export const questions: Question[] = [
       { "id": "d", text: "Saturday" }
     ],
     correct_options: ["b"],
-    hint: "Find the remainder of $75 \div 7$. The remainder is the number of days to count forward.",
-    explanation: "Divide 75 by 7: $75 \div 7 = 10$ with a remainder of 5. Counting 5 days forward from Friday: Friday + 5 days = Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday. Wait, Friday + 5 days = Saturday, Sunday, Monday, Tuesday, **Wednesday**. The answer must be Monday. Let's recheck the calculation. Friday + 7 days = Friday. $75 = 70 + 5$. Friday + 5 days = Saturday, Sunday, Monday, Tuesday, Wednesday. **The option 'b' should be Wednesday. I will change it in the options and explanation.**",
+    hint: "Find the remainder of $75 \\div 7$. The remainder is the number of days to count forward.",
+    explanation: "Divide 75 by 7: $75 \\div 7 = 10$ with a remainder of 5. Counting 5 days forward from Friday: Friday + 5 days = Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday. Wait, Friday + 5 days = Saturday, Sunday, Monday, Tuesday, **Wednesday**. The answer must be Monday. Let's recheck the calculation. Friday + 7 days = Friday. $75 = 70 + 5$. Friday + 5 days = Saturday, Sunday, Monday, Tuesday, Wednesday. **The option 'b' should be Wednesday. I will change it in the options and explanation.**",
     options: [
       { id: "a", text: "Sunday" },
       { id: "b", text: "Wednesday" },
       { id: "c", "text": "Friday" },
       { "id": "d", text: "Saturday" }
     ],
-    explanation: "$75 \div 7$ gives a remainder of 5. Count 5 days forward from Friday: Saturday, Sunday, Monday, Tuesday, Wednesday.",
+    explanation: "$75 \\div 7$ gives a remainder of 5. Count 5 days forward from Friday: Saturday, Sunday, Monday, Tuesday, Wednesday.",
     difficulty: "Medium"
   },
   {
@@ -1317,8 +1317,8 @@ export const questions: Question[] = [
       { "id": "d", text: "Thursday" }
     ],
     correct_options: ["b"],
-    hint: "The difference is 17 days. $17 \div 7$ gives a remainder of 3.",
-    explanation: "The difference between the 27th and 10th is 17 days. $17 \div 7$ gives a remainder of 3 odd days. Count 3 days forward from Saturday: Sunday, Monday, Tuesday. The 27th will be a Tuesday.",
+    hint: "The difference is 17 days. $17 \\div 7$ gives a remainder of 3.",
+    explanation: "The difference between the 27th and 10th is 17 days. $17 \\div 7$ gives a remainder of 3 odd days. Count 3 days forward from Saturday: Sunday, Monday, Tuesday. The 27th will be a Tuesday.",
     difficulty: "Easy"
   },
   {
@@ -1333,7 +1333,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["a"],
     hint: "The calculation involves the number of leap years (24) and non-leap years (76) in a century.",
-    explanation: "In 100 years, there are 76 normal years (1 odd day each) and 24 leap years (2 odd days each). Total odd days: $(76 \\times 1) + (24 \\times 2) = 76 + 48 = 124$. $124 \div 7$ gives a remainder of 5. Thus, 5 odd days.",
+    explanation: "In 100 years, there are 76 normal years (1 odd day each) and 24 leap years (2 odd days each). Total odd days: $(76 \\times 1) + (24 \\times 2) = 76 + 48 = 124$. $124 \\div 7$ gives a remainder of 5. Thus, 5 odd days.",
     difficulty: "Hard"
   },
   {
@@ -1348,7 +1348,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["a"],
     hint: "You need to calculate the number of odd days up to 1949 and then add days for Jan 1950.",
-    explanation: "The calculation of odd days up to 1949 yields 3 odd days (from 1600+300+49). The days in Jan 1950 are 26. $26 \div 7$ gives 5 odd days. Total odd days: $3 + 5 = 8$. $8 \div 7$ gives a remainder of 1. Odd day 1 is Monday. The correct day is Thursday. The calculation is more complex than suggested. I will use a question with a simpler logic.",
+    explanation: "The calculation of odd days up to 1949 yields 3 odd days (from 1600+300+49). The days in Jan 1950 are 26. $26 \\div 7$ gives 5 odd days. Total odd days: $3 + 5 = 8$. $8 \\div 7$ gives a remainder of 1. Odd day 1 is Monday. The correct day is Thursday. The calculation is more complex than suggested. I will use a question with a simpler logic.",
     prompt: "If you were born on a Monday in 1990, and 1990 was a non-leap year, what day will your birthday fall on in 1991?",
     options: [
       { id: "a", text: "Monday" },
@@ -1372,7 +1372,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["c"],
     hint: "The total duration is 24 hours. The clock gains 5 minutes per hour. Total gain is $24 \\times 5$ minutes.",
-    explanation: "The time elapsed is 24 hours (from 9 AM to 9 AM). The clock gains 5 minutes per hour. Total gain: $24 \\times 5 = 120$ minutes, or 2 hours. Therefore, the clock will show $9:00 \text{ AM} + 2 \text{ hours} = 11:00 \text{ AM}$. **Corrected option 'c' to 11:00 AM.**",
+    explanation: "The time elapsed is 24 hours (from 9 AM to 9 AM). The clock gains 5 minutes per hour. Total gain: $24 \\times 5 = 120$ minutes, or 2 hours. Therefore, the clock will show $9:00 \\text{ AM} + 2 \\text{ hours} = 11:00 \\text{ AM}$. **Corrected option 'c' to 11:00 AM.**",
     options: [
       { id: "a", text: "9:05 AM" },
       { id: "b", text: "10:05 AM" },
@@ -1422,8 +1422,8 @@ export const questions: Question[] = [
       { "id": "d", text: "Thursday" }
     ],
     correct_options: ["c"],
-    hint: "October has 31 days. $31 \div 7$ gives a remainder of 3.",
-    explanation: "October has 31 days. $31 \div 7$ gives a remainder of 3 odd days. Count 3 days forward from Sunday: Monday, Tuesday, Wednesday. 1st November will be a Wednesday.",
+    hint: "October has 31 days. $31 \\div 7$ gives a remainder of 3.",
+    explanation: "October has 31 days. $31 \\div 7$ gives a remainder of 3 odd days. Count 3 days forward from Sunday: Monday, Tuesday, Wednesday. 1st November will be a Wednesday.",
     difficulty: "Easy"
   },
   {
@@ -1432,21 +1432,21 @@ export const questions: Question[] = [
     prompt: "At what time between 4 and 5 o'clock will the hands of a clock be at a $0$ degree angle (coincide)?",
     options: [
       { id: "a", text: "4:20" },
-      { id: "b", text: "$4:21 \frac{9}{11}$" },
-      { id: "c", "text": "$4:21 \frac{10}{11}$" },
-      { "id": "d", text: "$4:22 \frac{10}{11}$" }
+      { id: "b", text: "$4:21 \\frac{9}{11}$" },
+      { id: "c", "text": "$4:21 \\frac{10}{11}$" },
+      { "id": "d", text: "$4:22 \\frac{10}{11}$" }
     ],
     correct_options: ["c"],
     hint: "The hands coincide at $\\frac{60}{11} \\times H$ minutes past $H$. Here $H=4$.",
-    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H$ is the first hour (4). $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4. **Correction: The correct option is $4:21 \frac{9}{11}$. Option 'c' is changed to the correct value.**",
+    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H$ is the first hour (4). $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \\frac{9}{11}$ minutes past 4. **Correction: The correct option is $4:21 \\frac{9}{11}$. Option 'c' is changed to the correct value.**",
     options: [
       { id: "a", text: "$4:20$" },
-      { id: "b", text: "$4:21 \frac{9}{11}$" },
-      { id: "c", "text": "$4:22 \frac{10}{11}$" },
+      { id: "b", text: "$4:21 \\frac{9}{11}$" },
+      { id: "c", "text": "$4:22 \\frac{10}{11}$" },
       { "id": "d", text: "$4:22$" }
     ],
     correct_options: ["b"],
-    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H=4$. $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4.",
+    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H=4$. $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \\frac{9}{11}$ minutes past 4.",
     difficulty: "Hard"
   },
   {
@@ -3244,9 +3244,9 @@ export const questions: Question[] = [
     "prompt": "What is the time complexity for inserting an element at the beginning of a Singly Linked List?",
     "options": [
       { "id": "a", "text": "$O(n)$" },
-      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "b", "text": "$O(n \\log n)$" },
       { "id": "c", "text": "$O(1)$" },
-      { "id": "d", "text": "$O(\log n)$" }
+      { "id": "d", "text": "$O(\\log n)$" }
     ],
     "correct_options": ["c"],
     "hint": "You only need to update the head pointer and the new node's next pointer.",
@@ -3379,9 +3379,9 @@ export const questions: Question[] = [
     "prompt": "The worst-case time complexity of Quick Sort is:",
     "options": [
       { "id": "a", "text": "$O(n)$" },
-      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "b", "text": "$O(n \\log n)$" },
       { "id": "c", "text": "$O(n^2)$" },
-      { "id": "d", "text": "$O(\log n)$" }
+      { "id": "d", "text": "$O(\\log n)$" }
     ],
     "correct_options": ["c"],
     "hint": "This occurs when the pivot selection consistently results in highly unbalanced partitions.",
@@ -3481,7 +3481,7 @@ export const questions: Question[] = [
   {
     "id": "t024",
     "category": "Technical Ability",
-    "prompt": "Which sorting algorithm has a stable average and worst-case time complexity of $O(n \log n)$?",
+    "prompt": "Which sorting algorithm has a stable average and worst-case time complexity of $O(n \\log n)$?",
     "options": [
       { "id": "a", "text": "Quick Sort" },
       { "id": "b", "text": "Merge Sort" },
@@ -3490,7 +3490,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "This algorithm uses a divide-and-conquer approach and requires extra space.",
-    "explanation": "**Merge Sort** has a consistent time complexity of $O(n \log n)$ in all cases (best, average, worst) and is generally a stable sort.",
+    "explanation": "**Merge Sort** has a consistent time complexity of $O(n \\log n)$ in all cases (best, average, worst) and is generally a stable sort.",
     "difficulty": "Hard"
   },
   {
@@ -3663,14 +3663,14 @@ export const questions: Question[] = [
     "category": "Technical Ability",
     "prompt": "Which SQL aggregate function ignores NULL values by default?",
     "options": [
-      { "id": "a", "text": "COUNT($\ast$)" },
+      { "id": "a", "text": "COUNT($\\ast$)" },
       { "id": "b", "text": "AVG" },
       { "id": "c", "text": "COALESCE" },
       { "id": "d", "text": "GROUP BY" }
     ],
     "correct_options": ["b"],
     "hint": "This function is used to calculate the central tendency of numerical data.",
-    "explanation": "Aggregate functions like **AVG**, SUM, MIN, and MAX ignore NULL values. COUNT($\ast$) counts all rows, including those with NULLs in other columns.",
+    "explanation": "Aggregate functions like **AVG**, SUM, MIN, and MAX ignore NULL values. COUNT($\\ast$) counts all rows, including those with NULLs in other columns.",
     "difficulty": "Medium"
   },
   {
@@ -3790,7 +3790,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["d"],
     "hint": "Post-order is Left, Right, Root. The root is $D$.",
-    "explanation": "Pre-order ($D, B, A, C, E$) tells us $D$ is the root. In-order ($A, B, C | D | E$) shows the left subtree is $\{A, B, C\}$ and the right is $\{E\}$. The root of the left subtree is $B$. Post-order is Left: ($A, C$), Right: ($E$), Root: ($D$). Thus: $A, C, E, B, D$.",
+    "explanation": "Pre-order ($D, B, A, C, E$) tells us $D$ is the root. In-order ($A, B, C | D | E$) shows the left subtree is $\\{A, B, C\\}$ and the right is $\\{E\\}$. The root of the left subtree is $B$. Post-order is Left: ($A, C$), Right: ($E$), Root: ($D$). Thus: $A, C, E, B, D$.",
     "difficulty": "Hard"
   },
   {
@@ -3828,10 +3828,10 @@ export const questions: Question[] = [
     "category": "Technical Ability",
     "prompt": "Which SQL statement is used to remove all rows from a table without logging the individual row deletions, making it faster?",
     "options": [
-      { "id": "a", "text": "DELETE FROM table\_name" },
-      { "id": "b", "text": "REMOVE table\_name" },
-      { "id": "c", "text": "TRUNCATE TABLE table\_name" },
-      { "id": "d", "text": "DROP TABLE table\_name" }
+      { "id": "a", "text": "DELETE FROM table\\_name" },
+      { "id": "b", "text": "REMOVE table\\_name" },
+      { "id": "c", "text": "TRUNCATE TABLE table\\_name" },
+      { "id": "d", "text": "DROP TABLE table\\_name" }
     ],
     "correct_options": ["c"],
     "hint": "This command resets the identity (auto-increment) column.",
@@ -3886,7 +3886,7 @@ export const questions: Question[] = [
   {
     "id": "t051",
     "category": "Technical Ability",
-    "prompt": "What is the output of the Java code: `System.out.println(10 + 20 + \"Javatpoint\");`?",
+    "prompt": "What is the output of the Java code: `System.out.println(10 + 20 + \\"Javatpoint\\");`?",
     "options": [
       { "id": "a", "text": "30Javatpoint" },
       { "id": "b", "text": "1020Javatpoint" },
@@ -3895,7 +3895,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "The operations are performed strictly from left to right.",
-    "explanation": "Due to left-to-right evaluation, $10+20$ is calculated first (30). Then, string concatenation occurs: $30 + \"Javatpoint\"$ results in \"30Javatpoint\".",
+    "explanation": "Due to left-to-right evaluation, $10+20$ is calculated first (30). Then, string concatenation occurs: $30 + \\"Javatpoint\\"$ results in \\"30Javatpoint\\".",
     "difficulty": "Easy"
   },
   {
@@ -3964,7 +3964,7 @@ export const questions: Question[] = [
     "prompt": "What is the worst-case space complexity of Recursive Depth First Search (DFS) on a skewed tree?",
     "options": [
       { "id": "a", "text": "$O(1)$" },
-      { "id": "b", "text": "$O(\log n)$" },
+      { "id": "b", "text": "$O(\\log n)$" },
       { "id": "c", "text": "$O(n)$" },
       { "id": "d", "text": "$O(n^2)$" }
     ],
@@ -4249,9 +4249,9 @@ export const questions: Question[] = [
     "prompt": "What is the maximum number of swaps required by Bubble Sort to sort $n$ elements in the worst case?",
     "options": [
       { "id": "a", "text": "$O(n)$" },
-      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "b", "text": "$O(n \\log n)$" },
       { "id": "c", "text": "$O(n^2)$" },
-      { "id": "d", "text": "$O(\log n)$" }
+      { "id": "d", "text": "$O(\\log n)$" }
     ],
     "correct_options": ["c"],
     "hint": "The number of comparisons and swaps are proportional to the square of the number of elements.",
@@ -4519,13 +4519,13 @@ export const questions: Question[] = [
     "prompt": "What is the time complexity of searching in a well-balanced Binary Search Tree (BST)?",
     "options": [
       { "id": "a", "text": "$O(n)$" },
-      { "id": "b", "text": "$O(\log n)$" },
-      { "id": "c", "text": "$O(n \log n)$" },
+      { "id": "b", "text": "$O(\\log n)$" },
+      { "id": "c", "text": "$O(n \\log n)$" },
       { "id": "d", "text": "$O(1)$" }
     ],
     "correct_options": ["b"],
     "hint": "The search space is halved at each comparison.",
-    "explanation": "In a **well-balanced BST**, the height of the tree is $O(\log n)$, and since the search takes time proportional to the height, the complexity is $O(\log n)$.",
+    "explanation": "In a **well-balanced BST**, the height of the tree is $O(\\log n)$, and since the search takes time proportional to the height, the complexity is $O(\\log n)$.",
     "difficulty": "Easy"
   },
   {
@@ -4551,7 +4551,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "GROUP" },
       { "id": "b", "text": "UNIQUE" },
       { "id": "c", "text": "DISTINCT" },
-      { "id": "d", "text": "NO\_DUPLICATE" }
+      { "id": "d", "text": "NO\\_DUPLICATE" }
     ],
     "correct_options": ["c"],
     "hint": "The word implies a different set of values.",
@@ -4713,7 +4713,7 @@ export const questions: Question[] = [
   {
     "id": "p006",
     "category": "Pseudocode",
-    "prompt": "function mystery(n):\n  if n == 0: return 1\n  return mystery(n - 1) * 2\nprint(mystery(3))",
+    "prompt": "function mystery(n):\\n  if n == 0: return 1\\n  return mystery(n - 1) * 2\\nprint(mystery(3))",
     "options": [
       { "id": "a", "text": "3" },
       { "id": "b", "text": "6" },
@@ -4833,7 +4833,7 @@ export const questions: Question[] = [
   {
     "id": "p014",
     "category": "Pseudocode",
-    "prompt": "function change(v):\n  v = v + 5\n  return v\nx = 8; result = change(x); print(x)",
+    "prompt": "function change(v):\\n  v = v + 5\\n  return v\\nx = 8; result = change(x); print(x)",
     "options": [
       { "id": "a", "text": "8" },
       { "id": "b", "text": "13" },
@@ -4878,7 +4878,7 @@ export const questions: Question[] = [
   {
     "id": "p017",
     "category": "Pseudocode",
-    "prompt": "function calculate(a, b): return (a * 2) - b\nresult = calculate(5, 3); print(result)",
+    "prompt": "function calculate(a, b): return (a * 2) - b\\nresult = calculate(5, 3); print(result)",
     "options": [
       { "id": "a", "text": "7" },
       { "id": "b", "text": "10" },
@@ -5013,7 +5013,7 @@ export const questions: Question[] = [
   {
     "id": "p026",
     "category": "Pseudocode",
-    "prompt": "function recur(n):\n  if n <= 1: return 1\n  return recur(n - 1) + n\nprint(recur(4))",
+    "prompt": "function recur(n):\\n  if n <= 1: return 1\\n  return recur(n - 1) + n\\nprint(recur(4))",
     "options": [
       { "id": "a", "text": "4" },
       { "id": "b", "text": "7" },
@@ -5081,7 +5081,7 @@ export const questions: Question[] = [
   {
     "id": "p030",
     "category": "Pseudocode",
-    "prompt": "function process(arr):\n  arr[0] = arr[0] + 1\n  return arr\nlist = [5, 6]; new_list = process(list); print(list[0]) (Assume arrays are passed by reference)",
+    "prompt": "function process(arr):\\n  arr[0] = arr[0] + 1\\n  return arr\\nlist = [5, 6]; new_list = process(list); print(list[0]) (Assume arrays are passed by reference)",
     "options": [
       { "id": "a", "text": "5" },
       { "id": "b", "text": "6" },
@@ -5156,7 +5156,7 @@ export const questions: Question[] = [
   {
     "id": "p035",
     "category": "Pseudocode",
-    "prompt": "function recur(n):\n  if n <= 0: return 0\n  return n MOD 2 + recur(n - 1)\nprint(recur(4))",
+    "prompt": "function recur(n):\\n  if n <= 0: return 0\\n  return n MOD 2 + recur(n - 1)\\nprint(recur(4))",
     "options": [
       { "id": "a", "text": "2" },
       { "id": "b", "text": "4" },
@@ -5329,7 +5329,7 @@ export const questions: Question[] = [
   {
     "id": "p046",
     "category": "Pseudocode",
-    "prompt": "function mystery(a, b):\n  if b == 0: return a\n  return mystery(b, a MOD b)\nprint(mystery(20, 15))",
+    "prompt": "function mystery(a, b):\\n  if b == 0: return a\\n  return mystery(b, a MOD b)\\nprint(mystery(20, 15))",
     "options": [
       { "id": "a", "text": "1" },
       { "id": "b", "text": "5" },
@@ -5449,7 +5449,7 @@ export const questions: Question[] = [
   {
     "id": "p054",
     "category": "Pseudocode",
-    "prompt": "x = 5; function update(val): val = val + 1; x = val; return x\nprint(update(x))",
+    "prompt": "x = 5; function update(val): val = val + 1; x = val; return x\\nprint(update(x))",
     "options": [
       { "id": "a", "text": "5" },
       { "id": "b", "text": "6" },
@@ -5539,7 +5539,7 @@ export const questions: Question[] = [
   {
     "id": "p060",
     "category": "Pseudocode",
-    "prompt": "function recur(n):\n  if n <= 1: return n\n  return recur(n - 1) + recur(n - 2)\nprint(recur(4)) (Fibonacci sequence, F(0)=0, F(1)=1)",
+    "prompt": "function recur(n):\\n  if n <= 1: return n\\n  return recur(n - 1) + recur(n - 2)\\nprint(recur(4)) (Fibonacci sequence, F(0)=0, F(1)=1)",
     "options": [
       { "id": "a", "text": "3" },
       { "id": "b", "text": "5" },
@@ -5614,7 +5614,7 @@ export const questions: Question[] = [
   {
     "id": "p065",
     "category": "Pseudocode",
-    "prompt": "function calc(a, b): return (a - b) * (a + b)\nprint(calc(5, 3))",
+    "prompt": "function calc(a, b): return (a - b) * (a + b)\\nprint(calc(5, 3))",
     "options": [
       { "id": "a", "text": "16" },
       { "id": "b", "text": "8" },
@@ -5749,7 +5749,7 @@ export const questions: Question[] = [
   {
     "id": "p074",
     "category": "Pseudocode",
-    "prompt": "function do_something(x):\n  x = x * x\n  return x\ny = 3; z = do_something(y); print(y)",
+    "prompt": "function do_something(x):\\n  x = x * x\\n  return x\\ny = 3; z = do_something(y); print(y)",
     "options": [
       { "id": "a", "text": "3" },
       { "id": "b", "text": "9" },
@@ -5884,7 +5884,7 @@ export const questions: Question[] = [
   {
     "id": "p083",
     "category": "Pseudocode",
-    "prompt": "function count_down(n):\n  if n <= 0: return 0\n  print(n)\n  return count_down(n - 1)\nprint(count_down(3))",
+    "prompt": "function count_down(n):\\n  if n <= 0: return 0\\n  print(n)\\n  return count_down(n - 1)\\nprint(count_down(3))",
     "options": [
       { "id": "a", "text": "3 2 1 0" },
       { "id": "b", "text": "3 2 1" },
@@ -5989,7 +5989,7 @@ export const questions: Question[] = [
   {
     "id": "p090",
     "category": "Pseudocode",
-    "prompt": "function power(base, exp):\n  if exp == 0: return 1\n  return base * power(base, exp - 1)\nprint(power(2, 3))",
+    "prompt": "function power(base, exp):\\n  if exp == 0: return 1\\n  return base * power(base, exp - 1)\\nprint(power(2, 3))",
     "options": [
       { "id": "a", "text": "6" },
       { "id": "b", "text": "8" },
@@ -6117,7 +6117,7 @@ export const questions: Question[] = [
   {
     "id": "p098",
     "category": "Pseudocode",
-    "prompt": "function operate(a, b): a = a + 1; b = b - 1; return a + b\nresult = operate(5, 5); print(result)",
+    "prompt": "function operate(a, b): a = a + 1; b = b - 1; return a + b\\nresult = operate(5, 5); print(result)",
     "options": [
       { "id": "a", "text": "10" },
       { "id": "b", "text": "11" },
@@ -6298,7 +6298,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "30" }
     ],
     "correct_options": ["b"],
-    "hint": "The differences are increasing by one each time: $+3, +4, +5, \dots$",
+    "hint": "The differences are increasing by one each time: $+3, +4, +5, \\dots$",
     "explanation": "The differences are $3, 4, 5$. The next difference is $6$. Thus, $20+6=26$.",
     "difficulty": "Medium"
   },
@@ -6358,7 +6358,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "150" }
     ],
     "correct_options": ["c"],
-    "hint": "The pattern is multiplication by consecutive integers: $\\times 2, \\times 3, \\times 4, \dots$",
+    "hint": "The pattern is multiplication by consecutive integers: $\\times 2, \\times 3, \\times 4, \\dots$",
     "explanation": "The series follows: $1 \\times 2 = 2$, $2 \\times 3 = 6$, $6 \\times 4 = 24$. The next number is $24 \\times 5 = 120$.",
     "difficulty": "Medium"
   },
@@ -6418,7 +6418,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "38" }
     ],
     "correct_options": ["b"],
-    "hint": "The differences are decreasing by one each time: $+8, +7, +6, \dots$",
+    "hint": "The differences are decreasing by one each time: $+8, +7, +6, \\dots$",
     "explanation": "The differences are $8, 7, 6$. The next difference is $5$. Thus, $31+5=36$.",
     "difficulty": "Medium"
   },
@@ -6448,7 +6448,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "86" }
     ],
     "correct_options": ["b"],
-    "hint": "The differences form a pattern of multiples of 5: $+5, +10, +15, +20, \dots$",
+    "hint": "The differences form a pattern of multiples of 5: $+5, +10, +15, +20, \\dots$",
     "explanation": "The differences are $5, 10, 15, 20$. The next difference is $25$. Thus, $56+25=81$.",
     "difficulty": "Medium"
   },
@@ -6463,7 +6463,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "18" }
     ],
     "correct_options": ["b"],
-    "hint": "The differences are increasing by one each time: $+1, +2, +3, +4, \dots$",
+    "hint": "The differences are increasing by one each time: $+1, +2, +3, +4, \\dots$",
     "explanation": "The differences are $1, 2, 3, 4$. The next difference is $5$. Thus, $11+5=16$.",
     "difficulty": "Medium"
   },
@@ -6494,7 +6494,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "B's share (3 parts) is $₹900$. Find the value of one part.",
-    "explanation": "The ratio is $2:3:4$. B's share is $3$ parts, so $3 \text{ parts} = ₹900$. $1 \text{ part} = ₹300$. The total number of parts is $2+3+4=9$. Total amount $= 9 \\times ₹300 = ₹2700$.",
+    "explanation": "The ratio is $2:3:4$. B's share is $3$ parts, so $3 \\text{ parts} = ₹900$. $1 \\text{ part} = ₹300$. The total number of parts is $2+3+4=9$. Total amount $= 9 \\times ₹300 = ₹2700$.",
     "difficulty": "Medium"
   },
   {
@@ -6509,7 +6509,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Make the value of B common in both ratios.",
-    "explanation": "To combine, multiply the first ratio by 4 and the second by 3 (LCM of 3 and 4 is 12). $A:B = 2:3 \implies 8:12$. $B:C = 4:5 \implies 12:15$. The combined ratio is $A:B:C = 8:12:15$.",
+    "explanation": "To combine, multiply the first ratio by 4 and the second by 3 (LCM of 3 and 4 is 12). $A:B = 2:3 \\implies 8:12$. $B:C = 4:5 \\implies 12:15$. The combined ratio is $A:B:C = 8:12:15$.",
     "difficulty": "Medium"
   },
   {
@@ -6569,7 +6569,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Initial milk is $30$L and water is $10$L. The quantity of milk remains constant.",
-    "explanation": "Initial: Milk $= 40 \\times (3/4) = 30$L. Water $= 40 \\times (1/4) = 10$L. Let $x$ be the water added. $\\frac{30}{10+x} = \\frac{2}{1}$. $30 = 2(10+x) \implies 30 = 20+2x$. $2x=10$, so $x=5$ L.",
+    "explanation": "Initial: Milk $= 40 \\times (3/4) = 30$L. Water $= 40 \\times (1/4) = 10$L. Let $x$ be the water added. $\\frac{30}{10+x} = \\frac{2}{1}$. $30 = 2(10+x) \\implies 30 = 20+2x$. $2x=10$, so $x=5$ L.",
     "difficulty": "Medium"
   },
   {
@@ -6599,7 +6599,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Use $p/r = (p/q) \\times (q/r)$.",
-    "explanation": "We can write $\\frac{p}{r} = \\frac{p}{q} \\\times \\frac{q}{r} = \\frac{7}{9} \\\times \\frac{3}{5} = \\frac{7}{3 \\times 5} = \\frac{7}{15}$. Thus, $p:r = 7:15$.",
+    "explanation": "We can write $\\frac{p}{r} = \\frac{p}{q} \\times \\frac{q}{r} = \\frac{7}{9} \\times \\frac{3}{5} = \\frac{7}{3 \\times 5} = \\frac{7}{15}$. Thus, $p:r = 7:15$.",
     "difficulty": "Medium"
   },
   {
@@ -6658,7 +6658,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "24 days" }
     ],
     "correct_options": ["d"],
-    "hint": "B's daily work $= (A \text{ and } B)'s \text{ daily work} - A's \text{ daily work}$.",
+    "hint": "B's daily work $= (A \\text{ and } B)'s \\text{ daily work} - A's \\text{ daily work}$.",
     "explanation": "B's daily work $= 1/8 - 1/12 = 3/24 - 2/24 = 1/24$. B alone takes $24$ days.",
     "difficulty": "Medium"
   },
@@ -6733,8 +6733,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "45 days" }
     ],
     "correct_options": ["b"],
-    "hint": "Establish the relationship: $2 \text{ men} = 3 \text{ women}$. Then find the equivalent number of women for $1$ man and $1$ woman.",
-    "explanation": "Since $2 \text{ men} = 3 \text{ women}$, $1 \text{ man} = 1.5 \text{ women}$. $1 \text{ man} + 1 \text{ woman} = 1.5 \text{ women} + 1 \text{ woman} = 2.5 \text{ women}$. Since $3$ women take $30$ days, $2.5$ women will take $D$ days. (Inverse proportion) $3 \\times 30 = 2.5 \\times D$. $90 = 2.5 D$. $D = 90/2.5 = 36$ days.",
+    "hint": "Establish the relationship: $2 \\text{ men} = 3 \\text{ women}$. Then find the equivalent number of women for $1$ man and $1$ woman.",
+    "explanation": "Since $2 \\text{ men} = 3 \\text{ women}$, $1 \\text{ man} = 1.5 \\text{ women}$. $1 \\text{ man} + 1 \\text{ woman} = 1.5 \\text{ women} + 1 \\text{ woman} = 2.5 \\text{ women}$. Since $3$ women take $30$ days, $2.5$ women will take $D$ days. (Inverse proportion) $3 \\times 30 = 2.5 \\times D$. $90 = 2.5 D$. $D = 90/2.5 = 36$ days.",
     "difficulty": "Medium"
   },
   {
@@ -6770,7 +6770,7 @@ export const questions: Question[] = [
   {
     "id": "n041",
     "category": "Numerical Puzzles",
-    "prompt": "A trader sells an item for $₹600$ at a loss of $20\%$. What was the cost price (CP)?",
+    "prompt": "A trader sells an item for $₹600$ at a loss of $20\\%$. What was the cost price (CP)?",
     "options": [
       { "id": "a", "text": "$₹720$" },
       { "id": "b", "text": "$₹750$" },
@@ -6778,14 +6778,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹900$" }
     ],
     "correct_options": ["b"],
-    "hint": "Selling Price (SP) is $80\%$ of the Cost Price (CP).",
-    "explanation": "If there is a $20\%$ loss, $\text{SP} = \text{CP} \\times (100-20)/100 = 0.8 \\times \text{CP}$. $600 = 0.8 \\times \text{CP}$. $\text{CP} = 600 / 0.8 = 6000/8 = ₹750$.",
+    "hint": "Selling Price (SP) is $80\\%$ of the Cost Price (CP).",
+    "explanation": "If there is a $20\\%$ loss, $\\text{SP} = \\text{CP} \\times (100-20)/100 = 0.8 \\times \\text{CP}$. $600 = 0.8 \\times \\text{CP}$. $\\text{CP} = 600 / 0.8 = 6000/8 = ₹750$.",
     "difficulty": "Medium"
   },
   {
     "id": "n042",
     "category": "Numerical Puzzles",
-    "prompt": "By selling a book for $₹120$, a bookseller gains $25\%$. For how much should he sell it to gain $30\%$?",
+    "prompt": "By selling a book for $₹120$, a bookseller gains $25\\%$. For how much should he sell it to gain $30\\%$?",
     "options": [
       { "id": "a", "text": "$₹122.40$" },
       { "id": "b", "text": "$₹124.80$" },
@@ -6793,14 +6793,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹130.00$" }
     ],
     "correct_options": ["b"],
-    "hint": "First find the Cost Price (CP) using the $25\%$ gain, then calculate the new Selling Price (SP) for $30\%$ gain.",
-    "explanation": "$125\%$ of $\text{CP} = 120$. $\text{CP} = 120 / 1.25 = ₹96$. $\text{SP}$ for $30\%$ gain $= 96 \\times 1.30 = ₹124.80$.",
+    "hint": "First find the Cost Price (CP) using the $25\\%$ gain, then calculate the new Selling Price (SP) for $30\\%$ gain.",
+    "explanation": "$125\\%$ of $\\text{CP} = 120$. $\\text{CP} = 120 / 1.25 = ₹96$. $\\text{SP}$ for $30\\%$ gain $= 96 \\times 1.30 = ₹124.80$.",
     "difficulty": "Medium"
   },
   {
     "id": "n043",
     "category": "Numerical Puzzles",
-    "prompt": "A shopkeeper gives a $10\%$ discount on a marked price of $₹800$. What is the selling price?",
+    "prompt": "A shopkeeper gives a $10\\%$ discount on a marked price of $₹800$. What is the selling price?",
     "options": [
       { "id": "a", "text": "$₹700$" },
       { "id": "b", "text": "$₹720$" },
@@ -6808,14 +6808,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹760$" }
     ],
     "correct_options": ["b"],
-    "hint": "The selling price is $90\%$ of the marked price.",
+    "hint": "The selling price is $90\\%$ of the marked price.",
     "explanation": "Discount amount $= 800 \\times 0.10 = ₹80$. Selling Price $= 800 - 80 = ₹720$.",
     "difficulty": "Medium"
   },
   {
     "id": "n044",
     "category": "Numerical Puzzles",
-    "prompt": "What is the equivalent single discount for two successive discounts of $10\%$ and $20\%$?",
+    "prompt": "What is the equivalent single discount for two successive discounts of $10\\%$ and $20\\%$?",
     "options": [
       { "id": "a", "text": "28%" },
       { "id": "b", "text": "30%" },
@@ -6824,7 +6824,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $D = d_1 + d_2 - (d_1 d_2)/100$.",
-    "explanation": "Let the original price be $100$. After $10\%$ discount: $100 \\times 0.90 = 90$. After $20\%$ discount on $90$: $90 \\times 0.80 = 72$. Total discount $= 100 - 72 = 28\%$.",
+    "explanation": "Let the original price be $100$. After $10\\%$ discount: $100 \\times 0.90 = 90$. After $20\\%$ discount on $90$: $90 \\times 0.80 = 72$. Total discount $= 100 - 72 = 28\\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6839,13 +6839,13 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the CP and SP per article first.",
-    "explanation": "CP per article $= ₹10/15 = ₹2/3$. SP per article $= ₹15/10 = ₹3/2$. Profit $= (3/2) - (2/3) = 5/6$. Profit $\\% = (5/6) / (2/3) \\times 100 = 5/6 \\times 3/2 \\times 100 = 5/4 \\times 100 = 125\%$.",
+    "explanation": "CP per article $= ₹10/15 = ₹2/3$. SP per article $= ₹15/10 = ₹3/2$. Profit $= (3/2) - (2/3) = 5/6$. Profit $\\% = (5/6) / (2/3) \\times 100 = 5/6 \\times 3/2 \\times 100 = 5/4 \\times 100 = 125\\%$.",
     "difficulty": "Medium"
   },
   {
     "id": "n046",
     "category": "Numerical Puzzles",
-    "prompt": "A man saves $15\%$ of his income. If his expenditure is $₹17000$, what is his total income?",
+    "prompt": "A man saves $15\\%$ of his income. If his expenditure is $₹17000$, what is his total income?",
     "options": [
       { "id": "a", "text": "$₹18500$" },
       { "id": "b", "text": "$₹19000$" },
@@ -6853,14 +6853,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹20500$" }
     ],
     "correct_options": ["c"],
-    "hint": "Expenditure represents $100\% - 15\% = 85\%$ of his income.",
-    "explanation": "Expenditure is $85\%$ of income. $0.85 \\times \text{Income} = ₹17000$. $\text{Income} = 17000 / 0.85 = ₹20000$.",
+    "hint": "Expenditure represents $100\\% - 15\\% = 85\\%$ of his income.",
+    "explanation": "Expenditure is $85\\%$ of income. $0.85 \\times \\text{Income} = ₹17000$. $\\text{Income} = 17000 / 0.85 = ₹20000$.",
     "difficulty": "Medium"
   },
   {
     "id": "n047",
     "category": "Numerical Puzzles",
-    "prompt": "In an election, Candidate A got $40\%$ of the total votes and lost to Candidate B by $200$ votes. What is the total number of votes?",
+    "prompt": "In an election, Candidate A got $40\\%$ of the total votes and lost to Candidate B by $200$ votes. What is the total number of votes?",
     "options": [
       { "id": "a", "text": "800" },
       { "id": "b", "text": "1000" },
@@ -6868,8 +6868,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "1500" }
     ],
     "correct_options": ["b"],
-    "hint": "The percentage difference in votes is $20\%$ (since B got $60\%$).",
-    "explanation": "A got $40\%$, so B got $100\% - 40\% = 60\%$. The difference is $60\% - 40\% = 20\%$. $20\%$ of Total Votes $= 200$. Total Votes $= 200 / 0.20 = 1000$.",
+    "hint": "The percentage difference in votes is $20\\%$ (since B got $60\\%$).",
+    "explanation": "A got $40\\%$, so B got $100\\% - 40\\% = 60\\%$. The difference is $60\\% - 40\\% = 20\\%$. $20\\%$ of Total Votes $= 200$. Total Votes $= 200 / 0.20 = 1000$.",
     "difficulty": "Medium"
   },
   {
@@ -6883,14 +6883,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "34.2 L" }
     ],
     "correct_options": ["b"],
-    "hint": "Use the formula: $\text{Final Quantity} = \text{Initial Quantity} (1 - x/C)^n$, where $x=4$, $C=40$, $n=2$.",
+    "hint": "Use the formula: $\\text{Final Quantity} = \\text{Initial Quantity} (1 - x/C)^n$, where $x=4$, $C=40$, $n=2$.",
     "explanation": "Final milk quantity $= 40 (1 - 4/40)^2 = 40 (1 - 1/10)^2 = 40 (9/10)^2 = 40 \\times 81/100 = 32.4$ L.",
     "difficulty": "Medium"
   },
   {
     "id": "n049",
     "category": "Numerical Puzzles",
-    "prompt": "If the price of sugar is increased by $25\%$, by what percent should a family reduce its consumption to keep the expenditure the same?",
+    "prompt": "If the price of sugar is increased by $25\\%$, by what percent should a family reduce its consumption to keep the expenditure the same?",
     "options": [
       { "id": "a", "text": "20%" },
       { "id": "b", "text": "25%" },
@@ -6899,13 +6899,13 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "The reduction fraction is $x / (100+x)$ where $x$ is the percentage increase.",
-    "explanation": "Let $R$ be the required reduction in consumption. $R = \\frac{\\text{Increase}}{100 + \\text{Increase}} \\\times 100 = \\frac{25}{100+25} \\\times 100 = \\frac{25}{125} \\\times 100 = 1/5 \\times 100 = 20\%$.",
+    "explanation": "Let $R$ be the required reduction in consumption. $R = \\frac{\\text{Increase}}{100 + \\text{Increase}} \\times 100 = \\frac{25}{100+25} \\times 100 = \\frac{25}{125} \\times 100 = 1/5 \\times 100 = 20\\%$.",
     "difficulty": "Medium"
   },
   {
     "id": "n050",
     "category": "Numerical Puzzles",
-    "prompt": "The population of a town increases by $10\%$ in the first year and decreases by $10\%$ in the second year. What is the net percentage change over two years?",
+    "prompt": "The population of a town increases by $10\\%$ in the first year and decreases by $10\\%$ in the second year. What is the net percentage change over two years?",
     "options": [
       { "id": "a", "text": "0% (No change)" },
       { "id": "b", "text": "1% decrease" },
@@ -6914,7 +6914,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use the net percentage change formula: $a + b + (ab/100)$.",
-    "explanation": "Net change $= 10 + (-10) + (10 \\times -10)/100 = 0 + (-100/100) = -1\%$. This is a $1\%$ decrease.",
+    "explanation": "Net change $= 10 + (-10) + (10 \\times -10)/100 = 0 + (-100/100) = -1\\%$. This is a $1\\%$ decrease.",
     "difficulty": "Medium"
   },
   {
@@ -6928,14 +6928,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "33.33%" }
     ],
     "correct_options": ["b"],
-    "hint": "Profit percent $= (\text{Profit} / \text{CP}) \\times 100$.",
-    "explanation": "Profit $= 100 - 80 = ₹20$. Profit $\\% = (20 / 80) \\times 100 = 1/4 \\times 100 = 25\%$.",
+    "hint": "Profit percent $= (\\text{Profit} / \\text{CP}) \\times 100$.",
+    "explanation": "Profit $= 100 - 80 = ₹20$. Profit $\\% = (20 / 80) \\times 100 = 1/4 \\times 100 = 25\\%$.",
     "difficulty": "Medium"
   },
   {
     "id": "n052",
     "category": "Numerical Puzzles",
-    "prompt": "The marked price of a shirt is $₹1500$. After a $20\%$ discount, the shopkeeper still gains $20\%$. What is the cost price (CP)?",
+    "prompt": "The marked price of a shirt is $₹1500$. After a $20\\%$ discount, the shopkeeper still gains $20\\%$. What is the cost price (CP)?",
     "options": [
       { "id": "a", "text": "$₹1000$" },
       { "id": "b", "text": "$₹1100$" },
@@ -6944,7 +6944,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Find the SP first, then relate SP to CP using the gain percentage.",
-    "explanation": "Selling Price $(\text{SP}) = 1500 \\times (1 - 0.20) = 1500 \\times 0.80 = ₹1200$. Since the shopkeeper gains $20\%$, $120\%$ of $\text{CP} = 1200$. $\text{CP} = 1200 / 1.20 = ₹1000$.",
+    "explanation": "Selling Price $(\\text{SP}) = 1500 \\times (1 - 0.20) = 1500 \\times 0.80 = ₹1200$. Since the shopkeeper gains $20\\%$, $120\\%$ of $\\text{CP} = 1200$. $\\text{CP} = 1200 / 1.20 = ₹1000$.",
     "difficulty": "Medium"
   },
   {
@@ -6959,13 +6959,13 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the ratio of $90$ to $120$ and multiply by $100$.",
-    "explanation": "Required percentage $= (90 / 120) \\times 100 = (3/4) \\times 100 = 75\%$.",
+    "explanation": "Required percentage $= (90 / 120) \\times 100 = (3/4) \\times 100 = 75\\%$.",
     "difficulty": "Medium"
   },
   {
     "id": "n054",
     "category": "Numerical Puzzles",
-    "prompt": "If $60\%$ of A is equal to $75\%$ of B, then what is the ratio $B:A$?",
+    "prompt": "If $60\\%$ of A is equal to $75\\%$ of B, then what is the ratio $B:A$?",
     "options": [
       { "id": "a", "text": "5:4" },
       { "id": "b", "text": "4:5" },
@@ -6988,8 +6988,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "5.5 hours" }
     ],
     "correct_options": ["c"],
-    "hint": "Calculate the speed first: $150 \text{ km} / 2 \text{ h} = 75 \text{ km/h}$.",
-    "explanation": "Speed $= 150/2 = 75$ km/h. Time to travel $375$ km $= 375 \text{ km} / 75 \text{ km/h} = 5$ hours.",
+    "hint": "Calculate the speed first: $150 \\text{ km} / 2 \\text{ h} = 75 \\text{ km/h}$.",
+    "explanation": "Speed $= 150/2 = 75$ km/h. Time to travel $375$ km $= 375 \\text{ km} / 75 \\text{ km/h} = 5$ hours.",
     "difficulty": "Medium"
   },
   {
@@ -7033,7 +7033,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "10 km/h" }
     ],
     "correct_options": ["a"],
-    "hint": "Average speed $= \text{Total Distance} / \text{Total Time}$.",
+    "hint": "Average speed $= \\text{Total Distance} / \\text{Total Time}$.",
     "explanation": "Total Distance $= (5 \\times 3) + (12 \\times 2) = 15 + 24 = 39$ km. Total Time $= 3 + 2 = 5$ hours. Average Speed $= 39 / 5 = 7.8$ km/h.",
     "difficulty": "Medium"
   },
@@ -7049,7 +7049,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "First convert $54$ km/h to m/s.",
-    "explanation": "Speed $= 54 \\times 5/18 = 15$ m/s. Time to cross a pole (distance is train length) $= 150 \text{ m} / 15 \text{ m/s} = 10$ seconds.",
+    "explanation": "Speed $= 54 \\times 5/18 = 15$ m/s. Time to cross a pole (distance is train length) $= 150 \\text{ m} / 15 \\text{ m/s} = 10$ seconds.",
     "difficulty": "Medium"
   },
   {
@@ -7109,7 +7109,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Time stopped per hour $= (\\text{Difference in Speeds} / \\text{Speed without stoppages}) \\times 60$.",
-    "explanation": "Time stopped per hour $= (54-45)/54 \text{ hours} = 9/54 \text{ hours} = 1/6$ hours. $1/6 \\times 60 = 10$ minutes.",
+    "explanation": "Time stopped per hour $= (54-45)/54 \\text{ hours} = 9/54 \\text{ hours} = 1/6$ hours. $1/6 \\times 60 = 10$ minutes.",
     "difficulty": "Medium"
   },
   {
@@ -7154,7 +7154,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use relative speed and convert the distance to km and time to minutes.",
-    "explanation": "Relative speed $= 12 - 10 = 2$ km/h. Distance $= 100 \text{ m} = 0.1 \text{ km}$. Time $= 0.1 \text{ km} / 2 \text{ km/h} = 0.05$ hours. $0.05 \\times 60 = 3$ minutes.",
+    "explanation": "Relative speed $= 12 - 10 = 2$ km/h. Distance $= 100 \\text{ m} = 0.1 \\text{ km}$. Time $= 0.1 \\text{ km} / 2 \\text{ km/h} = 0.05$ hours. $0.05 \\times 60 = 3$ minutes.",
     "difficulty": "Medium"
   },
   {
@@ -7169,13 +7169,13 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Let $L$ be the length and $S$ be the speed. $L/S = 6$ and $(L+100)/S = 10$.",
-    "explanation": "Time to cross a pole: $L/S = 6 \implies L = 6S$. Time to cross platform: $(L+100)/S = 10 \implies 6S+100 = 10S$. $4S = 100$. $S = 25$ m/s.",
+    "explanation": "Time to cross a pole: $L/S = 6 \\implies L = 6S$. Time to cross platform: $(L+100)/S = 10 \\implies 6S+100 = 10S$. $4S = 100$. $S = 25$ m/s.",
     "difficulty": "Medium"
   },
   {
     "id": "n068",
     "category": "Numerical Puzzles",
-    "prompt": "If the speed of a car is increased by $25\%$, what is the percentage decrease in time taken to cover the same distance?",
+    "prompt": "If the speed of a car is increased by $25\\%$, what is the percentage decrease in time taken to cover the same distance?",
     "options": [
       { "id": "a", "text": "16%" },
       { "id": "b", "text": "20%" },
@@ -7184,7 +7184,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Speed ratio is $4:5$, so time ratio is $5:4$.",
-    "explanation": "New speed is $1.25$ times the old speed, or $5/4$ times. Since distance is constant, new time is $4/5$ of the old time. Decrease in time $= 1 - 4/5 = 1/5$. $1/5 \\times 100 = 20\%$.",
+    "explanation": "New speed is $1.25$ times the old speed, or $5/4$ times. Since distance is constant, new time is $4/5$ of the old time. Decrease in time $= 1 - 4/5 = 1/5$. $1/5 \\times 100 = 20\\%$.",
     "difficulty": "Medium"
   },
   {
@@ -7199,7 +7199,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the distance covered by Train A by $8$ am and then use relative speed on the remaining distance.",
-    "explanation": "By $8$ am, Train A covers $20 \\times 1 = 20$ km. Remaining distance $= 100-20 = 80$ km. Relative speed $= 20+25 = 45$ km/h. Time to meet $= 80/45 = 16/9$ hours $= 1$ hour and $7/9 \\times 60 \text{ min} = 1$ hour and $46.67$ minutes. Meeting time $\approx 8:00 \text{ am} + 1 \text{ hr } 47 \text{ min} = 9:47$ am. $16/9$ hours is close to $1$ hour and $40$ minutes, which is $100$ minutes. $8 \text{ am} + 1 \text{ hr } 40 \text{ min} = 9:40$ am. $80/45 = 1.777$ hours. $80/45 \\times 60 \approx 106.67$ minutes. $8 \text{ am} + 106.67 \text{ minutes} = 9:46:40$ am. The closest option is 9:40 am.",
+    "explanation": "By $8$ am, Train A covers $20 \\times 1 = 20$ km. Remaining distance $= 100-20 = 80$ km. Relative speed $= 20+25 = 45$ km/h. Time to meet $= 80/45 = 16/9$ hours $= 1$ hour and $7/9 \\times 60 \\text{ min} = 1$ hour and $46.67$ minutes. Meeting time $\\approx 8:00 \\text{ am} + 1 \\text{ hr } 47 \\text{ min} = 9:47$ am. $16/9$ hours is close to $1$ hour and $40$ minutes, which is $100$ minutes. $8 \\text{ am} + 1 \\text{ hr } 40 \\text{ min} = 9:40$ am. $80/45 = 1.777$ hours. $80/45 \\times 60 \\approx 106.67$ minutes. $8 \\text{ am} + 106.67 \\text{ minutes} = 9:46:40$ am. The closest option is 9:40 am.",
     "difficulty": "Medium"
   },
   {
@@ -7228,7 +7228,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "42" }
     ],
     "correct_options": ["b"],
-    "hint": "Excluded number $= (\text{Original Sum}) - (\text{New Sum})$.",
+    "hint": "Excluded number $= (\\text{Original Sum}) - (\\text{New Sum})$.",
     "explanation": "Original sum $= 5 \\times 30 = 150$. New sum (of $4$ numbers) $= 4 \\times 28 = 112$. Excluded number $= 150 - 112 = 38$.",
     "difficulty": "Medium"
   },
@@ -7280,7 +7280,7 @@ export const questions: Question[] = [
   {
     "id": "n075",
     "category": "Numerical Puzzles",
-    "prompt": "In what ratio must a grocer mix two varieties of tea worth $₹60$/kg and $₹65$/kg so that by selling the mixture at $₹68.20$/kg, he gains $10\%$?",
+    "prompt": "In what ratio must a grocer mix two varieties of tea worth $₹60$/kg and $₹65$/kg so that by selling the mixture at $₹68.20$/kg, he gains $10\\%$?",
     "options": [
       { "id": "a", "text": "1:2" },
       { "id": "b", "text": "2:3" },
@@ -7288,7 +7288,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "4:3" }
     ],
     "correct_options": ["c"],
-    "hint": "The CP of the mixture must be found first: $\text{CP}_{mix} = \text{SP} / 1.1$. Then use Alligation Rule.",
+    "hint": "The CP of the mixture must be found first: $\\text{CP}_{mix} = \\text{SP} / 1.1$. Then use Alligation Rule.",
     "explanation": "CP of mixture: $₹68.20 / 1.10 = ₹62$. Using the Alligation Rule: Quantity of first variety: $(65 - 62) = 3$. Quantity of second variety: $(62 - 60) = 2$. Ratio is $3:2$.",
     "difficulty": "Medium"
   },
@@ -7348,7 +7348,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "50 kg" }
     ],
     "correct_options": ["b"],
-    "hint": "New total weight $\text{Sum} + 52 + 44$. New number of boys is $8$.",
+    "hint": "New total weight $\\text{Sum} + 52 + 44$. New number of boys is $8$.",
     "explanation": "Initial sum of weight $= 6 \\times 48 = 288$ kg. New sum of weight $= 288 + 52 + 44 = 384$ kg. New average weight $= 384 / 8 = 48$ kg.",
     "difficulty": "Medium"
   },
@@ -7520,7 +7520,7 @@ export const questions: Question[] = [
   {
     "id": "n091",
     "category": "Numerical Puzzles",
-    "prompt": "Find the Simple Interest on $₹5000$ at $10\%$ per annum for $3$ years.",
+    "prompt": "Find the Simple Interest on $₹5000$ at $10\\%$ per annum for $3$ years.",
     "options": [
       { "id": "a", "text": "$₹1200$" },
       { "id": "b", "text": "$₹1500$" },
@@ -7535,7 +7535,7 @@ export const questions: Question[] = [
   {
     "id": "n092",
     "category": "Numerical Puzzles",
-    "prompt": "What will be the Compound Interest on $₹20000$ at $5\%$ per annum for $2$ years, compounded annually?",
+    "prompt": "What will be the Compound Interest on $₹20000$ at $5\\%$ per annum for $2$ years, compounded annually?",
     "options": [
       { "id": "a", "text": "$₹1500$" },
       { "id": "b", "text": "$₹2000$" },
@@ -7544,7 +7544,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Amount $A = P(1+R/100)^T$. $CI = A-P$.",
-    "explanation": "Amount $A = 20000 (1 + 5/100)^2 = 20000 \\times (1.05)^2 = 20000 \\times 1.1025 = ₹22050$. $\text{CI} = 22050 - 20000 = ₹2050$.",
+    "explanation": "Amount $A = 20000 (1 + 5/100)^2 = 20000 \\times (1.05)^2 = 20000 \\times 1.1025 = ₹22050$. $\\text{CI} = 22050 - 20000 = ₹2050$.",
     "difficulty": "Medium"
   },
   {
@@ -7559,13 +7559,13 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "If the sum doubles, the interest equals the principal ($SI=P$). $R = 100/T$.",
-    "explanation": "When a sum doubles, $SI=P$. $P = (P \\times R \\times 8) / 100$. $100 = 8R$. $R = 100/8 = 12.5\%$.",
+    "explanation": "When a sum doubles, $SI=P$. $P = (P \\times R \\times 8) / 100$. $100 = 8R$. $R = 100/8 = 12.5\\%$.",
     "difficulty": "Medium"
   },
   {
     "id": "n094",
     "category": "Numerical Puzzles",
-    "prompt": "The difference between Compound Interest and Simple Interest on a sum for $2$ years at $10\%$ per annum is $₹50$. What is the sum (Principal)?",
+    "prompt": "The difference between Compound Interest and Simple Interest on a sum for $2$ years at $10\\%$ per annum is $₹50$. What is the sum (Principal)?",
     "options": [
       { "id": "a", "text": "$₹4000$" },
       { "id": "b", "text": "$₹5000$" },
@@ -7573,7 +7573,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹7500$" }
     ],
     "correct_options": ["b"],
-    "hint": "For 2 years, the difference $\text{CI} - \text{SI} = P(R/100)^2$.",
+    "hint": "For 2 years, the difference $\\text{CI} - \\text{SI} = P(R/100)^2$.",
     "explanation": "Difference $= P(R/100)^2$. $50 = P(10/100)^2$. $50 = P(1/100)$. $P = 50 \\times 100 = ₹5000$.",
     "difficulty": "Medium"
   },
@@ -7589,7 +7589,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "The Simple Interest for the $2$ years between year $2$ and year $4$ is the difference between the amounts.",
-    "explanation": "SI for $2$ years $= 1080 - 720 = ₹360$. SI for $1$ year $= ₹180$. Principal $= \text{Amount at } 2 \text{ yrs} - \text{SI for } 2 \text{ yrs} = 720 - 360 = ₹360$.",
+    "explanation": "SI for $2$ years $= 1080 - 720 = ₹360$. SI for $1$ year $= ₹180$. Principal $= \\text{Amount at } 2 \\text{ yrs} - \\text{SI for } 2 \\text{ yrs} = 720 - 360 = ₹360$.",
     "difficulty": "Medium"
   },
   {
@@ -7603,14 +7603,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "72 sq m" }
     ],
     "correct_options": ["b"],
-    "hint": "Area of four walls $= 2(\text{Length} + \text{Width}) \\times \text{Height}$.",
+    "hint": "Area of four walls $= 2(\\text{Length} + \\text{Width}) \\times \\text{Height}$.",
     "explanation": "Area $= 2(5+4) \\times 3 = 2(9) \\times 3 = 54$ sq m.",
     "difficulty": "Medium"
   },
   {
     "id": "n097",
     "category": "Numerical Puzzles",
-    "prompt": "If the radius of a circle is $7$ cm, what is its circumference? (Use $\pi = 22/7$)",
+    "prompt": "If the radius of a circle is $7$ cm, what is its circumference? (Use $\\pi = 22/7$)",
     "options": [
       { "id": "a", "text": "22 cm" },
       { "id": "b", "text": "35 cm" },
@@ -7618,14 +7618,14 @@ export const questions: Question[] = [
       { "id": "d", "text": "49 cm" }
     ],
     "correct_options": ["c"],
-    "hint": "Circumference $C = 2 \pi r$.",
+    "hint": "Circumference $C = 2 \\pi r$.",
     "explanation": "Circumference $C = 2 \\times (22/7) \\times 7 = 44$ cm.",
     "difficulty": "Medium"
   },
   {
     "id": "n098",
     "category": "Numerical Puzzles",
-    "prompt": "The volume of a cube is $125 \text{ cm}^3$. What is the area of one face of the cube?",
+    "prompt": "The volume of a cube is $125 \\text{ cm}^3$. What is the area of one face of the cube?",
     "options": [
       { "id": "a", "text": "5 sq cm" },
       { "id": "b", "text": "25 sq cm" },
@@ -7634,7 +7634,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Volume $V = a^3$. Face area $A = a^2$.",
-    "explanation": "Volume $a^3 = 125 \text{ cm}^3$, so side $a = 5$ cm. Area of one face $= a^2 = 5^2 = 25$ sq cm.",
+    "explanation": "Volume $a^3 = 125 \\text{ cm}^3$, so side $a = 5$ cm. Area of one face $= a^2 = 5^2 = 25$ sq cm.",
     "difficulty": "Medium"
   },
   {
@@ -7649,7 +7649,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Convert all measurements to the same unit (cm) before calculating areas. $1$m $= 100$ cm.",
-    "explanation": "Field area $= (90 \\times 100) \\times (60 \\times 100) = 9000 \\times 6000 \text{ sq cm}$. Tile area $= 30 \\times 30 = 900 \text{ sq cm}$. Number of tiles $= (9000 \\times 6000) / 900 = 10 \\times 6000 = 60000$.",
+    "explanation": "Field area $= (90 \\times 100) \\times (60 \\times 100) = 9000 \\times 6000 \\text{ sq cm}$. Tile area $= 30 \\times 30 = 900 \\text{ sq cm}$. Number of tiles $= (9000 \\times 6000) / 900 = 10 \\times 6000 = 60000$.",
     "difficulty": "Medium"
   },
   {
