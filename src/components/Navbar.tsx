@@ -15,7 +15,7 @@ const Navbar = () => {
               <BookOpen className="w-6 h-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Infosys Prep</h1>
+              <h1 className="text-xl font-bold text-foreground">Infosys Preparation</h1>
               <p className="text-xs text-muted-foreground">Exam Practice Portal</p>
             </div>
           </Link>
