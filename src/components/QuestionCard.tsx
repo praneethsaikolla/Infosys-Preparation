@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb, CheckCircle2, XCircle, Eye } from "lucide-react";
+import LatexText from "@/components/LatexText";
 
 interface QuestionCardProps {
   question: Question;
@@ -37,7 +38,7 @@ const QuestionCard = ({
     } else {
       const currentAnswer = Array.isArray(selectedAnswer) ? selectedAnswer : [];
       const newSelection = currentAnswer.includes(optionId)
-        ? currentAnswer.filter(id => id !== optionId)
+        ? currentAnswer.filter((id) => id !== optionId)
         : [...currentAnswer, optionId];
       onAnswer(newSelection);
     }
@@ -48,12 +49,22 @@ const QuestionCard = ({
   };
 
   const isWrongAnswer = (optionId: string) => {
-    const answer = Array.isArray(selectedAnswer) ? selectedAnswer : [selectedAnswer];
-    return showResult && answer.includes(optionId) && !question.correct_options.includes(optionId);
+    const answer = Array.isArray(selectedAnswer)
+      ? selectedAnswer
+      : [selectedAnswer];
+    return (
+      showResult &&
+      answer.includes(optionId) &&
+      !question.correct_options.includes(optionId)
+    );
   };
 
   const getOptionStyle = (optionId: string) => {
-    const answer = Array.isArray(selectedAnswer) ? selectedAnswer : selectedAnswer ? [selectedAnswer] : [];
+    const answer = Array.isArray(selectedAnswer)
+      ? selectedAnswer
+      : selectedAnswer
+      ? [selectedAnswer]
+      : [];
     if (!showResult && !isReview) {
       return answer.includes(optionId)
         ? "border-primary bg-primary/10"
@@ -83,7 +94,7 @@ const QuestionCard = ({
           </Badge>
         </div>
         <CardTitle className="text-xl md:text-2xl leading-relaxed">
-          {question.prompt}
+          <LatexText text={question.prompt} />
         </CardTitle>
       </CardHeader>
 
@@ -96,9 +107,13 @@ const QuestionCard = ({
               disabled={showResult || isReview}
               className={`w-full text-left p-4 rounded-lg border-2 transition-all ${getOptionStyle(
                 option.id
-              )} ${!(showResult || isReview) && "cursor-pointer"} flex items-center justify-between group`}
+              )} ${
+                !(showResult || isReview) && "cursor-pointer"
+              } flex items-center justify-between group`}
             >
-              <span className="flex-1">{option.text}</span>
+              <span className="flex-1">
+                <LatexText text={option.text} />
+              </span>
               {showResult && isCorrectAnswer(option.id) && (
                 <CheckCircle2 className="w-5 h-5 text-success ml-2" />
               )}
@@ -137,8 +152,12 @@ const QuestionCard = ({
             <div className="flex items-start gap-2">
               <Lightbulb className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm text-warning-foreground mb-1">Hint:</p>
-                <p className="text-sm text-foreground">{question.hint}</p>
+                <p className="font-semibold text-sm text-warning-foreground mb-1">
+                  Hint:
+                </p>
+                <p className="text-sm text-foreground">
+                  <LatexText text={question.hint} />
+                </p>
               </div>
             </div>
           </div>
@@ -149,8 +168,12 @@ const QuestionCard = ({
             <div className="flex items-start gap-2">
               <Eye className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm text-primary mb-1">Explanation:</p>
-                <p className="text-sm text-foreground">{question.explanation}</p>
+                <p className="font-semibold text-sm text-primary mb-1">
+                  Explanation:
+                </p>
+                <p className="text-sm text-foreground">
+                  <LatexText text={question.explanation} />
+                </p>
               </div>
             </div>
           </div>
