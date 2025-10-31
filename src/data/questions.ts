@@ -448,8 +448,8 @@ export const questions: Question[] = [
       { id: "d", text: "63" }
     ],
     correct_options: ["c"],
-    hint: "The pattern is (Previous number $\\times 2$) + 1. Check which number violates this rule.",
-    explanation: "The pattern is $(n \times 2) + 1$: $(3 \times 2) + 1 = 7$; $(7 \times 2) + 1 = 15$; $(15 \times 2) + 1 = 31$. The given number is 30, so 30 is the wrong number. The next term would be $(31 \times 2) + 1 = 63$.",
+    hint: "The pattern is (Previous number $\\\times 2$) + 1. Check which number violates this rule.",
+    explanation: "The pattern is $(n \\times 2) + 1$: $(3 \\times 2) + 1 = 7$; $(7 \\times 2) + 1 = 15$; $(15 \\times 2) + 1 = 31$. The given number is 30, so 30 is the wrong number. The next term would be $(31 \\times 2) + 1 = 63$.",
     difficulty: "Hard"
   },
   {
@@ -464,7 +464,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["b"],
     hint: "The pattern alternates between adding 2 and multiplying by 2.",
-    explanation: "$4+2=6$, $6 \times 2=12$, $12+2=14$, $14 \times 2=28$, $28+2=30$. The next step is $\times 2$. $30 \times 2=60$.",
+    explanation: "$4+2=6$, $6 \\times 2=12$, $12+2=14$, $14 \\times 2=28$, $28+2=30$. The next step is $\\times 2$. $30 \\times 2=60$.",
     difficulty: "Medium"
   },
   {
@@ -509,7 +509,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["b"],
     hint: "The difference between consecutive numbers doubles each time: $6, 12, 24, ...$",
-    explanation: "The differences are: $9-3=6$, $21-9=12$, $45-21=24$. The next difference must be $24 \times 2 = 48$. So, $45+48=93$.",
+    explanation: "The differences are: $9-3=6$, $21-9=12$, $45-21=24$. The next difference must be $24 \\times 2 = 48$. So, $45+48=93$.",
     difficulty: "Hard"
   },
 
@@ -919,7 +919,7 @@ export const questions: Question[] = [
   {
     id: "r057",
     category: "Reasoning Ability",
-    prompt: "If 'A $\\times$ B' means A is the brother of B, and 'A + B' means A is the daughter of B, what is the relation of C to A in 'A + B $\\times$ C'?",
+    prompt: "If 'A $\\\times$ B' means A is the brother of B, and 'A + B' means A is the daughter of B, what is the relation of C to A in 'A + B $\\\times$ C'?",
     options: [
       { id: "a", text: "Uncle" },
       { id: "b", text: "Aunt" },
@@ -927,8 +927,8 @@ export const questions: Question[] = [
       { "id": "d", text: "Cannot be determined" }
     ],
     correct_options: ["d"],
-    hint: "A is B's daughter. B is C's brother. So B is A's father, and C is B's brother (or sister, as $\\times$ does not define B's gender, but C is the male sibling). C is A's uncle. **Correction: C is A's paternal uncle.**",
-    explanation: "$A+B$ means A is the daughter of B (B is A's parent). $B \times C$ means B is the brother of C. Since B is the brother of C and B is A's parent, C is A's paternal uncle or aunt (since 'brother' is the only defined gender). Assuming $A \times B$ defines A's gender, $B$ being the brother of $C$ means $B$ is male. $C$ is the sibling of $A$'s father ($B$). C is A's paternal uncle or aunt. Since $B$ is the brother of $C$, $C$ can be a sister or brother. The relation is Uncle or Aunt. Since only 'Uncle' and 'Aunt' are options, and we can't determine C's gender, the best answer is D.",
+    hint: "A is B's daughter. B is C's brother. So B is A's father, and C is B's brother (or sister, as $\\\times$ does not define B's gender, but C is the male sibling). C is A's uncle. **Correction: C is A's paternal uncle.**",
+    explanation: "$A+B$ means A is the daughter of B (B is A's parent). $B \\times C$ means B is the brother of C. Since B is the brother of C and B is A's parent, C is A's paternal uncle or aunt (since 'brother' is the only defined gender). Assuming $A \\times B$ defines A's gender, $B$ being the brother of $C$ means $B$ is male. $C$ is the sibling of $A$'s father ($B$). C is A's paternal uncle or aunt. Since $B$ is the brother of $C$, $C$ can be a sister or brother. The relation is Uncle or Aunt. Since only 'Uncle' and 'Aunt' are options, and we can't determine C's gender, the best answer is D.",
     difficulty: "Hard"
   },
   {
@@ -1020,7 +1020,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["c"],
     hint: "Three of the pairs follow the pattern ($n^2, n^3$) or ($n, n^3$).",
-    explanation: "(1, 8) is $1^3$ and $2^3$ or $1^2$ and $2^3$. Let's use the simplest: The second number is a perfect square or cube. $1^3$ is 1, $2^3$ is 8. $4=2^2$, $64=4^3$. Let's use the power relationship: $1 \rightarrow 1^3$, $4 \rightarrow 4^3$, $16 \rightarrow 16^3$. (16, 256) is $16^2$. (9, 27) is $3^2, 3^3$. The pattern is (Square, Cube of the base number). $(3^2, 3^3)$. $(1^2, \text{Not } 1^3)$. (4, 64) is $2^2, 4^3$. The rule is (First number, $8 \times$ first number). $1 \times 8=8$, $4 \times 8=32$ (64), $16 \times 8=128$ (256). The simplest rule is: **First is $n^2$, Second is $m^3$.** (9, 27) is $3^2$ and $3^3$. All others do not fit. Let's use a simpler rule: **Three pairs have the second number as a cube.** $8=2^3$, $64=4^3$, $27=3^3$. $256$ is $16^2$. The odd one is (16, 256). **Corrected answer to 'd'.**",
+    explanation: "(1, 8) is $1^3$ and $2^3$ or $1^2$ and $2^3$. Let's use the simplest: The second number is a perfect square or cube. $1^3$ is 1, $2^3$ is 8. $4=2^2$, $64=4^3$. Let's use the power relationship: $1 \rightarrow 1^3$, $4 \rightarrow 4^3$, $16 \rightarrow 16^3$. (16, 256) is $16^2$. (9, 27) is $3^2, 3^3$. The pattern is (Square, Cube of the base number). $(3^2, 3^3)$. $(1^2, \text{Not } 1^3)$. (4, 64) is $2^2, 4^3$. The rule is (First number, $8 \\times$ first number). $1 \\times 8=8$, $4 \\times 8=32$ (64), $16 \\times 8=128$ (256). The simplest rule is: **First is $n^2$, Second is $m^3$.** (9, 27) is $3^2$ and $3^3$. All others do not fit. Let's use a simpler rule: **Three pairs have the second number as a cube.** $8=2^3$, $64=4^3$, $27=3^3$. $256$ is $16^2$. The odd one is (16, 256). **Corrected answer to 'd'.**",
     correct_options: ["d"],
     explanation: "8 ($2^3$), 64 ($4^3$), and 27 ($3^3$) are perfect cubes. 256 ($16^2$) is a perfect square, making (16, 256) the odd pair.",
     difficulty: "Hard"
@@ -1097,7 +1097,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["d"],
     hint: "Check which numbers are prime.",
-    explanation: "13, 17, and 23 are all prime numbers (divisible only by 1 and themselves). 33 is a composite number ($3 \times 11$).",
+    explanation: "13, 17, and 23 are all prime numbers (divisible only by 1 and themselves). 33 is a composite number ($3 \\times 11$).",
     difficulty: "Medium"
   },
   {
@@ -1333,7 +1333,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["a"],
     hint: "The calculation involves the number of leap years (24) and non-leap years (76) in a century.",
-    explanation: "In 100 years, there are 76 normal years (1 odd day each) and 24 leap years (2 odd days each). Total odd days: $(76 \times 1) + (24 \times 2) = 76 + 48 = 124$. $124 \div 7$ gives a remainder of 5. Thus, 5 odd days.",
+    explanation: "In 100 years, there are 76 normal years (1 odd day each) and 24 leap years (2 odd days each). Total odd days: $(76 \\times 1) + (24 \\times 2) = 76 + 48 = 124$. $124 \div 7$ gives a remainder of 5. Thus, 5 odd days.",
     difficulty: "Hard"
   },
   {
@@ -1371,8 +1371,8 @@ export const questions: Question[] = [
       { "id": "d", text: "11:30 AM" }
     ],
     correct_options: ["c"],
-    hint: "The total duration is 24 hours. The clock gains 5 minutes per hour. Total gain is $24 \times 5$ minutes.",
-    explanation: "The time elapsed is 24 hours (from 9 AM to 9 AM). The clock gains 5 minutes per hour. Total gain: $24 \times 5 = 120$ minutes, or 2 hours. Therefore, the clock will show $9:00 \text{ AM} + 2 \text{ hours} = 11:00 \text{ AM}$. **Corrected option 'c' to 11:00 AM.**",
+    hint: "The total duration is 24 hours. The clock gains 5 minutes per hour. Total gain is $24 \\times 5$ minutes.",
+    explanation: "The time elapsed is 24 hours (from 9 AM to 9 AM). The clock gains 5 minutes per hour. Total gain: $24 \\times 5 = 120$ minutes, or 2 hours. Therefore, the clock will show $9:00 \text{ AM} + 2 \text{ hours} = 11:00 \text{ AM}$. **Corrected option 'c' to 11:00 AM.**",
     options: [
       { id: "a", text: "9:05 AM" },
       { id: "b", text: "10:05 AM" },
@@ -1393,7 +1393,7 @@ export const questions: Question[] = [
     ],
     correct_options: ["c"],
     hint: "Each hour mark represents $30$ degrees.",
-    explanation: "At 3:00, the minute hand is on 12 and the hour hand is on 3. The difference is 3 hour divisions. $3 \times 30^{\\circ} = 90^{\\circ}$.",
+    explanation: "At 3:00, the minute hand is on 12 and the hour hand is on 3. The difference is 3 hour divisions. $3 \\times 30^{\\circ} = 90^{\\circ}$.",
     difficulty: "Easy"
   },
   {
@@ -1437,8 +1437,8 @@ export const questions: Question[] = [
       { "id": "d", text: "$4:22 \frac{10}{11}$" }
     ],
     correct_options: ["c"],
-    hint: "The hands coincide at $\\frac{60}{11} \times H$ minutes past $H$. Here $H=4$.",
-    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \times H$, where $H$ is the first hour (4). $\\frac{60}{11} \times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4. **Correction: The correct option is $4:21 \frac{9}{11}$. Option 'c' is changed to the correct value.**",
+    hint: "The hands coincide at $\\frac{60}{11} \\times H$ minutes past $H$. Here $H=4$.",
+    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H$ is the first hour (4). $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4. **Correction: The correct option is $4:21 \frac{9}{11}$. Option 'c' is changed to the correct value.**",
     options: [
       { id: "a", text: "$4:20$" },
       { id: "b", text: "$4:21 \frac{9}{11}$" },
@@ -1446,7 +1446,7 @@ export const questions: Question[] = [
       { "id": "d", text: "$4:22$" }
     ],
     correct_options: ["b"],
-    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \times H$, where $H=4$. $\\frac{60}{11} \times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4.",
+    explanation: "The formula for the minute when hands coincide is $\\frac{60}{11} \\times H$, where $H=4$. $\\frac{60}{11} \\times 4 = \\frac{240}{11} = 21 \frac{9}{11}$ minutes past 4.",
     difficulty: "Hard"
   },
   {
@@ -5036,7 +5036,7 @@ export const questions: Question[] = [
       { "id": "d", "text": "6" }
     ],
     "correct_options": ["b"],
-    "hint": "Trace the multiplications: $2 \times 2 \times 3 \times 4$.",
+    "hint": "Trace the multiplications: $2 \\times 2 \\times 3 \\times 4$.",
     "explanation": "i=1: val = 2 * (1+1) = 4. i=2: val = 4 * (2+1) = 12. i=3: val = 12 * (3+1) = 48. Ah, wait, the loop runs for i=1, 2, 3. The prompt asks to print the final value. i=1: val = 4. i=2: val = 12. i=3: val = 48. Let me check the options. Wait, my calculation is $48$. Let me re-read the trace. i=1: val = 2 * (2) = 4. i=2: val = 4 * (3) = 12. i=3: val = 12 * (4) = 48. Let me adjust the options to ensure a correct answer is present. I will make 'd' 48. But the current option 'b' is 24. Let's re-evaluate the prompt. The problem is in my generated options. I will stick to the trace and correct the options to include 48. Since I cannot edit the options on the fly without making sure the original correct one is present, I'll assume a typo in my internal draft and make the correct answer '24' by changing the calculation slightly, or I'll trust the math. The math is 48. I must select 48. I will change option 'c' text to 48.",
     "options": [
       { "id": "a", "text": "12" },
@@ -6208,8 +6208,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "71" }
     ],
     "correct_options": ["c"],
-    "hint": "The pattern is (previous number $\times 2) + 1$.",
-    "explanation": "The series follows the pattern: $3 \times 2 + 1 = 7$, $7 \times 2 + 1 = 15$, $15 \times 2 + 1 = 31$. The next number is $31 \times 2 + 1 = 63$.",
+    "hint": "The pattern is (previous number $\\times 2) + 1$.",
+    "explanation": "The series follows the pattern: $3 \\times 2 + 1 = 7$, $7 \\times 2 + 1 = 15$, $15 \\times 2 + 1 = 31$. The next number is $31 \\times 2 + 1 = 63$.",
     "difficulty": "Medium"
   },
   {
@@ -6358,8 +6358,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "150" }
     ],
     "correct_options": ["c"],
-    "hint": "The pattern is multiplication by consecutive integers: $\times 2, \times 3, \times 4, \dots$",
-    "explanation": "The series follows: $1 \times 2 = 2$, $2 \times 3 = 6$, $6 \times 4 = 24$. The next number is $24 \times 5 = 120$.",
+    "hint": "The pattern is multiplication by consecutive integers: $\\times 2, \\times 3, \\times 4, \dots$",
+    "explanation": "The series follows: $1 \\times 2 = 2$, $2 \\times 3 = 6$, $6 \\times 4 = 24$. The next number is $24 \\times 5 = 120$.",
     "difficulty": "Medium"
   },
   {
@@ -6404,7 +6404,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["d"],
     "hint": "The pattern is multiplication by 2 (powers of 2).",
-    "explanation": "This is a geometric progression where each term is multiplied by $2$. The next number is $16 \times 2 = 32$.",
+    "explanation": "This is a geometric progression where each term is multiplied by $2$. The next number is $16 \\times 2 = 32$.",
     "difficulty": "Medium"
   },
   {
@@ -6479,7 +6479,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Set up an equation using $3x$ and $5x$ for the original numbers.",
-    "explanation": "Let the numbers be $3x$ and $5x$. $\\frac{3x-8}{5x-8} = \\frac{1}{2}$. Cross-multiplying gives $2(3x-8) = 1(5x-8)$, which simplifies to $6x-16 = 5x-8$. Thus, $x=8$. The smaller number is $3x = 3 \times 8 = 24$.",
+    "explanation": "Let the numbers be $3x$ and $5x$. $\\frac{3x-8}{5x-8} = \\frac{1}{2}$. Cross-multiplying gives $2(3x-8) = 1(5x-8)$, which simplifies to $6x-16 = 5x-8$. Thus, $x=8$. The smaller number is $3x = 3 \\times 8 = 24$.",
     "difficulty": "Medium"
   },
   {
@@ -6494,7 +6494,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "B's share (3 parts) is $₹900$. Find the value of one part.",
-    "explanation": "The ratio is $2:3:4$. B's share is $3$ parts, so $3 \text{ parts} = ₹900$. $1 \text{ part} = ₹300$. The total number of parts is $2+3+4=9$. Total amount $= 9 \times ₹300 = ₹2700$.",
+    "explanation": "The ratio is $2:3:4$. B's share is $3$ parts, so $3 \text{ parts} = ₹900$. $1 \text{ part} = ₹300$. The total number of parts is $2+3+4=9$. Total amount $= 9 \\times ₹300 = ₹2700$.",
     "difficulty": "Medium"
   },
   {
@@ -6524,7 +6524,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use the equation $\\frac{5x+4}{7x+4} = \\frac{3}{4}$ to find $x$.",
-    "explanation": "Let current ages be $5x$ and $7x$. $\\frac{5x+4}{7x+4} = \\frac{3}{4}$. $4(5x+4) = 3(7x+4)$. $20x+16 = 21x+12$. $x=4$. A's current age is $5x = 5 \times 4 = 20$ years.",
+    "explanation": "Let current ages be $5x$ and $7x$. $\\frac{5x+4}{7x+4} = \\frac{3}{4}$. $4(5x+4) = 3(7x+4)$. $20x+16 = 21x+12$. $x=4$. A's current age is $5x = 5 \\times 4 = 20$ years.",
     "difficulty": "Medium"
   },
   {
@@ -6539,7 +6539,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Convert all coin values to Rupees. Value $= 5x(1) + 6x(0.5) + 8x(0.25)$.",
-    "explanation": "Let the number of coins be $5x, 6x, 8x$. Total value in Rupees: $5x(1) + 6x(0.5) + 8x(0.25) = 420$. $5x + 3x + 2x = 420$. $10x = 420$. $x=42$. Number of $50p$ coins is $6x = 6 \times 42 = 252$.",
+    "explanation": "Let the number of coins be $5x, 6x, 8x$. Total value in Rupees: $5x(1) + 6x(0.5) + 8x(0.25) = 420$. $5x + 3x + 2x = 420$. $10x = 420$. $x=42$. Number of $50p$ coins is $6x = 6 \\times 42 = 252$.",
     "difficulty": "Medium"
   },
   {
@@ -6569,7 +6569,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Initial milk is $30$L and water is $10$L. The quantity of milk remains constant.",
-    "explanation": "Initial: Milk $= 40 \times (3/4) = 30$L. Water $= 40 \times (1/4) = 10$L. Let $x$ be the water added. $\\frac{30}{10+x} = \\frac{2}{1}$. $30 = 2(10+x) \implies 30 = 20+2x$. $2x=10$, so $x=5$ L.",
+    "explanation": "Initial: Milk $= 40 \\times (3/4) = 30$L. Water $= 40 \\times (1/4) = 10$L. Let $x$ be the water added. $\\frac{30}{10+x} = \\frac{2}{1}$. $30 = 2(10+x) \implies 30 = 20+2x$. $2x=10$, so $x=5$ L.",
     "difficulty": "Medium"
   },
   {
@@ -6598,8 +6598,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "1:2" }
     ],
     "correct_options": ["a"],
-    "hint": "Use $p/r = (p/q) \times (q/r)$.",
-    "explanation": "We can write $\\frac{p}{r} = \\frac{p}{q} \\times \\frac{q}{r} = \\frac{7}{9} \\times \\frac{3}{5} = \\frac{7}{3 \times 5} = \\frac{7}{15}$. Thus, $p:r = 7:15$.",
+    "hint": "Use $p/r = (p/q) \\times (q/r)$.",
+    "explanation": "We can write $\\frac{p}{r} = \\frac{p}{q} \\\times \\frac{q}{r} = \\frac{7}{9} \\\times \\frac{3}{5} = \\frac{7}{3 \\times 5} = \\frac{7}{15}$. Thus, $p:r = 7:15$.",
     "difficulty": "Medium"
   },
   {
@@ -6614,7 +6614,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Perimeter $P = 2(L+W)$.",
-    "explanation": "Let $L=5x$ and $W=2x$. Perimeter $2(5x+2x) = 70$. $2(7x) = 70$. $14x = 70$. $x=5$. Length is $5x = 5 \times 5 = 25$ cm.",
+    "explanation": "Let $L=5x$ and $W=2x$. Perimeter $2(5x+2x) = 70$. $2(7x) = 70$. $14x = 70$. $x=5$. Length is $5x = 5 \\times 5 = 25$ cm.",
     "difficulty": "Medium"
   },
   {
@@ -6674,7 +6674,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $M_1 D_1 = M_2 D_2$.",
-    "explanation": "Men and days are inversely proportional. $15 \times 20 = 10 \times D_2$. $300 = 10 D_2$. $D_2 = 30$ days.",
+    "explanation": "Men and days are inversely proportional. $15 \\times 20 = 10 \\times D_2$. $300 = 10 D_2$. $D_2 = 30$ days.",
     "difficulty": "Medium"
   },
   {
@@ -6734,7 +6734,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Establish the relationship: $2 \text{ men} = 3 \text{ women}$. Then find the equivalent number of women for $1$ man and $1$ woman.",
-    "explanation": "Since $2 \text{ men} = 3 \text{ women}$, $1 \text{ man} = 1.5 \text{ women}$. $1 \text{ man} + 1 \text{ woman} = 1.5 \text{ women} + 1 \text{ woman} = 2.5 \text{ women}$. Since $3$ women take $30$ days, $2.5$ women will take $D$ days. (Inverse proportion) $3 \times 30 = 2.5 \times D$. $90 = 2.5 D$. $D = 90/2.5 = 36$ days.",
+    "explanation": "Since $2 \text{ men} = 3 \text{ women}$, $1 \text{ man} = 1.5 \text{ women}$. $1 \text{ man} + 1 \text{ woman} = 1.5 \text{ women} + 1 \text{ woman} = 2.5 \text{ women}$. Since $3$ women take $30$ days, $2.5$ women will take $D$ days. (Inverse proportion) $3 \\times 30 = 2.5 \\times D$. $90 = 2.5 D$. $D = 90/2.5 = 36$ days.",
     "difficulty": "Medium"
   },
   {
@@ -6749,7 +6749,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "The number of taps and the time taken are inversely proportional.",
-    "explanation": "Let $T_1 = 4$, $H_1 = 10$, $H_2 = 8$. $T_1 H_1 = T_2 H_2$. $4 \times 10 = T_2 \times 8$. $40 = 8 T_2$. $T_2 = 5$ taps.",
+    "explanation": "Let $T_1 = 4$, $H_1 = 10$, $H_2 = 8$. $T_1 H_1 = T_2 H_2$. $4 \\times 10 = T_2 \\times 8$. $40 = 8 T_2$. $T_2 = 5$ taps.",
     "difficulty": "Medium"
   },
   {
@@ -6764,7 +6764,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "If $2/3$ of the work takes $16$ days, find the time for $1$ unit of work.",
-    "explanation": "Time taken for $1$ unit (whole work) $= 16 / (2/3) = 16 \times 3/2 = 8 \times 3 = 24$ days.",
+    "explanation": "Time taken for $1$ unit (whole work) $= 16 / (2/3) = 16 \\times 3/2 = 8 \\times 3 = 24$ days.",
     "difficulty": "Medium"
   },
   {
@@ -6779,7 +6779,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Selling Price (SP) is $80\%$ of the Cost Price (CP).",
-    "explanation": "If there is a $20\%$ loss, $\text{SP} = \text{CP} \times (100-20)/100 = 0.8 \times \text{CP}$. $600 = 0.8 \times \text{CP}$. $\text{CP} = 600 / 0.8 = 6000/8 = ₹750$.",
+    "explanation": "If there is a $20\%$ loss, $\text{SP} = \text{CP} \\times (100-20)/100 = 0.8 \\times \text{CP}$. $600 = 0.8 \\times \text{CP}$. $\text{CP} = 600 / 0.8 = 6000/8 = ₹750$.",
     "difficulty": "Medium"
   },
   {
@@ -6794,7 +6794,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "First find the Cost Price (CP) using the $25\%$ gain, then calculate the new Selling Price (SP) for $30\%$ gain.",
-    "explanation": "$125\%$ of $\text{CP} = 120$. $\text{CP} = 120 / 1.25 = ₹96$. $\text{SP}$ for $30\%$ gain $= 96 \times 1.30 = ₹124.80$.",
+    "explanation": "$125\%$ of $\text{CP} = 120$. $\text{CP} = 120 / 1.25 = ₹96$. $\text{SP}$ for $30\%$ gain $= 96 \\times 1.30 = ₹124.80$.",
     "difficulty": "Medium"
   },
   {
@@ -6809,7 +6809,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "The selling price is $90\%$ of the marked price.",
-    "explanation": "Discount amount $= 800 \times 0.10 = ₹80$. Selling Price $= 800 - 80 = ₹720$.",
+    "explanation": "Discount amount $= 800 \\times 0.10 = ₹80$. Selling Price $= 800 - 80 = ₹720$.",
     "difficulty": "Medium"
   },
   {
@@ -6824,7 +6824,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $D = d_1 + d_2 - (d_1 d_2)/100$.",
-    "explanation": "Let the original price be $100$. After $10\%$ discount: $100 \times 0.90 = 90$. After $20\%$ discount on $90$: $90 \times 0.80 = 72$. Total discount $= 100 - 72 = 28\%$.",
+    "explanation": "Let the original price be $100$. After $10\%$ discount: $100 \\times 0.90 = 90$. After $20\%$ discount on $90$: $90 \\times 0.80 = 72$. Total discount $= 100 - 72 = 28\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6839,7 +6839,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the CP and SP per article first.",
-    "explanation": "CP per article $= ₹10/15 = ₹2/3$. SP per article $= ₹15/10 = ₹3/2$. Profit $= (3/2) - (2/3) = 5/6$. Profit $\\% = (5/6) / (2/3) \times 100 = 5/6 \times 3/2 \times 100 = 5/4 \times 100 = 125\%$.",
+    "explanation": "CP per article $= ₹10/15 = ₹2/3$. SP per article $= ₹15/10 = ₹3/2$. Profit $= (3/2) - (2/3) = 5/6$. Profit $\\% = (5/6) / (2/3) \\times 100 = 5/6 \\times 3/2 \\times 100 = 5/4 \\times 100 = 125\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6854,7 +6854,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Expenditure represents $100\% - 15\% = 85\%$ of his income.",
-    "explanation": "Expenditure is $85\%$ of income. $0.85 \times \text{Income} = ₹17000$. $\text{Income} = 17000 / 0.85 = ₹20000$.",
+    "explanation": "Expenditure is $85\%$ of income. $0.85 \\times \text{Income} = ₹17000$. $\text{Income} = 17000 / 0.85 = ₹20000$.",
     "difficulty": "Medium"
   },
   {
@@ -6884,7 +6884,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use the formula: $\text{Final Quantity} = \text{Initial Quantity} (1 - x/C)^n$, where $x=4$, $C=40$, $n=2$.",
-    "explanation": "Final milk quantity $= 40 (1 - 4/40)^2 = 40 (1 - 1/10)^2 = 40 (9/10)^2 = 40 \times 81/100 = 32.4$ L.",
+    "explanation": "Final milk quantity $= 40 (1 - 4/40)^2 = 40 (1 - 1/10)^2 = 40 (9/10)^2 = 40 \\times 81/100 = 32.4$ L.",
     "difficulty": "Medium"
   },
   {
@@ -6899,7 +6899,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "The reduction fraction is $x / (100+x)$ where $x$ is the percentage increase.",
-    "explanation": "Let $R$ be the required reduction in consumption. $R = \\frac{\\text{Increase}}{100 + \\text{Increase}} \\times 100 = \\frac{25}{100+25} \\times 100 = \\frac{25}{125} \\times 100 = 1/5 \times 100 = 20\%$.",
+    "explanation": "Let $R$ be the required reduction in consumption. $R = \\frac{\\text{Increase}}{100 + \\text{Increase}} \\\times 100 = \\frac{25}{100+25} \\\times 100 = \\frac{25}{125} \\\times 100 = 1/5 \\times 100 = 20\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6914,7 +6914,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use the net percentage change formula: $a + b + (ab/100)$.",
-    "explanation": "Net change $= 10 + (-10) + (10 \times -10)/100 = 0 + (-100/100) = -1\%$. This is a $1\%$ decrease.",
+    "explanation": "Net change $= 10 + (-10) + (10 \\times -10)/100 = 0 + (-100/100) = -1\%$. This is a $1\%$ decrease.",
     "difficulty": "Medium"
   },
   {
@@ -6928,8 +6928,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "33.33%" }
     ],
     "correct_options": ["b"],
-    "hint": "Profit percent $= (\text{Profit} / \text{CP}) \times 100$.",
-    "explanation": "Profit $= 100 - 80 = ₹20$. Profit $\\% = (20 / 80) \times 100 = 1/4 \times 100 = 25\%$.",
+    "hint": "Profit percent $= (\text{Profit} / \text{CP}) \\times 100$.",
+    "explanation": "Profit $= 100 - 80 = ₹20$. Profit $\\% = (20 / 80) \\times 100 = 1/4 \\times 100 = 25\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6944,7 +6944,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Find the SP first, then relate SP to CP using the gain percentage.",
-    "explanation": "Selling Price $(\text{SP}) = 1500 \times (1 - 0.20) = 1500 \times 0.80 = ₹1200$. Since the shopkeeper gains $20\%$, $120\%$ of $\text{CP} = 1200$. $\text{CP} = 1200 / 1.20 = ₹1000$.",
+    "explanation": "Selling Price $(\text{SP}) = 1500 \\times (1 - 0.20) = 1500 \\times 0.80 = ₹1200$. Since the shopkeeper gains $20\%$, $120\%$ of $\text{CP} = 1200$. $\text{CP} = 1200 / 1.20 = ₹1000$.",
     "difficulty": "Medium"
   },
   {
@@ -6959,7 +6959,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the ratio of $90$ to $120$ and multiply by $100$.",
-    "explanation": "Required percentage $= (90 / 120) \times 100 = (3/4) \times 100 = 75\%$.",
+    "explanation": "Required percentage $= (90 / 120) \\times 100 = (3/4) \\times 100 = 75\%$.",
     "difficulty": "Medium"
   },
   {
@@ -6974,7 +6974,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Convert percentages to fractions and solve for $B/A$.",
-    "explanation": "$0.60 \times A = 0.75 \times B$. $\\frac{B}{A} = \\frac{0.60}{0.75} = \\frac{60}{75} = \\frac{4}{5}$. Thus, $B:A = 4:5$.",
+    "explanation": "$0.60 \\times A = 0.75 \\times B$. $\\frac{B}{A} = \\frac{0.60}{0.75} = \\frac{60}{75} = \\frac{4}{5}$. Thus, $B:A = 4:5$.",
     "difficulty": "Medium"
   },
   {
@@ -7004,7 +7004,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Multiply the speed in km/h by $5/18$ to convert to m/s.",
-    "explanation": "Speed in m/s $= 90 \times (5/18) = 5 \times 5 = 25$ m/s.",
+    "explanation": "Speed in m/s $= 90 \\times (5/18) = 5 \\times 5 = 25$ m/s.",
     "difficulty": "Medium"
   },
   {
@@ -7019,7 +7019,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Distance is constant: $D = S_1 T_1 = S_2 T_2$.",
-    "explanation": "Distance $D = 48 \times 10 = 480$ km. New speed $S_2 = D / T_2 = 480 / 8 = 60$ km/h.",
+    "explanation": "Distance $D = 48 \\times 10 = 480$ km. New speed $S_2 = D / T_2 = 480 / 8 = 60$ km/h.",
     "difficulty": "Medium"
   },
   {
@@ -7034,7 +7034,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Average speed $= \text{Total Distance} / \text{Total Time}$.",
-    "explanation": "Total Distance $= (5 \times 3) + (12 \times 2) = 15 + 24 = 39$ km. Total Time $= 3 + 2 = 5$ hours. Average Speed $= 39 / 5 = 7.8$ km/h.",
+    "explanation": "Total Distance $= (5 \\times 3) + (12 \\times 2) = 15 + 24 = 39$ km. Total Time $= 3 + 2 = 5$ hours. Average Speed $= 39 / 5 = 7.8$ km/h.",
     "difficulty": "Medium"
   },
   {
@@ -7049,7 +7049,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "First convert $54$ km/h to m/s.",
-    "explanation": "Speed $= 54 \times 5/18 = 15$ m/s. Time to cross a pole (distance is train length) $= 150 \text{ m} / 15 \text{ m/s} = 10$ seconds.",
+    "explanation": "Speed $= 54 \\times 5/18 = 15$ m/s. Time to cross a pole (distance is train length) $= 150 \text{ m} / 15 \text{ m/s} = 10$ seconds.",
     "difficulty": "Medium"
   },
   {
@@ -7079,7 +7079,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Relative speed is the difference of speeds. Total distance is the sum of lengths.",
-    "explanation": "Total distance $= 100+120 = 220$ m. Relative speed $= 40-32 = 8$ km/h. $8 \times 5/18 = 20/9$ m/s. Time $= 220 / (20/9) = 220 \times 9 / 20 = 11 \times 9 = 99$ seconds.",
+    "explanation": "Total distance $= 100+120 = 220$ m. Relative speed $= 40-32 = 8$ km/h. $8 \\times 5/18 = 20/9$ m/s. Time $= 220 / (20/9) = 220 \\times 9 / 20 = 11 \\times 9 = 99$ seconds.",
     "difficulty": "Medium"
   },
   {
@@ -7094,7 +7094,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "If speed ratio is $a:b$, time ratio is $b:a$. Speed ratio $4:3$, Time ratio $3:4$.",
-    "explanation": "Ratio of speeds is $4:3$. Ratio of times is $3:4$. The difference in time ($4-3=1$ part) is $20$ minutes. Usual time is $3$ parts, so $3 \times 20 = 60$ minutes.",
+    "explanation": "Ratio of speeds is $4:3$. Ratio of times is $3:4$. The difference in time ($4-3=1$ part) is $20$ minutes. Usual time is $3$ parts, so $3 \\times 20 = 60$ minutes.",
     "difficulty": "Medium"
   },
   {
@@ -7108,8 +7108,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "15 minutes" }
     ],
     "correct_options": ["b"],
-    "hint": "Time stopped per hour $= (\\text{Difference in Speeds} / \\text{Speed without stoppages}) \times 60$.",
-    "explanation": "Time stopped per hour $= (54-45)/54 \text{ hours} = 9/54 \text{ hours} = 1/6$ hours. $1/6 \times 60 = 10$ minutes.",
+    "hint": "Time stopped per hour $= (\\text{Difference in Speeds} / \\text{Speed without stoppages}) \\times 60$.",
+    "explanation": "Time stopped per hour $= (54-45)/54 \text{ hours} = 9/54 \text{ hours} = 1/6$ hours. $1/6 \\times 60 = 10$ minutes.",
     "difficulty": "Medium"
   },
   {
@@ -7124,7 +7124,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Use the formula $S_{avg} = 2xy / (x+y)$ for equal distances.",
-    "explanation": "Average Speed $= (2 \times 20 \times 30) / (20 + 30) = 1200 / 50 = 24$ km/h.",
+    "explanation": "Average Speed $= (2 \\times 20 \\times 30) / (20 + 30) = 1200 / 50 = 24$ km/h.",
     "difficulty": "Medium"
   },
   {
@@ -7139,7 +7139,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Convert distance to km and time to hours, or convert m/s to km/h by multiplying by $18/5$.",
-    "explanation": "Time $= 2$ minutes $= 120$ seconds. Speed in m/s $= 900/120 = 7.5$ m/s. Speed in km/h $= 7.5 \times 18/5 = 1.5 \times 18 = 27$ km/h.",
+    "explanation": "Time $= 2$ minutes $= 120$ seconds. Speed in m/s $= 900/120 = 7.5$ m/s. Speed in km/h $= 7.5 \\times 18/5 = 1.5 \\times 18 = 27$ km/h.",
     "difficulty": "Medium"
   },
   {
@@ -7154,7 +7154,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Use relative speed and convert the distance to km and time to minutes.",
-    "explanation": "Relative speed $= 12 - 10 = 2$ km/h. Distance $= 100 \text{ m} = 0.1 \text{ km}$. Time $= 0.1 \text{ km} / 2 \text{ km/h} = 0.05$ hours. $0.05 \times 60 = 3$ minutes.",
+    "explanation": "Relative speed $= 12 - 10 = 2$ km/h. Distance $= 100 \text{ m} = 0.1 \text{ km}$. Time $= 0.1 \text{ km} / 2 \text{ km/h} = 0.05$ hours. $0.05 \\times 60 = 3$ minutes.",
     "difficulty": "Medium"
   },
   {
@@ -7184,7 +7184,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Speed ratio is $4:5$, so time ratio is $5:4$.",
-    "explanation": "New speed is $1.25$ times the old speed, or $5/4$ times. Since distance is constant, new time is $4/5$ of the old time. Decrease in time $= 1 - 4/5 = 1/5$. $1/5 \times 100 = 20\%$.",
+    "explanation": "New speed is $1.25$ times the old speed, or $5/4$ times. Since distance is constant, new time is $4/5$ of the old time. Decrease in time $= 1 - 4/5 = 1/5$. $1/5 \\times 100 = 20\%$.",
     "difficulty": "Medium"
   },
   {
@@ -7199,7 +7199,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Calculate the distance covered by Train A by $8$ am and then use relative speed on the remaining distance.",
-    "explanation": "By $8$ am, Train A covers $20 \times 1 = 20$ km. Remaining distance $= 100-20 = 80$ km. Relative speed $= 20+25 = 45$ km/h. Time to meet $= 80/45 = 16/9$ hours $= 1$ hour and $7/9 \times 60 \text{ min} = 1$ hour and $46.67$ minutes. Meeting time $\approx 8:00 \text{ am} + 1 \text{ hr } 47 \text{ min} = 9:47$ am. $16/9$ hours is close to $1$ hour and $40$ minutes, which is $100$ minutes. $8 \text{ am} + 1 \text{ hr } 40 \text{ min} = 9:40$ am. $80/45 = 1.777$ hours. $80/45 \times 60 \approx 106.67$ minutes. $8 \text{ am} + 106.67 \text{ minutes} = 9:46:40$ am. The closest option is 9:40 am.",
+    "explanation": "By $8$ am, Train A covers $20 \\times 1 = 20$ km. Remaining distance $= 100-20 = 80$ km. Relative speed $= 20+25 = 45$ km/h. Time to meet $= 80/45 = 16/9$ hours $= 1$ hour and $7/9 \\times 60 \text{ min} = 1$ hour and $46.67$ minutes. Meeting time $\approx 8:00 \text{ am} + 1 \text{ hr } 47 \text{ min} = 9:47$ am. $16/9$ hours is close to $1$ hour and $40$ minutes, which is $100$ minutes. $8 \text{ am} + 1 \text{ hr } 40 \text{ min} = 9:40$ am. $80/45 = 1.777$ hours. $80/45 \\times 60 \approx 106.67$ minutes. $8 \text{ am} + 106.67 \text{ minutes} = 9:46:40$ am. The closest option is 9:40 am.",
     "difficulty": "Medium"
   },
   {
@@ -7213,8 +7213,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "5:1" }
     ],
     "correct_options": ["a"],
-    "hint": "Distance is constant: $D \times T_D = U \times T_U$, where $D = S_b + S_s$ and $U = S_b - S_s$.",
-    "explanation": "Let $S_b$ be boat speed, $S_s$ be stream speed. $(S_b + S_s) \times 2 = (S_b - S_s) \times 6$. $2S_b + 2S_s = 6S_b - 6S_s$. $8S_s = 4S_b$. $S_b / S_s = 8/4 = 2/1$. Ratio is $2:1$.",
+    "hint": "Distance is constant: $D \\times T_D = U \\times T_U$, where $D = S_b + S_s$ and $U = S_b - S_s$.",
+    "explanation": "Let $S_b$ be boat speed, $S_s$ be stream speed. $(S_b + S_s) \\times 2 = (S_b - S_s) \\times 6$. $2S_b + 2S_s = 6S_b - 6S_s$. $8S_s = 4S_b$. $S_b / S_s = 8/4 = 2/1$. Ratio is $2:1$.",
     "difficulty": "Medium"
   },
   {
@@ -7229,7 +7229,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "Excluded number $= (\text{Original Sum}) - (\text{New Sum})$.",
-    "explanation": "Original sum $= 5 \times 30 = 150$. New sum (of $4$ numbers) $= 4 \times 28 = 112$. Excluded number $= 150 - 112 = 38$.",
+    "explanation": "Original sum $= 5 \\times 30 = 150$. New sum (of $4$ numbers) $= 4 \\times 28 = 112$. Excluded number $= 150 - 112 = 38$.",
     "difficulty": "Medium"
   },
   {
@@ -7244,7 +7244,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "The new average is $16$ years for $21$ people. The teacher's age must be $15$ plus $1$ year for each of the $21$ people.",
-    "explanation": "Original sum of ages $= 20 \times 15 = 300$. New sum of ages (for $21$ people) $= 21 \times 16 = 336$. Teacher's age $= 336 - 300 = 36$ years.",
+    "explanation": "Original sum of ages $= 20 \\times 15 = 300$. New sum of ages (for $21$ people) $= 21 \\times 16 = 336$. Teacher's age $= 336 - 300 = 36$ years.",
     "difficulty": "Medium"
   },
   {
@@ -7274,7 +7274,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "The sum of the first 6 and last 6 results includes the $6^{th}$ result twice.",
-    "explanation": "Total sum of $11$ results $= 11 \times 60 = 660$. Sum of first $6$ results $= 6 \times 58 = 348$. Sum of last $6$ results $= 6 \times 63 = 378$. $6^{th}$ result $= (348 + 378) - 660 = 726 - 660 = 66$.",
+    "explanation": "Total sum of $11$ results $= 11 \\times 60 = 660$. Sum of first $6$ results $= 6 \\times 58 = 348$. Sum of last $6$ results $= 6 \\times 63 = 378$. $6^{th}$ result $= (348 + 378) - 660 = 726 - 660 = 66$.",
     "difficulty": "Medium"
   },
   {
@@ -7333,8 +7333,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "115" }
     ],
     "correct_options": ["c"],
-    "hint": "The total required score is $4 \times 90$.",
-    "explanation": "Total required score $= 4 \times 90 = 360$. Current total score $= 80 + 75 + 95 = 250$. Score in the next inning $= 360 - 250 = 110$.",
+    "hint": "The total required score is $4 \\times 90$.",
+    "explanation": "Total required score $= 4 \\times 90 = 360$. Current total score $= 80 + 75 + 95 = 250$. Score in the next inning $= 360 - 250 = 110$.",
     "difficulty": "Medium"
   },
   {
@@ -7349,7 +7349,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "New total weight $\text{Sum} + 52 + 44$. New number of boys is $8$.",
-    "explanation": "Initial sum of weight $= 6 \times 48 = 288$ kg. New sum of weight $= 288 + 52 + 44 = 384$ kg. New average weight $= 384 / 8 = 48$ kg.",
+    "explanation": "Initial sum of weight $= 6 \\times 48 = 288$ kg. New sum of weight $= 288 + 52 + 44 = 384$ kg. New average weight $= 384 / 8 = 48$ kg.",
     "difficulty": "Medium"
   },
   {
@@ -7364,7 +7364,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "A month of $30$ days starting with a Sunday has $5$ Sundays and $25$ other days.",
-    "explanation": "Total visitors $= (5 \times 510) + (25 \times 240) = 2550 + 6000 = 8550$. Average per day $= 8550 / 30 = 285$.",
+    "explanation": "Total visitors $= (5 \\times 510) + (25 \\times 240) = 2550 + 6000 = 8550$. Average per day $= 8550 / 30 = 285$.",
     "difficulty": "Medium"
   },
   {
@@ -7379,7 +7379,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "This is a permutation of 5 items taken 3 at a time: $P(5,3)$.",
-    "explanation": "Number of ways $= 5 \times 4 \times 3 = 60$.",
+    "explanation": "Number of ways $= 5 \\times 4 \\times 3 = 60$.",
     "difficulty": "Medium"
   },
   {
@@ -7438,8 +7438,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "40" }
     ],
     "correct_options": ["c"],
-    "hint": "Choose $1$ girl from $3$ and $2$ boys from $5$: $C(3,1) \times C(5,2)$.",
-    "explanation": "Ways to choose $1$ girl from $3$: $C(3,1) = 3$. Ways to choose $2$ boys from $5$: $C(5,2) = 10$. Total ways $= 3 \times 10 = 30$.",
+    "hint": "Choose $1$ girl from $3$ and $2$ boys from $5$: $C(3,1) \\times C(5,2)$.",
+    "explanation": "Ways to choose $1$ girl from $3$: $C(3,1) = 3$. Ways to choose $2$ boys from $5$: $C(5,2) = 10$. Total ways $= 3 \\times 10 = 30$.",
     "difficulty": "Medium"
   },
   {
@@ -7454,7 +7454,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "This is a simple permutation problem: $n!$.",
-    "explanation": "The number of ways is $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$.",
+    "explanation": "The number of ways is $5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$.",
     "difficulty": "Medium"
   },
   {
@@ -7484,7 +7484,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "Total letters $11$. Repeated letters: I (4), S (4), P (2).",
-    "explanation": "Number of arrangements $= 11! / (4! 4! 2!) = 39916800 / (24 \times 24 \times 2) = 34650$.",
+    "explanation": "Number of arrangements $= 11! / (4! 4! 2!) = 39916800 / (24 \\times 24 \\times 2) = 34650$.",
     "difficulty": "Medium"
   },
   {
@@ -7514,7 +7514,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "This is a combination problem: $C(10,4)$.",
-    "explanation": "Number of ways $= C(10,4) = \\frac{10!}{4! 6!} = \\frac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = 10 \times 3 \times 7 = 210$.",
+    "explanation": "Number of ways $= C(10,4) = \\frac{10!}{4! 6!} = \\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 10 \\times 3 \\times 7 = 210$.",
     "difficulty": "Medium"
   },
   {
@@ -7528,8 +7528,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "$₹2000$" }
     ],
     "correct_options": ["b"],
-    "hint": "Simple Interest $I = (P \times R \times T)/100$.",
-    "explanation": "SI $= (5000 \times 10 \times 3) / 100 = 50 \times 30 = ₹1500$.",
+    "hint": "Simple Interest $I = (P \\times R \\times T)/100$.",
+    "explanation": "SI $= (5000 \\times 10 \\times 3) / 100 = 50 \\times 30 = ₹1500$.",
     "difficulty": "Medium"
   },
   {
@@ -7544,7 +7544,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Amount $A = P(1+R/100)^T$. $CI = A-P$.",
-    "explanation": "Amount $A = 20000 (1 + 5/100)^2 = 20000 \times (1.05)^2 = 20000 \times 1.1025 = ₹22050$. $\text{CI} = 22050 - 20000 = ₹2050$.",
+    "explanation": "Amount $A = 20000 (1 + 5/100)^2 = 20000 \\times (1.05)^2 = 20000 \\times 1.1025 = ₹22050$. $\text{CI} = 22050 - 20000 = ₹2050$.",
     "difficulty": "Medium"
   },
   {
@@ -7559,7 +7559,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "If the sum doubles, the interest equals the principal ($SI=P$). $R = 100/T$.",
-    "explanation": "When a sum doubles, $SI=P$. $P = (P \times R \times 8) / 100$. $100 = 8R$. $R = 100/8 = 12.5\%$.",
+    "explanation": "When a sum doubles, $SI=P$. $P = (P \\times R \\times 8) / 100$. $100 = 8R$. $R = 100/8 = 12.5\%$.",
     "difficulty": "Medium"
   },
   {
@@ -7574,7 +7574,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["b"],
     "hint": "For 2 years, the difference $\text{CI} - \text{SI} = P(R/100)^2$.",
-    "explanation": "Difference $= P(R/100)^2$. $50 = P(10/100)^2$. $50 = P(1/100)$. $P = 50 \times 100 = ₹5000$.",
+    "explanation": "Difference $= P(R/100)^2$. $50 = P(10/100)^2$. $50 = P(1/100)$. $P = 50 \\times 100 = ₹5000$.",
     "difficulty": "Medium"
   },
   {
@@ -7603,8 +7603,8 @@ export const questions: Question[] = [
       { "id": "d", "text": "72 sq m" }
     ],
     "correct_options": ["b"],
-    "hint": "Area of four walls $= 2(\text{Length} + \text{Width}) \times \text{Height}$.",
-    "explanation": "Area $= 2(5+4) \times 3 = 2(9) \times 3 = 54$ sq m.",
+    "hint": "Area of four walls $= 2(\text{Length} + \text{Width}) \\times \text{Height}$.",
+    "explanation": "Area $= 2(5+4) \\times 3 = 2(9) \\times 3 = 54$ sq m.",
     "difficulty": "Medium"
   },
   {
@@ -7619,7 +7619,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Circumference $C = 2 \pi r$.",
-    "explanation": "Circumference $C = 2 \times (22/7) \times 7 = 44$ cm.",
+    "explanation": "Circumference $C = 2 \\times (22/7) \\times 7 = 44$ cm.",
     "difficulty": "Medium"
   },
   {
@@ -7649,7 +7649,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["c"],
     "hint": "Convert all measurements to the same unit (cm) before calculating areas. $1$m $= 100$ cm.",
-    "explanation": "Field area $= (90 \times 100) \times (60 \times 100) = 9000 \times 6000 \text{ sq cm}$. Tile area $= 30 \times 30 = 900 \text{ sq cm}$. Number of tiles $= (9000 \times 6000) / 900 = 10 \times 6000 = 60000$.",
+    "explanation": "Field area $= (90 \\times 100) \\times (60 \\times 100) = 9000 \\times 6000 \text{ sq cm}$. Tile area $= 30 \\times 30 = 900 \text{ sq cm}$. Number of tiles $= (9000 \\times 6000) / 900 = 10 \\times 6000 = 60000$.",
     "difficulty": "Medium"
   },
   {
