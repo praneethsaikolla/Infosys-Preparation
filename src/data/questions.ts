@@ -3895,7 +3895,7 @@ export const questions: Question[] = [
     ],
     "correct_options": ["a"],
     "hint": "The operations are performed strictly from left to right.",
-    "explanation": "Due to left-to-right evaluation, $10+20$ is calculated first (30). Then, string concatenation occurs: $30 + \\"Javatpoint\\"$ results in \\"30Javatpoint\\".",
+    "explanation": "Due to left-to-right evaluation, $10+20$ is calculated first (30). Then, string concatenation occurs: $30 + \"Javatpoint\"$ results in \"30Javatpoint\".",
     "difficulty": "Easy"
   },
   {
