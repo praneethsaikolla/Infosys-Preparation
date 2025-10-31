@@ -6197,6 +6197,1506 @@ export const questions: Question[] = [
     explanation: "Workers and days are inversely proportional. 3×8 = 6×x, so x = 4 days.",
     difficulty: "Medium"
   },
+  {
+    "id": "n003",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 3, 7, 15, 31, ?",
+    "options": [
+      { "id": "a", "text": "47" },
+      { "id": "b", "text": "55" },
+      { "id": "c", "text": "63" },
+      { "id": "d", "text": "71" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The pattern is (previous number $\times 2) + 1$.",
+    "explanation": "The series follows the pattern: $3 \times 2 + 1 = 7$, $7 \times 2 + 1 = 15$, $15 \times 2 + 1 = 31$. The next number is $31 \times 2 + 1 = 63$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n004",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1, 8, 27, 64, ?",
+    "options": [
+      { "id": "a", "text": "100" },
+      { "id": "b", "text": "125" },
+      { "id": "c", "text": "132" },
+      { "id": "d", "text": "144" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The numbers are perfect cubes.",
+    "explanation": "The series is based on cubes of consecutive integers: $1^3=1$, $2^3=8$, $3^3=27$, $4^3=64$. The next number is $5^3=125$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n005",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 5, 10, 17, 26, ?",
+    "options": [
+      { "id": "a", "text": "35" },
+      { "id": "b", "text": "37" },
+      { "id": "c", "text": "40" },
+      { "id": "d", "text": "42" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Look at the differences between consecutive numbers, they form an arithmetic progression.",
+    "explanation": "The differences are: $10-5=5$, $17-10=7$, $26-17=9$. The next difference should be $11$. Thus, $26+11=37$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n006",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 4, 16, 36, 64, ?",
+    "options": [
+      { "id": "a", "text": "81" },
+      { "id": "b", "text": "90" },
+      { "id": "c", "text": "100" },
+      { "id": "d", "text": "121" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The numbers are squares of consecutive even integers.",
+    "explanation": "The series consists of $2^2=4$, $4^2=16$, $6^2=36$, $8^2=64$. The next number is $10^2=100$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n007",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 100, 99, 95, 86, ?",
+    "options": [
+      { "id": "a", "text": "70" },
+      { "id": "b", "text": "65" },
+      { "id": "c", "text": "68" },
+      { "id": "d": "text": "72" }
+    ],
+    "correct_options": ["a"],
+    "hint": "The differences are decreasing squares: $1, 4, 9, 16$.",
+    "explanation": "The differences are $1^2=1$, $2^2=4$, $3^2=9$. The next difference should be $4^2=16$. Thus, $86-16=70$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n008",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1.5, 3, 4.5, 6, ?",
+    "options": [
+      { "id": "a", "text": "7" },
+      { "id": "b", "text": "7.5" },
+      { "id": "c", "text": "8" },
+      { "id": "d", "text": "8.5" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The difference between consecutive terms is constant.",
+    "explanation": "This is an arithmetic progression with a common difference of $1.5$. The next term is $6 + 1.5 = 7.5$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n009",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 8, 11, 15, 20, ?",
+    "options": [
+      { "id": "a", "text": "24" },
+      { "id": "b", "text": "26" },
+      { "id": "c", "text": "28" },
+      { "id": "d", "text": "30" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The differences are increasing by one each time: $+3, +4, +5, \dots$",
+    "explanation": "The differences are $3, 4, 5$. The next difference is $6$. Thus, $20+6=26$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n010",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 13, 17, 19, 23, ?",
+    "options": [
+      { "id": "a", "text": "27" },
+      { "id": "b", "text": "29" },
+      { "id": "c", "text": "31" },
+      { "id": "d", "text": "33" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The numbers are consecutive prime numbers.",
+    "explanation": "The series consists of prime numbers starting from $13$. The next prime number after $23$ is $29$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n011",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 2, 3, 5, 7, 11, ?",
+    "options": [
+      { "id": "a", "text": "12" },
+      { "id": "b", "text": "13" },
+      { "id": "c", "text": "14" },
+      { "id": "d", "text": "15" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The numbers are the sequence of prime numbers.",
+    "explanation": "The series lists the first six prime numbers: $2, 3, 5, 7, 11$. The next prime number is $13$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n012",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      { "id": "a", "text": "30" },
+      { "id": "b", "text": "32" },
+      { "id": "c", "text": "36" },
+      { "id": "d": "text": "40" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The numbers are perfect squares.",
+    "explanation": "The series is $1^2, 2^2, 3^2, 4^2, 5^2$. The next number is $6^2=36$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n013",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1, 2, 6, 24, ?",
+    "options": [
+      { "id": "a", "text": "96" },
+      { "id": "b", "text": "100" },
+      { "id": "c", "text": "120" },
+      { "id": "d": "text": "150" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The pattern is multiplication by consecutive integers: $\times 2, \times 3, \times 4, \dots$",
+    "explanation": "The series follows: $1 \times 2 = 2$, $2 \times 3 = 6$, $6 \times 4 = 24$. The next number is $24 \times 5 = 120$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n014",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 10, 20, 40, 70, ?",
+    "options": [
+      { "id": "a", "text": "100" },
+      { "id": "b", "text": "110" },
+      { "id": "c", "text": "120" },
+      { "id": "d": "text": "130" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The differences between consecutive terms are increasing by $10$.",
+    "explanation": "The differences are $10, 20, 30$. The next difference is $40$. Thus, $70+40=110$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n015",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1, 4, 27, 256, ?",
+    "options": [
+      { "id": "a", "text": "1024" },
+      { "id": "b", "text": "3125" },
+      { "id": "c", "text": "625" },
+      { "id": "d": "text": "4096" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The pattern is $n^n$.",
+    "explanation": "The series follows: $1^1=1$, $2^2=4$, $3^3=27$, $4^4=256$. The next number is $5^5=3125$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n016",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 2, 4, 8, 16, ?",
+    "options": [
+      { "id": "a", "text": "24" },
+      { "id": "b", "text": "28" },
+      { "id": "c", "text": "30" },
+      { "id": "d": "text": "32" }
+    ],
+    "correct_options": ["d"],
+    "hint": "The pattern is multiplication by 2 (powers of 2).",
+    "explanation": "This is a geometric progression where each term is multiplied by $2$. The next number is $16 \times 2 = 32$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n017",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 10, 18, 25, 31, ?",
+    "options": [
+      { "id": "a", "text": "35" },
+      { "id": "b", "text": "36" },
+      { "id": "c", "text": "37" },
+      { "id": "d": "text": "38" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The differences are decreasing by one each time: $+8, +7, +6, \dots$",
+    "explanation": "The differences are $8, 7, 6$. The next difference is $5$. Thus, $31+5=36$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n018",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 100, 50, 25, 12.5, ?",
+    "options": [
+      { "id": "a", "text": "6.25" },
+      { "id": "b", "text": "6.75" },
+      { "id": "c", "text": "7.5" },
+      { "id": "d": "text": "5.25" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Each term is half of the previous term.",
+    "explanation": "This is a geometric progression with a common ratio of $1/2$. The next term is $12.5 / 2 = 6.25$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n019",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 6, 11, 21, 36, 56, ?",
+    "options": [
+      { "id": "a", "text": "78" },
+      { "id": "b", "text": "81" },
+      { "id": "c", "text": "83" },
+      { "id": "d": "text": "86" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The differences form a pattern of multiples of 5: $+5, +10, +15, +20, \dots$",
+    "explanation": "The differences are $5, 10, 15, 20$. The next difference is $25$. Thus, $56+25=81$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n020",
+    "category": "Numerical Puzzles",
+    "prompt": "What comes next in the series: 1, 2, 4, 7, 11, ?",
+    "options": [
+      { "id": "a", "text": "15" },
+      { "id": "b", "text": "16" },
+      { "id": "c", "text": "17" },
+      { "id": "d": "text": "18" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The differences are increasing by one each time: $+1, +2, +3, +4, \dots$",
+    "explanation": "The differences are $1, 2, 3, 4$. The next difference is $5$. Thus, $11+5=16$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n021",
+    "category": "Numerical Puzzles",
+    "prompt": "Two numbers are in the ratio $3:5$. If $8$ is subtracted from each, the new ratio is $1:2$. What is the smaller number?",
+    "options": [
+      { "id": "a", "text": "16" },
+      { "id": "b", "text": "24" },
+      { "id": "c", "text": "32" },
+      { "id": "d": "text": "40" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Set up an equation using $3x$ and $5x$ for the original numbers.",
+    "explanation": "Let the numbers be $3x$ and $5x$. $\\frac{3x-8}{5x-8} = \\frac{1}{2}$. Cross-multiplying gives $2(3x-8) = 1(5x-8)$, which simplifies to $6x-16 = 5x-8$. Thus, $x=8$. The smaller number is $3x = 3 \times 8 = 24$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n022",
+    "category": "Numerical Puzzles",
+    "prompt": "A sum of money is to be distributed among A, B, C in the ratio $2:3:4$. If B gets $₹900$, what is the total amount?",
+    "options": [
+      { "id": "a", "text": "$₹1800$" },
+      { "id": "b", "text": "$₹2400$" },
+      { "id": "c", "text": "$₹2700$" },
+      { "id": "d": "text": "$₹3000$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "B's share (3 parts) is $₹900$. Find the value of one part.",
+    "explanation": "The ratio is $2:3:4$. B's share is $3$ parts, so $3 \text{ parts} = ₹900$. $1 \text{ part} = ₹300$. The total number of parts is $2+3+4=9$. Total amount $= 9 \times ₹300 = ₹2700$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n023",
+    "category": "Numerical Puzzles",
+    "prompt": "If $A:B = 2:3$ and $B:C = 4:5$, find the combined ratio $A:B:C$.",
+    "options": [
+      { "id": "a", "text": "6:9:15" },
+      { "id": "b", "text": "8:12:15" },
+      { "id": "c", "text": "2:3:5" },
+      { "id": "d": "text": "4:8:15" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Make the value of B common in both ratios.",
+    "explanation": "To combine, multiply the first ratio by 4 and the second by 3 (LCM of 3 and 4 is 12). $A:B = 2:3 \implies 8:12$. $B:C = 4:5 \implies 12:15$. The combined ratio is $A:B:C = 8:12:15$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n024",
+    "category": "Numerical Puzzles",
+    "prompt": "The ages of A and B are in the ratio $5:7$. Four years from now, the ratio of their ages will be $3:4$. What is A's current age?",
+    "options": [
+      { "id": "a", "text": "15 years" },
+      { "id": "b", "text": "20 years" },
+      { "id": "c", "text": "25 years" },
+      { "id": "d": "text": "28 years" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use the equation $\\frac{5x+4}{7x+4} = \\frac{3}{4}$ to find $x$.",
+    "explanation": "Let current ages be $5x$ and $7x$. $\\frac{5x+4}{7x+4} = \\frac{3}{4}$. $4(5x+4) = 3(7x+4)$. $20x+16 = 21x+12$. $x=4$. A's current age is $5x = 5 \times 4 = 20$ years.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n025",
+    "category": "Numerical Puzzles",
+    "prompt": "A bag contains $₹1$, $50p$, and $25p$ coins in the ratio $5:6:8$. If the total value is $₹420$, find the number of $50p$ coins.",
+    "options": [
+      { "id": "a", "text": "210" },
+      { "id": "b", "text": "252" },
+      { "id": "c", "text": "336" },
+      { "id": "d": "text": "420" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Convert all coin values to Rupees. Value $= 5x(1) + 6x(0.5) + 8x(0.25)$.",
+    "explanation": "Let the number of coins be $5x, 6x, 8x$. Total value in Rupees: $5x(1) + 6x(0.5) + 8x(0.25) = 420$. $5x + 3x + 2x = 420$. $10x = 420$. $x=42$. Number of $50p$ coins is $6x = 6 \times 42 = 252$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n026",
+    "category": "Numerical Puzzles",
+    "prompt": "If $A:B = 1/2:3/8$ and $B:C = 1/3:5/9$. Find $A:C$.",
+    "options": [
+      { "id": "a", "text": "4:5" },
+      { "id": "b", "text": "5:4" },
+      { "id": "c", "text": "7:9" },
+      { "id": "d": "text": "8:15" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Simplify $A:B$ and $B:C$ to whole number ratios first, then combine.",
+    "explanation": "$A:B = (1/2):(3/8) = 8:6 = 4:3$. $B:C = (1/3):(5/9) = 9:15 = 3:5$. Since $B$ is $3$ in both, $A:B:C = 4:3:5$. Therefore, $A:C = 4:5$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n027",
+    "category": "Numerical Puzzles",
+    "prompt": "A $40$L mixture contains milk and water in the ratio $3:1$. How much water must be added to make the ratio $2:1$?",
+    "options": [
+      { "id": "a", "text": "3 L" },
+      { "id": "b", "text": "4 L" },
+      { "id": "c", "text": "5 L" },
+      { "id": "d": "text": "6 L" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Initial milk is $30$L and water is $10$L. The quantity of milk remains constant.",
+    "explanation": "Initial: Milk $= 40 \times (3/4) = 30$L. Water $= 40 \times (1/4) = 10$L. Let $x$ be the water added. $\\frac{30}{10+x} = \\frac{2}{1}$. $30 = 2(10+x) \implies 30 = 20+2x$. $2x=10$, so $x=5$ L.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n028",
+    "category": "Numerical Puzzles",
+    "prompt": "The ratio of speeds of three cars is $2:3:4$. What is the ratio of the time taken by them to travel the same distance?",
+    "options": [
+      { "id": "a", "text": "4:3:2" },
+      { "id": "b", "text": "6:4:3" },
+      { "id": "c", "text": "2:3:4" },
+      { "id": "d": "text": "3:4:6" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Time is inversely proportional to speed. Use the inverse ratio $1/2 : 1/3 : 1/4$.",
+    "explanation": "Ratio of time is the inverse ratio of speeds: $1/2 : 1/3 : 1/4$. Multiply by the LCM of $2, 3, 4$ (which is $12$) to clear fractions: $12/2 : 12/3 : 12/4 = 6:4:3$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n029",
+    "category": "Numerical Puzzles",
+    "prompt": "If $p/q = 7/9$ and $q/r = 3/5$, then find the ratio $p:r$.",
+    "options": [
+      { "id": "a", "text": "7:15" },
+      { "id": "b", "text": "15:7" },
+      { "id": "c", "text": "21:45" },
+      { "id": "d": "text": "1:2" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Use $p/r = (p/q) \times (q/r)$.",
+    "explanation": "We can write $\\frac{p}{r} = \\frac{p}{q} \\times \\frac{q}{r} = \\frac{7}{9} \\times \\frac{3}{5} = \\frac{7}{3 \times 5} = \\frac{7}{15}$. Thus, $p:r = 7:15$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n030",
+    "category": "Numerical Puzzles",
+    "prompt": "A rectangle's length and width are in the ratio $5:2$. If the perimeter is $70$ cm, what is the length?",
+    "options": [
+      { "id": "a", "text": "25 cm" },
+      { "id": "b", "text": "30 cm" },
+      { "id": "c", "text": "10 cm" },
+      { "id": "d": "text": "35 cm" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Perimeter $P = 2(L+W)$.",
+    "explanation": "Let $L=5x$ and $W=2x$. Perimeter $2(5x+2x) = 70$. $2(7x) = 70$. $14x = 70$. $x=5$. Length is $5x = 5 \times 5 = 25$ cm.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n031",
+    "category": "Numerical Puzzles",
+    "prompt": "A can do a piece of work in $10$ days and B can do it in $15$ days. How many days will they take to complete the work together?",
+    "options": [
+      { "id": "a", "text": "5 days" },
+      { "id": "b", "text": "6 days" },
+      { "id": "c", "text": "7.5 days" },
+      { "id": "d": "text": "8 days" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use the formula $1/A + 1/B = 1/T$.",
+    "explanation": "A's 1-day work $= 1/10$. B's 1-day work $= 1/15$. Together, $1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6$. They take $6$ days to complete the work together.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n032",
+    "category": "Numerical Puzzles",
+    "prompt": "A, B, and C can do a work in $12$, $15$, and $20$ days respectively. If they work together, how long will it take?",
+    "options": [
+      { "id": "a", "text": "4 days" },
+      { "id": "b", "text": "5 days" },
+      { "id": "c", "text": "6 days" },
+      { "id": "d": "text": "8 days" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Find the sum of their individual daily work fractions.",
+    "explanation": "Together, daily work: $1/12 + 1/15 + 1/20$. LCM is $60$. $(5+4+3)/60 = 12/60 = 1/5$. They take $5$ days to complete the work.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n033",
+    "category": "Numerical Puzzles",
+    "prompt": "A and B together can do a work in $8$ days. A alone can do it in $12$ days. How long will B alone take?",
+    "options": [
+      { "id": "a", "text": "16 days" },
+      { "id": "b", "text": "18 days" },
+      { "id": "c", "text": "20 days" },
+      { "id": "d": "text": "24 days" }
+    ],
+    "correct_options": ["d"],
+    "hint": "B's daily work $= (A \text{ and } B)'s \text{ daily work} - A's \text{ daily work}$.",
+    "explanation": "B's daily work $= 1/8 - 1/12 = 3/24 - 2/24 = 1/24$. B alone takes $24$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n034",
+    "category": "Numerical Puzzles",
+    "prompt": "$15$ men can complete a project in $20$ days. How many days will $10$ men take to complete the same project?",
+    "options": [
+      { "id": "a", "text": "30 days" },
+      { "id": "b", "text": "25 days" },
+      { "id": "c", "text": "40 days" },
+      { "id": "d": "text": "45 days" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Use the formula $M_1 D_1 = M_2 D_2$.",
+    "explanation": "Men and days are inversely proportional. $15 \times 20 = 10 \times D_2$. $300 = 10 D_2$. $D_2 = 30$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n035",
+    "category": "Numerical Puzzles",
+    "prompt": "A pipe can fill a tank in $12$ hours. Another pipe can empty it in $18$ hours. If both are opened, how long will it take to fill the tank?",
+    "options": [
+      { "id": "a", "text": "24 hours" },
+      { "id": "b", "text": "36 hours" },
+      { "id": "c", "text": "30 hours" },
+      { "id": "d": "text": "42 hours" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The rate of emptying is subtracted from the rate of filling: $1/12 - 1/18$.",
+    "explanation": "Net filling rate $= 1/12 - 1/18$. LCM is $36$. $(3-2)/36 = 1/36$. The tank will be filled in $36$ hours.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n036",
+    "category": "Numerical Puzzles",
+    "prompt": "A is thrice as efficient as B. If A alone can do a work in $15$ days, in how many days can A and B together finish the work?",
+    "options": [
+      { "id": "a", "text": "10 days" },
+      { "id": "b", "text": "11.25 days" },
+      { "id": "c", "text": "12 days" },
+      { "id": "d": "text": "13.5 days" }
+    ],
+    "correct_options": ["b"],
+    "hint": "A's efficiency is 3 times B's. Their combined efficiency is 4 times B's.",
+    "explanation": "A is $3$ times faster than B. If A takes $D$ days, B takes $3D$ days. A takes $15$ days, so B takes $45$ days. Together, $1/15 + 1/45 = 3/45 + 1/45 = 4/45$. Time $= 45/4 = 11.25$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n037",
+    "category": "Numerical Puzzles",
+    "prompt": "A takes $10$ days and B takes $15$ days to complete a work. A starts alone, and B joins him after $2$ days. How many more days will they work together to finish the rest of the work?",
+    "options": [
+      { "id": "a", "text": "4.8 days" },
+      { "id": "b", "text": "5.2 days" },
+      { "id": "c", "text": "6 days" },
+      { "id": "d": "text": "7.5 days" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Calculate the work done by A in 2 days and the remaining work to be done together.",
+    "explanation": "Work done by A in $2$ days $= 2/10 = 1/5$. Remaining work $= 1 - 1/5 = 4/5$. Combined daily work $1/10 + 1/15 = 5/30 = 1/6$. Time to complete remaining work $= (4/5) / (1/6) = 24/5 = 4.8$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n038",
+    "category": "Numerical Puzzles",
+    "prompt": "$2$ men or $3$ women can complete a work in $30$ days. How long will $1$ man and $1$ woman take to complete the same work?",
+    "options": [
+      { "id": "a", "text": "24 days" },
+      { "id": "b", "text": "36 days" },
+      { "id": "c", "text": "40 days" },
+      { "id": "d": "text": "45 days" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Establish the relationship: $2 \text{ men} = 3 \text{ women}$. Then find the equivalent number of women for $1$ man and $1$ woman.",
+    "explanation": "Since $2 \text{ men} = 3 \text{ women}$, $1 \text{ man} = 1.5 \text{ women}$. $1 \text{ man} + 1 \text{ woman} = 1.5 \text{ women} + 1 \text{ woman} = 2.5 \text{ women}$. Since $3$ women take $30$ days, $2.5$ women will take $D$ days. (Inverse proportion) $3 \times 30 = 2.5 \times D$. $90 = 2.5 D$. $D = 90/2.5 = 36$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n039",
+    "category": "Numerical Puzzles",
+    "prompt": "$4$ identical taps can fill a tank in $10$ hours. How many taps are required to fill it in $8$ hours?",
+    "options": [
+      { "id": "a", "text": "3 taps" },
+      { "id": "b", "text": "5 taps" },
+      { "id": "c", "text": "6 taps" },
+      { "id": "d": "text": "8 taps" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The number of taps and the time taken are inversely proportional.",
+    "explanation": "Let $T_1 = 4$, $H_1 = 10$, $H_2 = 8$. $T_1 H_1 = T_2 H_2$. $4 \times 10 = T_2 \times 8$. $40 = 8 T_2$. $T_2 = 5$ taps.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n040",
+    "category": "Numerical Puzzles",
+    "prompt": "A can do $2/3$ of a work in $16$ days. How many days will he take to complete the whole work?",
+    "options": [
+      { "id": "a", "text": "20 days" },
+      { "id": "b", "text": "22 days" },
+      { "id": "c", "text": "24 days" },
+      { "id": "d": "text": "28 days" }
+    ],
+    "correct_options": ["c"],
+    "hint": "If $2/3$ of the work takes $16$ days, find the time for $1$ unit of work.",
+    "explanation": "Time taken for $1$ unit (whole work) $= 16 / (2/3) = 16 \times 3/2 = 8 \times 3 = 24$ days.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n041",
+    "category": "Numerical Puzzles",
+    "prompt": "A trader sells an item for $₹600$ at a loss of $20\%$. What was the cost price (CP)?",
+    "options": [
+      { "id": "a", "text": "$₹720$" },
+      { "id": "b", "text": "$₹750$" },
+      { "id": "c", "text": "$₹800$" },
+      { "id": "d": "text": "$₹900$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Selling Price (SP) is $80\%$ of the Cost Price (CP).",
+    "explanation": "If there is a $20\%$ loss, $\text{SP} = \text{CP} \times (100-20)/100 = 0.8 \times \text{CP}$. $600 = 0.8 \times \text{CP}$. $\text{CP} = 600 / 0.8 = 6000/8 = ₹750$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n042",
+    "category": "Numerical Puzzles",
+    "prompt": "By selling a book for $₹120$, a bookseller gains $25\%$. For how much should he sell it to gain $30\%$?",
+    "options": [
+      { "id": "a", "text": "$₹122.40$" },
+      { "id": "b", "text": "$₹124.80$" },
+      { "id": "c", "text": "$₹126.00$" },
+      { "id": "d": "text": "$₹130.00$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "First find the Cost Price (CP) using the $25\%$ gain, then calculate the new Selling Price (SP) for $30\%$ gain.",
+    "explanation": "$125\%$ of $\text{CP} = 120$. $\text{CP} = 120 / 1.25 = ₹96$. $\text{SP}$ for $30\%$ gain $= 96 \times 1.30 = ₹124.80$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n043",
+    "category": "Numerical Puzzles",
+    "prompt": "A shopkeeper gives a $10\%$ discount on a marked price of $₹800$. What is the selling price?",
+    "options": [
+      { "id": "a", "text": "$₹700$" },
+      { "id": "b", "text": "$₹720$" },
+      { "id": "c", "text": "$₹740$" },
+      { "id": "d": "text": "$₹760$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The selling price is $90\%$ of the marked price.",
+    "explanation": "Discount amount $= 800 \times 0.10 = ₹80$. Selling Price $= 800 - 80 = ₹720$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n044",
+    "category": "Numerical Puzzles",
+    "prompt": "What is the equivalent single discount for two successive discounts of $10\%$ and $20\%$?",
+    "options": [
+      { "id": "a", "text": "28%" },
+      { "id": "b", "text": "30%" },
+      { "id": "c", "text": "27%" },
+      { "id": "d": "text": "32%" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Use the formula $D = d_1 + d_2 - (d_1 d_2)/100$.",
+    "explanation": "Let the original price be $100$. After $10\%$ discount: $100 \times 0.90 = 90$. After $20\%$ discount on $90$: $90 \times 0.80 = 72$. Total discount $= 100 - 72 = 28\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n045",
+    "category": "Numerical Puzzles",
+    "prompt": "If $15$ articles are bought for $₹10$ and sold at $₹15$ for $10$ articles, find the profit percent.",
+    "options": [
+      { "id": "a", "text": "100%" },
+      { "id": "b", "text": "125%" },
+      { "id": "c", "text": "150%" },
+      { "id": "d": "text": "175%" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Calculate the CP and SP per article first.",
+    "explanation": "CP per article $= ₹10/15 = ₹2/3$. SP per article $= ₹15/10 = ₹3/2$. Profit $= (3/2) - (2/3) = 5/6$. Profit $\\% = (5/6) / (2/3) \times 100 = 5/6 \times 3/2 \times 100 = 5/4 \times 100 = 125\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n046",
+    "category": "Numerical Puzzles",
+    "prompt": "A man saves $15\%$ of his income. If his expenditure is $₹17000$, what is his total income?",
+    "options": [
+      { "id": "a", "text": "$₹18500$" },
+      { "id": "b", "text": "$₹19000$" },
+      { "id": "c", "text": "$₹20000$" },
+      { "id": "d": "text": "$₹20500$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Expenditure represents $100\% - 15\% = 85\%$ of his income.",
+    "explanation": "Expenditure is $85\%$ of income. $0.85 \times \text{Income} = ₹17000$. $\text{Income} = 17000 / 0.85 = ₹20000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n047",
+    "category": "Numerical Puzzles",
+    "prompt": "In an election, Candidate A got $40\%$ of the total votes and lost to Candidate B by $200$ votes. What is the total number of votes?",
+    "options": [
+      { "id": "a", "text": "800" },
+      { "id": "b", "text": "1000" },
+      { "id": "c", "text": "1200" },
+      { "id": "d": "text": "1500" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The percentage difference in votes is $20\%$ (since B got $60\%$).",
+    "explanation": "A got $40\%$, so B got $100\% - 40\% = 60\%$. The difference is $60\% - 40\% = 20\%$. $20\%$ of Total Votes $= 200$. Total Votes $= 200 / 0.20 = 1000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n048",
+    "category": "Numerical Puzzles",
+    "prompt": "A container has $40$L of milk. $4$L of milk is taken out and replaced with water. This process is repeated once more. What is the final quantity of milk?",
+    "options": [
+      { "id": "a", "text": "31.2 L" },
+      { "id": "b", "text": "32.4 L" },
+      { "id": "c", "text": "33.6 L" },
+      { "id": "d": "text": "34.2 L" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use the formula: $\text{Final Quantity} = \text{Initial Quantity} (1 - x/C)^n$, where $x=4$, $C=40$, $n=2$.",
+    "explanation": "Final milk quantity $= 40 (1 - 4/40)^2 = 40 (1 - 1/10)^2 = 40 (9/10)^2 = 40 \times 81/100 = 32.4$ L.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n049",
+    "category": "Numerical Puzzles",
+    "prompt": "If the price of sugar is increased by $25\%$, by what percent should a family reduce its consumption to keep the expenditure the same?",
+    "options": [
+      { "id": "a", "text": "20%" },
+      { "id": "b", "c": "25%" },
+      { "id": "c", "text": "30%" },
+      { "id": "d": "text": "16.67%" }
+    ],
+    "correct_options": ["a"],
+    "hint": "The reduction fraction is $x / (100+x)$ where $x$ is the percentage increase.",
+    "explanation": "Let $R$ be the required reduction in consumption. $R = \\frac{\\text{Increase}}{100 + \\text{Increase}} \\times 100 = \\frac{25}{100+25} \\times 100 = \\frac{25}{125} \\times 100 = 1/5 \times 100 = 20\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n050",
+    "category": "Numerical Puzzles",
+    "prompt": "The population of a town increases by $10\%$ in the first year and decreases by $10\%$ in the second year. What is the net percentage change over two years?",
+    "options": [
+      { "id": "a", "text": "0% (No change)" },
+      { "id": "b", "text": "1% decrease" },
+      { "id": "c", "text": "1% increase" },
+      { "id": "d": "text": "10% decrease" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use the net percentage change formula: $a + b + (ab/100)$.",
+    "explanation": "Net change $= 10 + (-10) + (10 \times -10)/100 = 0 + (-100/100) = -1\%$. This is a $1\%$ decrease.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n051",
+    "category": "Numerical Puzzles",
+    "prompt": "If the Cost Price (CP) of an item is $₹80$ and the Selling Price (SP) is $₹100$, find the profit percent.",
+    "options": [
+      { "id": "a", "text": "20%" },
+      { "id": "b", "text": "25%" },
+      { "id": "c", "text": "30%" },
+      { "id": "d": "text": "33.33%" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Profit percent $= (\text{Profit} / \text{CP}) \times 100$.",
+    "explanation": "Profit $= 100 - 80 = ₹20$. Profit $\\% = (20 / 80) \times 100 = 1/4 \times 100 = 25\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n052",
+    "category": "Numerical Puzzles",
+    "prompt": "The marked price of a shirt is $₹1500$. After a $20\%$ discount, the shopkeeper still gains $20\%$. What is the cost price (CP)?",
+    "options": [
+      { "id": "a", "text": "$₹1000$" },
+      { "id": "b", "text": "$₹1100$" },
+      { "id": "c", "text": "$₹1200$" },
+      { "id": "d": "text": "$₹1250$" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Find the SP first, then relate SP to CP using the gain percentage.",
+    "explanation": "Selling Price $(\text{SP}) = 1500 \times (1 - 0.20) = 1500 \times 0.80 = ₹1200$. Since the shopkeeper gains $20\%$, $120\%$ of $\text{CP} = 1200$. $\text{CP} = 1200 / 1.20 = ₹1000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n053",
+    "category": "Numerical Puzzles",
+    "prompt": "What percent of $120$ is $90$?",
+    "options": [
+      { "id": "a", "text": "70%" },
+      { "id": "b", "text": "75%" },
+      { "id": "c", "text": "80%" },
+      { "id": "d": "text": "85%" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Calculate the ratio of $90$ to $120$ and multiply by $100$.",
+    "explanation": "Required percentage $= (90 / 120) \times 100 = (3/4) \times 100 = 75\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n054",
+    "category": "Numerical Puzzles",
+    "prompt": "If $60\%$ of A is equal to $75\%$ of B, then what is the ratio $B:A$?",
+    "options": [
+      { "id": "a", "text": "5:4" },
+      { "id": "b", "text": "4:5" },
+      { "id": "c", "text": "3:4" },
+      { "id": "d": "text": "4:3" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Convert percentages to fractions and solve for $B/A$.",
+    "explanation": "$0.60 \times A = 0.75 \times B$. $\\frac{B}{A} = \\frac{0.60}{0.75} = \\frac{60}{75} = \\frac{4}{5}$. Thus, $B:A = 4:5$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n055",
+    "category": "Numerical Puzzles",
+    "prompt": "A car travels $150$ km in $2$ hours. How long will it take to travel $375$ km at the same speed?",
+    "options": [
+      { "id": "a", "text": "4 hours" },
+      { "id": "b", "text": "4.5 hours" },
+      { "id": "c", "text": "5 hours" },
+      { "id": "d": "text": "5.5 hours" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Calculate the speed first: $150 \text{ km} / 2 \text{ h} = 75 \text{ km/h}$.",
+    "explanation": "Speed $= 150/2 = 75$ km/h. Time to travel $375$ km $= 375 \text{ km} / 75 \text{ km/h} = 5$ hours.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n056",
+    "category": "Numerical Puzzles",
+    "prompt": "A train is running at a speed of $90$ km/h. Convert its speed to m/s.",
+    "options": [
+      { "id": "a", "text": "20 m/s" },
+      { "id": "b", "text": "25 m/s" },
+      { "id": "c", "text": "30 m/s" },
+      { "id": "d": "text": "35 m/s" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Multiply the speed in km/h by $5/18$ to convert to m/s.",
+    "explanation": "Speed in m/s $= 90 \times (5/18) = 5 \times 5 = 25$ m/s.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n057",
+    "category": "Numerical Puzzles",
+    "prompt": "A car covers a distance in $10$ hours at a speed of $48$ km/h. What speed must it maintain to cover the same distance in $8$ hours?",
+    "options": [
+      { "id": "a", "text": "55 km/h" },
+      { "id": "b", "text": "60 km/h" },
+      { "id": "c", "text": "64 km/h" },
+      { "id": "d": "text": "72 km/h" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Distance is constant: $D = S_1 T_1 = S_2 T_2$.",
+    "explanation": "Distance $D = 48 \times 10 = 480$ km. New speed $S_2 = D / T_2 = 480 / 8 = 60$ km/h.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n058",
+    "category": "Numerical Puzzles",
+    "prompt": "A man walks at $5$ km/h for $3$ hours and then cycles at $12$ km/h for $2$ hours. What is his average speed for the whole journey?",
+    "options": [
+      { "id": "a", "text": "7.8 km/h" },
+      { "id": "b", "text": "8.5 km/h" },
+      { "id": "c", "text": "9.2 km/h" },
+      { "id": "d": "text": "10 km/h" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Average speed $= \text{Total Distance} / \text{Total Time}$.",
+    "explanation": "Total Distance $= (5 \times 3) + (12 \times 2) = 15 + 24 = 39$ km. Total Time $= 3 + 2 = 5$ hours. Average Speed $= 39 / 5 = 7.8$ km/h.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n059",
+    "category": "Numerical Puzzles",
+    "prompt": "A train $150$m long is running at $54$ km/h. How long will it take to cross a pole?",
+    "options": [
+      { "id": "a", "text": "8 seconds" },
+      { "id": "b", "text": "10 seconds" },
+      { "id": "c", "text": "12 seconds" },
+      { "id": "d": "text": "15 seconds" }
+    ],
+    "correct_options": ["b"],
+    "hint": "First convert $54$ km/h to m/s.",
+    "explanation": "Speed $= 54 \times 5/18 = 15$ m/s. Time to cross a pole (distance is train length) $= 150 \text{ m} / 15 \text{ m/s} = 10$ seconds.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n060",
+    "category": "Numerical Puzzles",
+    "prompt": "A boat covers $24$ km upstream in $6$ hours and $20$ km downstream in $4$ hours. Find the speed of the current.",
+    "options": [
+      { "id": "a", "text": "0.5 km/h" },
+      { "id": "b", "text": "1 km/h" },
+      { "id": "c", "text": "1.5 km/h" },
+      { "id": "d": "text": "2 km/h" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Upstream speed ($U$) and Downstream speed ($D$). Speed of current $S_c = (D-U)/2$.",
+    "explanation": "Upstream speed $U = 24/6 = 4$ km/h. Downstream speed $D = 20/4 = 5$ km/h. Speed of current $= (5-4)/2 = 1/2 = 0.5$ km/h.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n061",
+    "category": "Numerical Puzzles",
+    "prompt": "Two trains $100$m and $120$m long are running in the same direction at $40$ km/h and $32$ km/h. In what time will the faster train cross the slower train?",
+    "options": [
+      { "id": "a", "text": "88 seconds" },
+      { "id": "b", "text": "99 seconds" },
+      { "id": "c", "text": "110 seconds" },
+      { "id": "d": "text": "121 seconds" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Relative speed is the difference of speeds. Total distance is the sum of lengths.",
+    "explanation": "Total distance $= 100+120 = 220$ m. Relative speed $= 40-32 = 8$ km/h. $8 \times 5/18 = 20/9$ m/s. Time $= 220 / (20/9) = 220 \times 9 / 20 = 11 \times 9 = 99$ seconds.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n062",
+    "category": "Numerical Puzzles",
+    "prompt": "Walking at $3/4$ of his usual speed, a man is $20$ minutes late. What is his usual time to cover the distance?",
+    "options": [
+      { "id": "a", "text": "45 minutes" },
+      { "id": "b", "text": "50 minutes" },
+      { "id": "c", "text": "60 minutes" },
+      { "id": "d": "text": "75 minutes" }
+    ],
+    "correct_options": ["c"],
+    "hint": "If speed ratio is $a:b$, time ratio is $b:a$. Speed ratio $4:3$, Time ratio $3:4$.",
+    "explanation": "Ratio of speeds is $4:3$. Ratio of times is $3:4$. The difference in time ($4-3=1$ part) is $20$ minutes. Usual time is $3$ parts, so $3 \times 20 = 60$ minutes.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n063",
+    "category": "Numerical Puzzles",
+    "prompt": "Excluding stoppages, the speed of a bus is $54$ km/h, and including stoppages, it is $45$ km/h. How many minutes does the bus stop per hour?",
+    "options": [
+      { "id": "a", "text": "8 minutes" },
+      { "id": "b", "text": "10 minutes" },
+      { "id": "c", "text": "12 minutes" },
+      { "id": "d": "text": "15 minutes" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Time stopped per hour $= (\\text{Difference in Speeds} / \\text{Speed without stoppages}) \times 60$.",
+    "explanation": "Time stopped per hour $= (54-45)/54 \text{ hours} = 9/54 \text{ hours} = 1/6$ hours. $1/6 \times 60 = 10$ minutes.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n064",
+    "category": "Numerical Puzzles",
+    "prompt": "A person goes from A to B at $20$ km/h and returns at $30$ km/h. What is the average speed for the round trip?",
+    "options": [
+      { "id": "a", "text": "24 km/h" },
+      { "id": "b", "text": "25 km/h" },
+      { "id": "c", "text": "26 km/h" },
+      { "id": "d": "text": "27 km/h" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Use the formula $S_{avg} = 2xy / (x+y)$ for equal distances.",
+    "explanation": "Average Speed $= (2 \times 20 \times 30) / (20 + 30) = 1200 / 50 = 24$ km/h.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n065",
+    "category": "Numerical Puzzles",
+    "prompt": "A cyclist covers $900$m in $2$ minutes. Find the speed in km/h.",
+    "options": [
+      { "id": "a", "text": "24 km/h" },
+      { "id": "b", "text": "27 km/h" },
+      { "id": "c", "text": "30 km/h" },
+      { "id": "d": "text": "32 km/h" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Convert distance to km and time to hours, or convert m/s to km/h by multiplying by $18/5$.",
+    "explanation": "Time $= 2$ minutes $= 120$ seconds. Speed in m/s $= 900/120 = 7.5$ m/s. Speed in km/h $= 7.5 \times 18/5 = 1.5 \times 18 = 27$ km/h.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n066",
+    "category": "Numerical Puzzles",
+    "prompt": "A thief is spotted by a policeman from a distance of $100$m. The thief runs at $10$ km/h and the policeman chases him at $12$ km/h. After how many minutes will the policeman catch the thief?",
+    "options": [
+      { "id": "a", "text": "2 minutes" },
+      { "id": "b", "text": "3 minutes" },
+      { "id": "c", "text": "4 minutes" },
+      { "id": "d": "text": "5 minutes" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use relative speed and convert the distance to km and time to minutes.",
+    "explanation": "Relative speed $= 12 - 10 = 2$ km/h. Distance $= 100 \text{ m} = 0.1 \text{ km}$. Time $= 0.1 \text{ km} / 2 \text{ km/h} = 0.05$ hours. $0.05 \times 60 = 3$ minutes.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n067",
+    "category": "Numerical Puzzles",
+    "prompt": "A train crosses a platform $100$m long in $10$ seconds and a pole in $6$ seconds. What is the speed of the train?",
+    "options": [
+      { "id": "a", "text": "15 m/s" },
+      { "id": "b", "text": "20 m/s" },
+      { "id": "c", "text": "25 m/s" },
+      { "id": "d": "text": "30 m/s" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Let $L$ be the length and $S$ be the speed. $L/S = 6$ and $(L+100)/S = 10$.",
+    "explanation": "Time to cross a pole: $L/S = 6 \implies L = 6S$. Time to cross platform: $(L+100)/S = 10 \implies 6S+100 = 10S$. $4S = 100$. $S = 25$ m/s.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n068",
+    "category": "Numerical Puzzles",
+    "prompt": "If the speed of a car is increased by $25\%$, what is the percentage decrease in time taken to cover the same distance?",
+    "options": [
+      { "id": "a", "text": "16%" },
+      { "id": "b", "text": "20%" },
+      { "id": "c", "text": "25%" },
+      { "id": "d": "text": "33.33%" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Speed ratio is $4:5$, so time ratio is $5:4$.",
+    "explanation": "New speed is $1.25$ times the old speed, or $5/4$ times. Since distance is constant, new time is $4/5$ of the old time. Decrease in time $= 1 - 4/5 = 1/5$. $1/5 \times 100 = 20\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n069",
+    "category": "Numerical Puzzles",
+    "prompt": "Two places are $100$ km apart. Train A leaves A at $7$ am at $20$ km/h. Train B leaves B at $8$ am at $25$ km/h towards A. When will they meet?",
+    "options": [
+      { "id": "a", "text": "9:30 am" },
+      { "id": "b", "text": "9:40 am" },
+      { "id": "c", "text": "10:00 am" },
+      { "id": "d": "text": "10:15 am" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Calculate the distance covered by Train A by $8$ am and then use relative speed on the remaining distance.",
+    "explanation": "By $8$ am, Train A covers $20 \times 1 = 20$ km. Remaining distance $= 100-20 = 80$ km. Relative speed $= 20+25 = 45$ km/h. Time to meet $= 80/45 = 16/9$ hours $= 1$ hour and $7/9 \times 60 \text{ min} = 1$ hour and $46.67$ minutes. Meeting time $\approx 8:00 \text{ am} + 1 \text{ hr } 47 \text{ min} = 9:47$ am. $16/9$ hours is close to $1$ hour and $40$ minutes, which is $100$ minutes. $8 \text{ am} + 1 \text{ hr } 40 \text{ min} = 9:40$ am. $80/45 = 1.777$ hours. $80/45 \times 60 \approx 106.67$ minutes. $8 \text{ am} + 106.67 \text{ minutes} = 9:46:40$ am. The closest option is 9:40 am.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n070",
+    "category": "Numerical Puzzles",
+    "prompt": "A man rowing a boat takes $2$ hours to travel a certain distance downstream and $6$ hours to travel the same distance upstream. What is the ratio of the speed of the boat to the speed of the stream?",
+    "options": [
+      { "id": "a", "text": "2:1" },
+      { "id": "b", "text": "3:1" },
+      { "id": "c", "text": "4:1" },
+      { "id": "d": "text": "5:1" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Distance is constant: $D \times T_D = U \times T_U$, where $D = S_b + S_s$ and $U = S_b - S_s$.",
+    "explanation": "Let $S_b$ be boat speed, $S_s$ be stream speed. $(S_b + S_s) \times 2 = (S_b - S_s) \times 6$. $2S_b + 2S_s = 6S_b - 6S_s$. $8S_s = 4S_b$. $S_b / S_s = 8/4 = 2/1$. Ratio is $2:1$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n071",
+    "category": "Numerical Puzzles",
+    "prompt": "The average of $5$ numbers is $30$. If one number is excluded, the average becomes $28$. What is the excluded number?",
+    "options": [
+      { "id": "a", "text": "36" },
+      { "id": "b", "text": "38" },
+      { "id": "c", "text": "40" },
+      { "id": "d": "text": "42" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Excluded number $= (\text{Original Sum}) - (\text{New Sum})$.",
+    "explanation": "Original sum $= 5 \times 30 = 150$. New sum (of $4$ numbers) $= 4 \times 28 = 112$. Excluded number $= 150 - 112 = 38$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n072",
+    "category": "Numerical Puzzles",
+    "prompt": "The average age of $20$ students in a class is $15$ years. If the teacher's age is included, the new average becomes $16$ years. What is the teacher's age?",
+    "options": [
+      { "id": "a", "text": "30 years" },
+      { "id": "b", "text": "36 years" },
+      { "id": "c", "text": "40 years" },
+      { "id": "d": "text": "42 years" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The new average is $16$ years for $21$ people. The teacher's age must be $15$ plus $1$ year for each of the $21$ people.",
+    "explanation": "Original sum of ages $= 20 \times 15 = 300$. New sum of ages (for $21$ people) $= 21 \times 16 = 336$. Teacher's age $= 336 - 300 = 36$ years.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n073",
+    "category": "Numerical Puzzles",
+    "prompt": "What is the average of the first $50$ natural numbers?",
+    "options": [
+      { "id": "a", "text": "25" },
+      { "id": "b", "text": "25.5" },
+      { "id": "c", "text": "26" },
+      { "id": "d": "text": "26.5" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The average of the first $n$ natural numbers is $(n+1)/2$.",
+    "explanation": "Average $= (50+1)/2 = 51/2 = 25.5$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n074",
+    "category": "Numerical Puzzles",
+    "prompt": "The average of $11$ results is $60$. If the average of the first $6$ results is $58$ and that of the last $6$ results is $63$, what is the $6^{th}$ result?",
+    "options": [
+      { "id": "a", "text": "60" },
+      { "id": "b", "text": "66" },
+      { "id": "c", "text": "69" },
+      { "id": "d": "text": "72" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The sum of the first 6 and last 6 results includes the $6^{th}$ result twice.",
+    "explanation": "Total sum of $11$ results $= 11 \times 60 = 660$. Sum of first $6$ results $= 6 \times 58 = 348$. Sum of last $6$ results $= 6 \times 63 = 378$. $6^{th}$ result $= (348 + 378) - 660 = 726 - 660 = 66$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n075",
+    "category": "Numerical Puzzles",
+    "prompt": "In what ratio must a grocer mix two varieties of tea worth $₹60$/kg and $₹65$/kg so that by selling the mixture at $₹68.20$/kg, he gains $10\%$?",
+    "options": [
+      { "id": "a", "text": "1:2" },
+      { "id": "b", "text": "2:3" },
+      { "id": "c", "text": "3:2" },
+      { "id": "d": "text": "4:3" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The CP of the mixture must be found first: $\text{CP}_{mix} = \text{SP} / 1.1$. Then use Alligation Rule.",
+    "explanation": "CP of mixture: $₹68.20 / 1.10 = ₹62$. Using the Alligation Rule: Quantity of first variety: $(65 - 62) = 3$. Quantity of second variety: $(62 - 60) = 2$. Ratio is $3:2$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n076",
+    "category": "Numerical Puzzles",
+    "prompt": "What is the average of all prime numbers between $30$ and $50$?",
+    "options": [
+      { "id": "a", "text": "39.8" },
+      { "id": "b", "text": "40.2" },
+      { "id": "c", "text": "41" },
+      { "id": "d": "text": "43" }
+    ],
+    "correct_options": ["a"],
+    "hint": "The prime numbers are $31, 37, 41, 43, 47$.",
+    "explanation": "Prime numbers between $30$ and $50$ are $31, 37, 41, 43, 47$ (5 numbers). Sum $= 31+37+41+43+47 = 199$. Average $= 199/5 = 39.8$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n077",
+    "category": "Numerical Puzzles",
+    "prompt": "The average monthly income of A and B is $₹5050$. Of B and C is $₹6250$, and of A and C is $₹5200$. What is the monthly income of A?",
+    "options": [
+      { "id": "a", "text": "$₹4000$" },
+      { "id": "b", "text": "$₹4500$" },
+      { "id": "c", "text": "$₹5100$" },
+      { "id": "d": "text": "$₹5500$" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Sum all three totals and divide by 2 to get $A+B+C$. Then subtract $B+C$ to find $A$.",
+    "explanation": "$A+B = 10100$. $B+C = 12500$. $A+C = 10400$. $2(A+B+C) = 10100 + 12500 + 10400 = 33000$. $A+B+C = 16500$. $A = (A+B+C) - (B+C) = 16500 - 12500 = ₹4000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n078",
+    "category": "Numerical Puzzles",
+    "prompt": "A cricketer scored $80, 75, 95$ runs in three innings. What score must he make in the next inning so that his average score in four innings is $90$?",
+    "options": [
+      { "id": "a", "text": "100" },
+      { "id": "b", "text": "105" },
+      { "id": "c", "text": "110" },
+      { "id": "d": "text": "115" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The total required score is $4 \times 90$.",
+    "explanation": "Total required score $= 4 \times 90 = 360$. Current total score $= 80 + 75 + 95 = 250$. Score in the next inning $= 360 - 250 = 110$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n079",
+    "category": "Numerical Puzzles",
+    "prompt": "The average weight of $6$ boys is $48$ kg. Two new boys, weighing $52$ kg and $44$ kg, join the class. What is the new average weight?",
+    "options": [
+      { "id": "a", "text": "47 kg" },
+      { "id": "b", "text": "48 kg" },
+      { "id": "c", "text": "49 kg" },
+      { "id": "d": "text": "50 kg" }
+    ],
+    "correct_options": ["b"],
+    "hint": "New total weight $\text{Sum} + 52 + 44$. New number of boys is $8$.",
+    "explanation": "Initial sum of weight $= 6 \times 48 = 288$ kg. New sum of weight $= 288 + 52 + 44 = 384$ kg. New average weight $= 384 / 8 = 48$ kg.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n080",
+    "category": "Numerical Puzzles",
+    "prompt": "A library has an average of $510$ visitors on Sundays and $240$ on other days. What is the average number of visitors per day in a month of $30$ days starting with a Sunday?",
+    "options": [
+      { "id": "a", "text": "275" },
+      { "id": "b", "text": "280" },
+      { "id": "c", "text": "285" },
+      { "id": "d": "text": "290" }
+    ],
+    "correct_options": ["c"],
+    "hint": "A month of $30$ days starting with a Sunday has $5$ Sundays and $25$ other days.",
+    "explanation": "Total visitors $= (5 \times 510) + (25 \times 240) = 2550 + 6000 = 8550$. Average per day $= 8550 / 30 = 285$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n081",
+    "category": "Numerical Puzzles",
+    "prompt": "How many different $3$-digit numbers can be formed using the digits $1, 2, 3, 4, 5$ without repetition?",
+    "options": [
+      { "id": "a", "text": "40" },
+      { "id": "b", "text": "60" },
+      { "id": "c", "text": "80" },
+      { "id": "d": "text": "120" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This is a permutation of 5 items taken 3 at a time: $P(5,3)$.",
+    "explanation": "Number of ways $= 5 \times 4 \times 3 = 60$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n082",
+    "category": "Numerical Puzzles",
+    "prompt": "In how many ways can the letters of the word 'CORPORATION' be arranged?",
+    "options": [
+      { "id": "a", "text": "50400" },
+      { "id": "b", "text": "1663200" },
+      { "id": "c", "text": "3326400" },
+      { "id": "d": "text": "39916800" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Total letters $11$. 'O' appears $3$ times, 'R' appears $2$ times.",
+    "explanation": "Total letters $= 11$. Repeated letters: O (3 times), R (2 times). Number of arrangements $= 11! / (3! 2!) = 39916800 / 12 = 3326400$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n083",
+    "category": "Numerical Puzzles",
+    "prompt": "In a bag, there are $4$ red, $5$ green, and $6$ white balls. One ball is drawn at random. What is the probability that the ball drawn is not white?",
+    "options": [
+      { "id": "a", "text": "1/3" },
+      { "id": "b", "text": "2/5" },
+      { "id": "c", "text": "3/5" },
+      { "id": "d": "text": "4/5" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Total number of balls is $15$. Not white means red or green.",
+    "explanation": "Total balls $= 4+5+6 = 15$. Number of non-white balls $= 4+5 = 9$. Probability $= 9/15 = 3/5$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n084",
+    "category": "Numerical Puzzles",
+    "prompt": "A coin is tossed three times. What is the probability of getting exactly two heads?",
+    "options": [
+      { "id": "a", "text": "1/4" },
+      { "id": "b", "text": "3/8" },
+      { "id": "c", "text": "1/2" },
+      { "id": "d": "text": "5/8" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Total outcomes are $2^3=8$. The outcomes with exactly two heads are HHT, HTH, THH.",
+    "explanation": "Total outcomes $8$. Favorable outcomes (HHT, HTH, THH) are $3$. Probability $= 3/8$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n085",
+    "category": "Numerical Puzzles",
+    "prompt": "From a group of $5$ boys and $3$ girls, a committee of $3$ people is to be formed. In how many ways can this be done if it must include exactly $1$ girl?",
+    "options": [
+      { "id": "a", "text": "10" },
+      { "id": "b", "text": "20" },
+      { "id": "c", "text": "30" },
+      { "id": "d": "text": "40" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Choose $1$ girl from $3$ and $2$ boys from $5$: $C(3,1) \times C(5,2)$.",
+    "explanation": "Ways to choose $1$ girl from $3$: $C(3,1) = 3$. Ways to choose $2$ boys from $5$: $C(5,2) = 10$. Total ways $= 3 \times 10 = 30$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n086",
+    "category": "Numerical Puzzles",
+    "prompt": "In how many ways can $5$ people be seated in a row?",
+    "options": [
+      { "id": "a", "text": "24" },
+      { "id": "b", "text": "60" },
+      { "id": "c", "text": "120" },
+      { "id": "d": "text": "240" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This is a simple permutation problem: $n!$.",
+    "explanation": "The number of ways is $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n087",
+    "category": "Numerical Puzzles",
+    "prompt": "Two dice are thrown simultaneously. What is the probability of getting a sum of $7$?",
+    "options": [
+      { "id": "a", "text": "1/12" },
+      { "id": "b", "text": "1/6" },
+      { "id": "c", "text": "1/4" },
+      { "id": "d": "text": "1/3" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Total outcomes are $36$. Favorable outcomes are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).",
+    "explanation": "Total outcomes $36$. Favorable outcomes are $6$. Probability $= 6/36 = 1/6$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n088",
+    "category": "Numerical Puzzles",
+    "prompt": "How many different arrangements can be made from the letters of the word 'MISSISSIPPI'?",
+    "options": [
+      { "id": "a", "text": "34650" },
+      { "id": "b", "text": "45300" },
+      { "id": "c", "text": "55440" },
+      { "id": "d": "text": "110880" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Total letters $11$. Repeated letters: I (4), S (4), P (2).",
+    "explanation": "Number of arrangements $= 11! / (4! 4! 2!) = 39916800 / (24 \times 24 \times 2) = 34650$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n089",
+    "category": "Numerical Puzzles",
+    "prompt": "A box contains $10$ good apples and $5$ rotten apples. If $2$ apples are drawn at random, what is the probability that both are good?",
+    "options": [
+      { "id": "a", "text": "9/15" },
+      { "id": "b", "text": "3/7" },
+      { "id": "c", "text": "5/14" },
+      { "id": "d": "text": "1/3" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Use combinations: $\\frac{\\text{Ways to choose 2 good apples}}{\\text{Ways to choose 2 from total}}$.",
+    "explanation": "Total apples $15$. Ways to choose $2$ apples: $C(15,2) = 105$. Ways to choose $2$ good apples: $C(10,2) = 45$. Probability $= 45/105 = 3/7$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n090",
+    "category": "Numerical Puzzles",
+    "prompt": "In how many ways can $4$ books be selected from $10$ distinct books?",
+    "options": [
+      { "id": "a", "text": "210" },
+      { "id": "b", "text": "240" },
+      { "id": "c", "text": "5040" },
+      { "id": "d": "text": "10080" }
+    ],
+    "correct_options": ["a"],
+    "hint": "This is a combination problem: $C(10,4)$.",
+    "explanation": "Number of ways $= C(10,4) = \\frac{10!}{4! 6!} = \\frac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = 10 \times 3 \times 7 = 210$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n091",
+    "category": "Numerical Puzzles",
+    "prompt": "Find the Simple Interest on $₹5000$ at $10\%$ per annum for $3$ years.",
+    "options": [
+      { "id": "a", "text": "$₹1200$" },
+      { "id": "b", "text": "$₹1500$" },
+      { "id": "c", "text": "$₹1800$" },
+      { "id": "d": "text": "$₹2000$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Simple Interest $I = (P \times R \times T)/100$.",
+    "explanation": "SI $= (5000 \times 10 \times 3) / 100 = 50 \times 30 = ₹1500$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n092",
+    "category": "Numerical Puzzles",
+    "prompt": "What will be the Compound Interest on $₹20000$ at $5\%$ per annum for $2$ years, compounded annually?",
+    "options": [
+      { "id": "a", "text": "$₹1500$" },
+      { "id": "b", "text": "$₹2000$" },
+      { "id": "c", "text": "$₹2050$" },
+      { "id": "d": "text": "$₹2100$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Amount $A = P(1+R/100)^T$. $CI = A-P$.",
+    "explanation": "Amount $A = 20000 (1 + 5/100)^2 = 20000 \times (1.05)^2 = 20000 \times 1.1025 = ₹22050$. $\text{CI} = 22050 - 20000 = ₹2050$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n093",
+    "category": "Numerical Puzzles",
+    "prompt": "At what rate of Simple Interest will a sum double itself in $8$ years?",
+    "options": [
+      { "id": "a", "text": "10%" },
+      { "id": "b", "text": "12%" },
+      { "id": "c", "text": "12.5%" },
+      { "id": "d": "text": "15%" }
+    ],
+    "correct_options": ["c"],
+    "hint": "If the sum doubles, the interest equals the principal ($SI=P$). $R = 100/T$.",
+    "explanation": "When a sum doubles, $SI=P$. $P = (P \times R \times 8) / 100$. $100 = 8R$. $R = 100/8 = 12.5\%$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n094",
+    "category": "Numerical Puzzles",
+    "prompt": "The difference between Compound Interest and Simple Interest on a sum for $2$ years at $10\%$ per annum is $₹50$. What is the sum (Principal)?",
+    "options": [
+      { "id": "a", "text": "$₹4000$" },
+      { "id": "b", "text": "$₹5000$" },
+      { "id": "c", "text": "$₹6000$" },
+      { "id": "d": "text": "$₹7500$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "For 2 years, the difference $\text{CI} - \text{SI} = P(R/100)^2$.",
+    "explanation": "Difference $= P(R/100)^2$. $50 = P(10/100)^2$. $50 = P(1/100)$. $P = 50 \times 100 = ₹5000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n095",
+    "category": "Numerical Puzzles",
+    "prompt": "A sum of money amounts to $₹720$ in $2$ years and $₹1080$ in $4$ years at Simple Interest. What is the sum (Principal)?",
+    "options": [
+      { "id": "a", "text": "$₹360$" },
+      { "id": "b", "text": "$₹400$" },
+      { "id": "c", "text": "$₹480$" },
+      { "id": "d": "text": "$₹500$" }
+    ],
+    "correct_options": ["a"],
+    "hint": "The Simple Interest for the $2$ years between year $2$ and year $4$ is the difference between the amounts.",
+    "explanation": "SI for $2$ years $= 1080 - 720 = ₹360$. SI for $1$ year $= ₹180$. Principal $= \text{Amount at } 2 \text{ yrs} - \text{SI for } 2 \text{ yrs} = 720 - 360 = ₹360$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n096",
+    "category": "Numerical Puzzles",
+    "prompt": "The length, width, and height of a room are $5$m, $4$m, and $3$m. Find the area of the four walls.",
+    "options": [
+      { "id": "a", "text": "45 sq m" },
+      { "id": "b", "text": "54 sq m" },
+      { "id": "c", "text": "60 sq m" },
+      { "id": "d": "text": "72 sq m" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Area of four walls $= 2(\text{Length} + \text{Width}) \times \text{Height}$.",
+    "explanation": "Area $= 2(5+4) \times 3 = 2(9) \times 3 = 54$ sq m.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n097",
+    "category": "Numerical Puzzles",
+    "prompt": "If the radius of a circle is $7$ cm, what is its circumference? (Use $\pi = 22/7$)",
+    "options": [
+      { "id": "a", "text": "22 cm" },
+      { "id": "b", "text": "35 cm" },
+      { "id": "c", "text": "44 cm" },
+      { "id": "d": "text": "49 cm" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Circumference $C = 2 \pi r$.",
+    "explanation": "Circumference $C = 2 \times (22/7) \times 7 = 44$ cm.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n098",
+    "category": "Numerical Puzzles",
+    "prompt": "The volume of a cube is $125 \text{ cm}^3$. What is the area of one face of the cube?",
+    "options": [
+      { "id": "a", "text": "5 sq cm" },
+      { "id": "b", "text": "25 sq cm" },
+      { "id": "c", "text": "30 sq cm" },
+      { "id": "d": "text": "60 sq cm" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Volume $V = a^3$. Face area $A = a^2$.",
+    "explanation": "Volume $a^3 = 125 \text{ cm}^3$, so side $a = 5$ cm. Area of one face $= a^2 = 5^2 = 25$ sq cm.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n099",
+    "category": "Numerical Puzzles",
+    "prompt": "A rectangular field is $90$m long and $60$m wide. How many square tiles of side $30$ cm are needed to cover the floor?",
+    "options": [
+      { "id": "a", "text": "20000" },
+      { "id": "b", "text": "30000" },
+      { "id": "c", "text": "60000" },
+      { "id": "d": "text": "90000" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Convert all measurements to the same unit (cm) before calculating areas. $1$m $= 100$ cm.",
+    "explanation": "Field area $= (90 \times 100) \times (60 \times 100) = 9000 \times 6000 \text{ sq cm}$. Tile area $= 30 \times 30 = 900 \text{ sq cm}$. Number of tiles $= (9000 \times 6000) / 900 = 10 \times 6000 = 60000$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n100",
+    "category": "Numerical Puzzles",
+    "prompt": "Find the odd one out in the series: 4, 9, 16, 25, 30, 36.",
+    "options": [
+      { "id": "a", "text": "9" },
+      { "id": "b", "text": "25" },
+      { "id": "c", "text": "30" },
+      { "id": "d": "text": "36" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Check if the numbers are squares of integers.",
+    "explanation": "All numbers except $30$ are perfect squares: $2^2=4, 3^2=9, 4^2=16, 5^2=25, 6^2=36$. $30$ is the odd one out.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n101",
+    "category": "Numerical Puzzles",
+    "prompt": "If 'CODE' is written as 'DQEF', how is 'ROSE' written using the same logic?",
+    "options": [
+      { "id": "a", "text": "SPOT" },
+      { "id": "b", "text": "SPTF" },
+      { "id": "c", "text": "SQOF" },
+      { "id": "d": "text": "STPF" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Each letter in the original word is shifted forward by one position.",
+    "explanation": "C $\to$ D, O $\to$ P, D $\to$ E, E $\to$ F (each letter $+1$). Applying the same logic to ROSE: R $\to$ S, O $\to$ P, S $\to$ T, E $\to$ F. The result is SPTF.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "n102",
+    "category": "Numerical Puzzles",
+    "prompt": "A clock shows $4:30$. If the minute hand points East, in which direction does the hour hand point?",
+    "options": [
+      { "id": "a", "text": "North" },
+      { "id": "b", "text": "North-East" },
+      { "id": "c", "text": "East" },
+      { "id": "d": "text": "South-East" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Determine the position of 3, 6, 9, and 12 based on the minute hand pointing East.",
+    "explanation": "At $4:30$, the minute hand is on $6$, and the hour hand is exactly halfway between $4$ and $5$. If $6$ (minute hand) is East, then $3$ is North, $12$ is West, and $9$ is South. The hour hand is between North ($3$) and East ($6$), so it points North-East.",
+    "difficulty": "Medium"
+  },
 
   // English Grammar
   {
