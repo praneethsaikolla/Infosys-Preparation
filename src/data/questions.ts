@@ -3134,60 +3134,1504 @@ export const questions: Question[] = [
 
   // Technical Ability
   {
-    id: "t001",
-    category: "Technical Ability",
-    prompt: "What is the output of: print(2 ** 3)?",
-    options: [
-      { id: "a", text: "6" },
-      { id: "b", text: "8" },
-      { id: "c", text: "9" }
+    "id": "t001",
+    "category": "Technical Ability",
+    "prompt": "What is the output of: print(2 ** 3)?",
+    "options": [
+      { "id": "a", "text": "6" },
+      { "id": "b", "text": "8" },
+      { "id": "c", "text": "9" },
+      { "id": "d", "text": "16" }
     ],
-    correct_options: ["b"],
-    hint: "** operator in Python performs exponentiation.",
-    explanation: "2 ** 3 means 2 raised to power 3, which equals 8.",
-    difficulty: "Easy"
+    "correct_options": ["b"],
+    "hint": "** operator in Python performs exponentiation.",
+    "explanation": "2 ** 3 means 2 raised to power 3 ($2^3$), which equals 8.",
+    "difficulty": "Easy"
   },
   {
-    id: "t002",
-    category: "Technical Ability",
-    prompt: "Which data structure uses LIFO (Last In First Out)?",
-    options: [
-      { id: "a", text: "Queue" },
-      { id: "b", text: "Stack" },
-      { id: "c", text: "Array" }
+    "id": "t002",
+    "category": "Technical Ability",
+    "prompt": "Which data structure uses LIFO (Last In First Out)?",
+    "options": [
+      { "id": "a", "text": "Queue" },
+      { "id": "b", "text": "Stack" },
+      { "id": "c", "text": "Array" },
+      { "id": "d", "text": "Linked List" }
     ],
-    correct_options: ["b"],
-    hint: "Think of a pile of plates - you take from the top.",
-    explanation: "Stack follows LIFO principle where the last element added is the first to be removed.",
-    difficulty: "Medium"
+    "correct_options": ["b"],
+    "hint": "Think of a pile of plates - you take from the top.",
+    "explanation": "Stack follows LIFO principle where the last element added is the first to be removed. Queue uses FIFO (First In First Out).",
+    "difficulty": "Medium"
   },
   {
-    id: "t003",
-    category: "Technical Ability",
-    prompt: "What does SQL stand for?",
-    options: [
-      { id: "a", text: "Structured Query Language" },
-      { id: "b", text: "Simple Question Language" },
-      { id: "c", text: "Standard Queue List" }
+    "id": "t003",
+    "category": "Technical Ability",
+    "prompt": "What does SQL stand for?",
+    "options": [
+      { "id": "a", "text": "Structured Query Language" },
+      { "id": "b", "text": "Simple Question Language" },
+      { "id": "c", "text": "Standard Queue List" },
+      { "id": "d", "text": "Sequential Query Logic" }
     ],
-    correct_options: ["a"],
-    hint: "It's used for database queries.",
-    explanation: "SQL stands for Structured Query Language, used to manage relational databases.",
-    difficulty: "Easy"
+    "correct_options": ["a"],
+    "hint": "It's used for database queries.",
+    "explanation": "SQL stands for Structured Query Language, used to manage relational databases.",
+    "difficulty": "Easy"
   },
   {
-    id: "t004",
-    category: "Technical Ability",
-    prompt: "What is the time complexity of binary search?",
-    options: [
-      { id: "a", text: "O(n)" },
-      { id: "b", text: "O(log n)" },
-      { id: "c", text: "O(n²)" }
+    "id": "t004",
+    "category": "Technical Ability",
+    "prompt": "Which keyword is used to prevent a class from being inherited in Java?",
+    "options": [
+      { "id": "a", "text": "static" },
+      { "id": "b", "text": "abstract" },
+      { "id": "c", "text": "final" },
+      { "id": "d", "text": "private" }
     ],
-    correct_options: ["b"],
-    hint: "Binary search divides the search space in half each time.",
-    explanation: "Binary search has O(log n) time complexity as it halves the search space with each iteration.",
-    difficulty: "Hard"
+    "correct_options": ["c"],
+    "hint": "This keyword can also be applied to variables and methods to prevent modification or overriding.",
+    "explanation": "The **final** keyword can be applied to a class to prevent it from being subclassed (inherited).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t005",
+    "category": "Technical Ability",
+    "prompt": "What is the primary purpose of a constructor in OOP?",
+    "options": [
+      { "id": "a", "text": "To destroy an object when its use is finished." },
+      { "id": "b", "text": "To define the behavior (methods) of a class." },
+      { "id": "c", "text": "To initialize the object's state upon creation." },
+      { "id": "d", "text": "To implement inheritance." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It's called automatically when an object is instantiated.",
+    "explanation": "A constructor is a special method called at the time of object creation to initialize the member variables (state) of the new object.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t006",
+    "category": "Technical Ability",
+    "prompt": "In C++, what is the default visibility mode of members in a struct?",
+    "options": [
+      { "id": "a", "text": "private" },
+      { "id": "b", "text": "protected" },
+      { "id": "c", "text": "public" },
+      { "id": "d", "text": "internal" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It behaves like a class where everything is accessible by default.",
+    "explanation": "In C++, members of a **struct** are public by default, while members of a **class** are private by default.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t007",
+    "category": "Technical Ability",
+    "prompt": "Which searching algorithm requires the array to be sorted?",
+    "options": [
+      { "id": "a", "text": "Linear Search" },
+      { "id": "b", "text": "Hash Search" },
+      { "id": "c", "text": "Binary Search" },
+      { "id": "d", "text": "Breadth-First Search" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This algorithm works by repeatedly dividing the search interval in half.",
+    "explanation": "**Binary Search** works by comparing the target value to the middle element of the array. This process can only be efficient if the data is sorted.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t008",
+    "category": "Technical Ability",
+    "prompt": "What is the time complexity for inserting an element at the beginning of a Singly Linked List?",
+    "options": [
+      { "id": "a", "text": "$O(n)$" },
+      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "c", "text": "$O(1)$" },
+      { "id": "d", "text": "$O(\log n)$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "You only need to update the head pointer and the new node's next pointer.",
+    "explanation": "Inserting at the beginning only requires creating a new node and updating the head pointer to point to it, which takes constant time, $O(1)$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t009",
+    "category": "Technical Ability",
+    "prompt": "What is the key difference between a stored procedure and a function in SQL?",
+    "options": [
+      { "id": "a", "text": "Procedures can return a value, functions cannot." },
+      { "id": "b", "text": "Functions can return a value, procedures may or may not." },
+      { "id": "c", "text": "Functions can modify data, procedures cannot." },
+      { "id": "d", "text": "Procedures can only be used with SELECT statements." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Think about what is *mandatory* for each to return.",
+    "explanation": "A **function** is guaranteed to return a value and can be used in SQL expressions; a **stored procedure** may or may not return a value and is executed as a statement.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t010",
+    "category": "Technical Ability",
+    "prompt": "Which command is used to permanently remove a table and all its data from the database?",
+    "options": [
+      { "id": "a", "text": "DELETE TABLE" },
+      { "id": "b", "text": "TRUNCATE TABLE" },
+      { "id": "c", "text": "DROP TABLE" },
+      { "id": "d", "text": "REMOVE TABLE" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This is a Data Definition Language (DDL) command.",
+    "explanation": "**DROP TABLE** removes the table definition, data, indexes, and privileges associated with it permanently. DELETE and TRUNCATE only remove data.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t011",
+    "category": "Technical Ability",
+    "prompt": "What is a 'deadlock' in an Operating System?",
+    "options": [
+      { "id": "a", "text": "When a process is swapped out to secondary memory." },
+      { "id": "b", "text": "When two or more processes are waiting indefinitely for a resource held by the other." },
+      { "id": "c", "text": "When a process uses too much CPU time." },
+      { "id": "d", "text": "When the system crashes due to low memory." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It involves a circular waiting condition.",
+    "explanation": "A **deadlock** occurs when a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process in the set.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t012",
+    "category": "Technical Ability",
+    "prompt": "Which CPU scheduling algorithm gives priority to the job that requires the least CPU time?",
+    "options": [
+      { "id": "a", "text": "First-Come, First-Served (FCFS)" },
+      { "id": "b", "text": "Round Robin (RR)" },
+      { "id": "c", "text": "Shortest Job Next (SJN)" },
+      { "id": "d", "text": "Priority Scheduling" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The name directly indicates which job length is prioritized.",
+    "explanation": "**Shortest Job Next (SJN)**, also called Shortest Job First (SJF), schedules the process with the shortest expected execution time next.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t013",
+    "category": "Technical Ability",
+    "prompt": "What is the primary function of the 'super' keyword in Java?",
+    "options": [
+      { "id": "a", "text": "To call the current class's method." },
+      { "id": "b", "text": "To refer to the static members of a class." },
+      { "id": "c", "text": "To access members of the immediate parent class." },
+      { "id": "d", "text": "To make a method final." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It relates directly to inheritance.",
+    "explanation": "The **super** keyword is used to explicitly call the constructor or methods/variables of the immediate parent (superclass).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t014",
+    "category": "Technical Ability",
+    "prompt": "Which of the following is NOT an advantage of OOP?",
+    "options": [
+      { "id": "a", "text": "Code Reusability" },
+      { "id": "b", "text": "Data Security (through Encapsulation)" },
+      { "id": "c", "text": "Simpler program design for smaller applications" },
+      { "id": "d", "text": "Polymorphism for flexible interfaces" }
+    ],
+    "correct_options": ["c"],
+    "hint": "OOP's complexity can be overkill for very simple, short programs.",
+    "explanation": "While OOP is great for large, complex systems, it can sometimes introduce unnecessary overhead and complexity in very small, simple programs.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t015",
+    "category": "Technical Ability",
+    "prompt": "In C, what is a pointer variable primarily used to store?",
+    "options": [
+      { "id": "a", "text": "A character string." },
+      { "id": "b", "text": "The value of another variable." },
+      { "id": "c", "text": "The memory address of another variable." },
+      { "id": "d", "text": "An array of values." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It 'points' to the location of data.",
+    "explanation": "A pointer variable stores the **memory address** of another variable. The $\\ast$ operator is used for dereferencing (accessing the value at that address).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t016",
+    "category": "Technical Ability",
+    "prompt": "What is the key feature that distinguishes a Heap from a regular Binary Tree?",
+    "options": [
+      { "id": "a", "text": "It is always a full binary tree." },
+      { "id": "b", "text": "It is sorted in-order." },
+      { "id": "c", "text": "It is a Complete Binary Tree and satisfies the Heap property." },
+      { "id": "d", "text": "It is used for searching only." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It has two structural requirements: completeness and a specific ordering rule (Max/Min Heap).",
+    "explanation": "A Heap is a Complete Binary Tree that satisfies the Heap property: for every node, the key of the parent is greater than (Max Heap) or less than (Min Heap) the keys of its children.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t017",
+    "category": "Technical Ability",
+    "prompt": "The worst-case time complexity of Quick Sort is:",
+    "options": [
+      { "id": "a", "text": "$O(n)$" },
+      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "c", "text": "$O(n^2)$" },
+      { "id": "d", "text": "$O(\log n)$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This occurs when the pivot selection consistently results in highly unbalanced partitions.",
+    "explanation": "The worst-case time complexity for Quick Sort is $O(n^2)$, which happens when the pivot is always the smallest or largest element.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t018",
+    "category": "Technical Ability",
+    "prompt": "What is 'Normalization' in a database context?",
+    "options": [
+      { "id": "a", "text": "The process of securing data." },
+      { "id": "b", "text": "The process of reorganizing tables to minimize redundancy and dependency." },
+      { "id": "c", "text": "The process of speeding up query execution using indexes." },
+      { "id": "d", "text": "The process of combining multiple tables into one." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It involves reaching specific Normal Forms (like 1NF, 2NF, 3NF).",
+    "explanation": "**Normalization** is a systematic process of decomposing tables to eliminate data redundancy and ensure data dependencies make sense.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t019",
+    "category": "Technical Ability",
+    "prompt": "Which type of join returns all rows from the left table, and the matched rows from the right table?",
+    "options": [
+      { "id": "a", "text": "INNER JOIN" },
+      { "id": "b", "text": "RIGHT JOIN" },
+      { "id": "c", "text": "FULL JOIN" },
+      { "id": "d", "text": "LEFT JOIN" }
+    ],
+    "correct_options": ["d"],
+    "hint": "The name implies that one side (all rows) is prioritized.",
+    "explanation": "A **LEFT JOIN** (or LEFT OUTER JOIN) returns all rows from the left table, and the matching rows from the right table. NULL is returned for the right table columns where there is no match.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t020",
+    "category": "Technical Ability",
+    "prompt": "In Operating Systems, what is 'Thrashing'?",
+    "options": [
+      { "id": "a", "text": "When the system spends too much time executing I/O operations." },
+      { "id": "b", "text": "When a process rapidly cycles between the ready and running states." },
+      { "id": "c", "text": "When a process spends more time paging than executing." },
+      { "id": "d", "text": "When the CPU cache runs out of space." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It's a performance degradation problem related to virtual memory.",
+    "explanation": "**Thrashing** is a phenomenon in virtual memory systems where the operating system spends a significant amount of time swapping pages between main memory and disk, severely slowing down performance.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t021",
+    "category": "Technical Ability",
+    "prompt": "Which component of the compiler checks the code for grammatical mistakes in the programming language?",
+    "options": [
+      { "id": "a", "text": "Semantic Analyzer" },
+      { "id": "b", "text": "Code Generator" },
+      { "id": "c", "text": "Lexical Analyzer" },
+      { "id": "d", "text": "Syntax Analyzer" }
+    ],
+    "correct_options": ["d"],
+    "hint": "It ensures the structure of the program conforms to the language's rules.",
+    "explanation": "The **Syntax Analyzer** (or Parser) checks if the program's structure is correct according to the formal grammar of the language.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t022",
+    "category": "Technical Ability",
+    "prompt": "What is the primary characteristic of an **abstract class** in object-oriented programming?",
+    "options": [
+      { "id": "a", "text": "It can be instantiated using the 'new' keyword." },
+      { "id": "b", "text": "It contains only abstract methods." },
+      { "id": "c", "text": "It cannot have member variables." },
+      { "id": "d", "text": "It cannot be instantiated and may contain abstract methods." }
+    ],
+    "correct_options": ["d"],
+    "hint": "Think about whether you can create an object of this type of class.",
+    "explanation": "An **abstract class** cannot be instantiated (you can't create its object), but it can be subclassed. It can contain both abstract and concrete (implemented) methods.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t023",
+    "category": "Technical Ability",
+    "prompt": "In C++, which keyword is used to overload an operator?",
+    "options": [
+      { "id": "a", "text": "function" },
+      { "id": "b", "text": "overload" },
+      { "id": "c", "text": "operator" },
+      { "id": "d", "text": "friend" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The keyword is placed before the operator symbol in the function declaration.",
+    "explanation": "In C++, operator overloading is achieved by defining a function with the name `operatorX`, where $X$ is the operator symbol, using the **operator** keyword.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t024",
+    "category": "Technical Ability",
+    "prompt": "Which sorting algorithm has a stable average and worst-case time complexity of $O(n \log n)$?",
+    "options": [
+      { "id": "a", "text": "Quick Sort" },
+      { "id": "b", "text": "Merge Sort" },
+      { "id": "c", "text": "Insertion Sort" },
+      { "id": "d", "text": "Bubble Sort" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This algorithm uses a divide-and-conquer approach and requires extra space.",
+    "explanation": "**Merge Sort** has a consistent time complexity of $O(n \log n)$ in all cases (best, average, worst) and is generally a stable sort.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t025",
+    "category": "Technical Ability",
+    "prompt": "What is the primary advantage of using a Hash Table over a Linked List for searching?",
+    "options": [
+      { "id": "a", "text": "Saves memory." },
+      { "id": "b", "text": "Guarantees $O(1)$ search time in all cases." },
+      { "id": "c", "text": "Offers average $O(1)$ search time." },
+      { "id": "d", "text": "Easier to implement." }
+    ],
+    "correct_options": ["c"],
+    "hint": "The efficiency is extremely high on average, though not guaranteed in the worst case (due to collisions).",
+    "explanation": "A **Hash Table** provides an average time complexity of $O(1)$ for searching, insertion, and deletion, which is much faster than the $O(n)$ required by a Linked List.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t026",
+    "category": "Technical Ability",
+    "prompt": "Which property in a relational database ensures that the column cannot have a NULL value?",
+    "options": [
+      { "id": "a", "text": "UNIQUE" },
+      { "id": "b", "text": "DEFAULT" },
+      { "id": "c", "text": "PRIMARY KEY" },
+      { "id": "d", "text": "NOT NULL" }
+    ],
+    "correct_options": ["d"],
+    "hint": "It literally specifies that the value must be present.",
+    "explanation": "The **NOT NULL** constraint explicitly restricts a column from containing NULL values.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t027",
+    "category": "Technical Ability",
+    "prompt": "Which command is used to add new columns to an existing table in SQL?",
+    "options": [
+      { "id": "a", "text": "UPDATE TABLE" },
+      { "id": "b", "text": "INSERT COLUMN" },
+      { "id": "c", "text": "MODIFY TABLE" },
+      { "id": "d", "text": "ALTER TABLE" }
+    ],
+    "correct_options": ["d"],
+    "hint": "This command is used for structural changes to a table.",
+    "explanation": "**ALTER TABLE** is the Data Definition Language (DDL) command used to add, delete, or modify columns in an existing table.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t028",
+    "category": "Technical Ability",
+    "prompt": "What is the main role of the Dispatcher in the OS scheduling process?",
+    "options": [
+      { "id": "a", "text": "To decide which process should run next." },
+      { "id": "b", "text": "To manage the I/O operations." },
+      { "id": "c", "text": "To give control of the CPU to the process selected by the short-term scheduler." },
+      { "id": "d", "text": "To load programs from disk into memory." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It's the module that performs the context switch.",
+    "explanation": "The **Dispatcher** is the module that gives control of the CPU to the process selected by the short-term scheduler. This involves context switching, switching to user mode, and jumping to the program's starting address.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t029",
+    "category": "Technical Ability",
+    "prompt": "What is the problem where an instruction accesses the memory location that the previous instruction is about to write to?",
+    "options": [
+      { "id": "a", "text": "Structural Hazard" },
+      { "id": "b", "text": "Data Hazard (RAW)" },
+      { "id": "c", "text": "Control Hazard" },
+      { "id": "d", "text": "Pipeline Stall" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This specific hazard is Read After Write.",
+    "explanation": "This is a **Data Hazard** of the Read After Write (RAW) type, where an instruction tries to read an operand before a previous instruction has written to it.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t030",
+    "category": "Technical Ability",
+    "prompt": "Which OOP mechanism is used to achieve runtime polymorphism?",
+    "options": [
+      { "id": "a", "text": "Method Overloading" },
+      { "id": "b", "text": "Method Overriding" },
+      { "id": "c", "text": "Constructor Overloading" },
+      { "id": "d", "text": "Data Encapsulation" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This involves replacing a superclass method's implementation in a subclass.",
+    "explanation": "**Method Overriding** allows a subclass to provide a specific implementation of a method that is already provided by its parent class. This method call is resolved at runtime, achieving runtime polymorphism.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t031",
+    "category": "Technical Ability",
+    "prompt": "In Java, what is the default value of a local variable of type 'int'?",
+    "options": [
+      { "id": "a", "text": "0" },
+      { "id": "b", "text": "null" },
+      { "id": "c", "text": "Undefined (must be explicitly initialized)" },
+      { "id": "d", "text": "-1" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Only instance and static variables have default values.",
+    "explanation": "Unlike instance variables, **local variables** (variables declared inside a method) must be explicitly initialized before use; they do not have a default value.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t032",
+    "category": "Technical Ability",
+    "prompt": "What is the key difference between `==` and the `.equals()` method in Java for objects?",
+    "options": [
+      { "id": "a", "text": "`==` compares content, `.equals()` compares references." },
+      { "id": "b", "text": "`==` compares references, `.equals()` compares content (if overridden)." },
+      { "id": "c", "text": "They are functionally identical." },
+      { "id": "d", "text": "`.equals()` works only for primitive types." }
+    ],
+    "correct_options": ["b"],
+    "hint": "The comparison operator checks memory location, while the method checks value.",
+    "explanation": "The **==** operator compares the memory addresses (references) of two objects. The **.equals()** method, if properly overridden, compares the actual content or state of the objects.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t033",
+    "category": "Technical Ability",
+    "prompt": "What is the purpose of the `try...catch` block in exception handling?",
+    "options": [
+      { "id": "a", "text": "To define a method that should never fail." },
+      { "id": "b", "text": "To prevent code execution after an error occurs." },
+      { "id": "c", "text": "To specify a block of code to be tested for errors and a block to handle them." },
+      { "id": "d", "text": "To forcefully stop the program execution." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It provides a safety net for risky code.",
+    "explanation": "The **try** block contains the code that might throw an exception, and the **catch** block defines the code to be executed if an exception of a certain type occurs.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t034",
+    "category": "Technical Ability",
+    "prompt": "Which algorithm finds the shortest path from a single source vertex to all other vertices in a graph with non-negative edge weights?",
+    "options": [
+      { "id": "a", "text": "Kruskal's Algorithm" },
+      { "id": "b", "text": "Prim's Algorithm" },
+      { "id": "c", "text": "Dijkstra's Algorithm" },
+      { "id": "d", "text": "Floyd-Warshall Algorithm" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This is a greedy algorithm often used with priority queues.",
+    "explanation": "**Dijkstra's Algorithm** solves the single-source shortest path problem for a graph with non-negative edge weights.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t035",
+    "category": "Technical Ability",
+    "prompt": "What is the maximum number of nodes in a binary tree of height $h$ (where root is height 0)?",
+    "options": [
+      { "id": "a", "text": "$2^h$" },
+      { "id": "b", "text": "$2^h - 1$" },
+      { "id": "c", "text": "$2^{h+1} - 1$" },
+      { "id": "d", "text": "$2^{h+1}$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Consider the number of nodes at each level: $1 + 2 + 4 + ... + 2^h$.",
+    "explanation": "The maximum number of nodes in a binary tree of height $h$ is $2^{h+1} - 1$. For a height of 2, max nodes is $2^{2+1} - 1 = 7$.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t036",
+    "category": "Technical Ability",
+    "prompt": "Which SQL aggregate function ignores NULL values by default?",
+    "options": [
+      { "id": "a", "text": "COUNT($\ast$)" },
+      { "id": "b", "text": "AVG" },
+      { "id": "c", "text": "COALESCE" },
+      { "id": "d", "text": "GROUP BY" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This function is used to calculate the central tendency of numerical data.",
+    "explanation": "Aggregate functions like **AVG**, SUM, MIN, and MAX ignore NULL values. COUNT($\ast$) counts all rows, including those with NULLs in other columns.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t037",
+    "category": "Technical Ability",
+    "prompt": "Which of the following is a Data Control Language (DCL) command?",
+    "options": [
+      { "id": "a", "text": "INSERT" },
+      { "id": "b", "text": "CREATE" },
+      { "id": "c", "text": "GRANT" },
+      { "id": "d", "text": "SELECT" }
+    ],
+    "correct_options": ["c"],
+    "hint": "DCL commands are used to manage user permissions.",
+    "explanation": "**GRANT** and REVOKE are DCL commands used to assign or remove database privileges from users.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t038",
+    "category": "Technical Ability",
+    "prompt": "What is the main advantage of using indexed sequential files over sequential files?",
+    "options": [
+      { "id": "a", "text": "Reduced memory usage." },
+      { "id": "b", "text": "Faster sequential access." },
+      { "id": "c", "text": "Faster random access to records." },
+      { "id": "d", "text": "Simpler implementation." }
+    ],
+    "correct_options": ["c"],
+    "hint": "Indexes allow you to jump directly to a record's general location.",
+    "explanation": "Indexed sequential files (like ISAM) use an index structure to allow for **faster random access** to a specific record, unlike purely sequential files which must be read from the start.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t039",
+    "category": "Technical Ability",
+    "prompt": "Which layer of the OSI model is responsible for logical addressing (IP addresses)?",
+    "options": [
+      { "id": "a", "text": "Data Link Layer" },
+      { "id": "b", "text": "Network Layer" },
+      { "id": "c", "text": "Transport Layer" },
+      { "id": "d", "text": "Application Layer" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Routing decisions are made at this layer.",
+    "explanation": "The **Network Layer** (Layer 3) handles the logical addressing (IP addressing) and routing of data packets across network segments.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t040",
+    "category": "Technical Ability",
+    "prompt": "In C, what is the correct way to dynamically allocate memory for 10 integers?",
+    "options": [
+      { "id": "a", "text": "`int *p = malloc(10);`" },
+      { "id": "b", "text": "`int *p = calloc(10, sizeof(int));`" },
+      { "id": "c", "text": "`int *p = new int[10];`" },
+      { "id": "d", "text": "`int *p = sizeof(int) * 10;`" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Both `malloc` and `calloc` are used, but one initializes the memory to zero.",
+    "explanation": "**calloc(10, sizeof(int))** allocates space for 10 integers and initializes all allocated memory to zero. `malloc(10 * sizeof(int))` would also work for allocation but not initialization.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t041",
+    "category": "Technical Ability",
+    "prompt": "What does the term 'Encapsulation' primarily refer to in OOPS?",
+    "options": [
+      { "id": "a", "text": "Creating new classes from existing ones." },
+      { "id": "b", "text": "The ability to have multiple forms of a method." },
+      { "id": "c", "text": "Hiding internal data and requiring access through methods." },
+      { "id": "d", "text": "Defining only necessary details and hiding implementation." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It's often described as 'data hiding' or 'binding data and methods together'.",
+    "explanation": "**Encapsulation** is the mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit, and restricting direct access to the data.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t042",
+    "category": "Technical Ability",
+    "prompt": "Which of these is used for compile-time polymorphism?",
+    "options": [
+      { "id": "a", "text": "Inheritance" },
+      { "id": "b", "text": "Method Overriding" },
+      { "id": "c", "text": "Method Overloading" },
+      { "id": "d", "text": "Interface Implementation" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The compiler determines which method to call based on the signature.",
+    "explanation": "**Method Overloading** (having multiple methods with the same name but different parameters) is resolved by the compiler at compile time, hence it is compile-time (or static) polymorphism.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t043",
+    "category": "Technical Ability",
+    "prompt": "What is the primary difference between a **while** loop and a **do-while** loop?",
+    "options": [
+      { "id": "a", "text": "They iterate a different number of times." },
+      { "id": "b", "text": "The `do-while` loop executes its body at least once." },
+      { "id": "c", "text": "The `while` loop is used for array iteration." },
+      { "id": "d", "text": "The `do-while` loop checks the condition first." }
+    ],
+    "correct_options": ["b"],
+    "hint": "One is a post-test loop, the other is a pre-test loop.",
+    "explanation": "The **do-while** loop is an exit-controlled loop (post-test) where the condition is checked *after* the body executes, ensuring the body runs at least once, even if the condition is initially false.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t044",
+    "category": "Technical Ability",
+    "prompt": "What is the post-order traversal sequence for a Binary Search Tree where the in-order traversal is $A, B, C, D, E$ and pre-order traversal is $D, B, A, C, E$?",
+    "options": [
+      { "id": "a", "text": "A, C, B, E, D" },
+      { "id": "b", "text": "A, C, B, D, E" },
+      { "id": "c", "text": "A, B, C, D, E" },
+      { "id": "d", "text": "A, C, E, B, D" }
+    ],
+    "correct_options": ["d"],
+    "hint": "Post-order is Left, Right, Root. The root is $D$.",
+    "explanation": "Pre-order ($D, B, A, C, E$) tells us $D$ is the root. In-order ($A, B, C | D | E$) shows the left subtree is $\{A, B, C\}$ and the right is $\{E\}$. The root of the left subtree is $B$. Post-order is Left: ($A, C$), Right: ($E$), Root: ($D$). Thus: $A, C, E, B, D$.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t045",
+    "category": "Technical Ability",
+    "prompt": "Which of these is the most suitable data structure for implementing Breadth-First Search (BFS)?",
+    "options": [
+      { "id": "a", "text": "Stack" },
+      { "id": "b", "text": "Priority Queue" },
+      { "id": "c", "text": "Hash Map" },
+      { "id": "d", "text": "Queue" }
+    ],
+    "correct_options": ["d"],
+    "hint": "BFS visits nodes level by level (FIFO).",
+    "explanation": "BFS explores all neighbors at the present depth prior to moving on to nodes at the next depth level, which is naturally managed using a **Queue** (FIFO).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t046",
+    "category": "Technical Ability",
+    "prompt": "In SQL, what is the role of the **PRIMARY KEY** constraint?",
+    "options": [
+      { "id": "a", "text": "To ensure that values in a column are unique across the entire table." },
+      { "id": "b", "text": "To uniquely identify each record in a table and ensure non-null values." },
+      { "id": "c", "text": "To create a link between two tables." },
+      { "id": "d", "text": "To prevent unauthorized access to the table." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It is a combination of two other constraints: UNIQUE and NOT NULL.",
+    "explanation": "A **PRIMARY KEY** uniquely identifies a single row in a table. It must contain UNIQUE values, and it cannot contain NULL values.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t047",
+    "category": "Technical Ability",
+    "prompt": "Which SQL statement is used to remove all rows from a table without logging the individual row deletions, making it faster?",
+    "options": [
+      { "id": "a", "text": "DELETE FROM table\_name" },
+      { "id": "b", "text": "REMOVE table\_name" },
+      { "id": "c", "text": "TRUNCATE TABLE table\_name" },
+      { "id": "d", "text": "DROP TABLE table\_name" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This command resets the identity (auto-increment) column.",
+    "explanation": "**TRUNCATE TABLE** quickly removes all rows from a table by de-allocating the data pages, and it is a DDL command, unlike DELETE (DML).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t048",
+    "category": "Technical Ability",
+    "prompt": "In Operating Systems, what is the main purpose of **Paging**?",
+    "options": [
+      { "id": "a", "text": "To convert logical addresses to physical addresses." },
+      { "id": "b", "text": "To allow processes to use memory even when there is insufficient physical memory." },
+      { "id": "c", "text": "To prevent external fragmentation." },
+      { "id": "d", "text": "To manage disk space allocation." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It's a memory management scheme that breaks up logical and physical memory.",
+    "explanation": "Paging is a memory management scheme that eliminates the need for contiguous physical memory. It allows for the implementation of **Virtual Memory**, letting processes exceed physical memory limits.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t049",
+    "category": "Technical Ability",
+    "prompt": "The 'Wait-for Graph' is primarily used in the context of:",
+    "options": [
+      { "id": "a", "text": "Process synchronization." },
+      { "id": "b", "text": "Deadlock detection." },
+      { "id": "c", "text": "CPU scheduling." },
+      { "id": "d", "text": "Memory allocation." }
+    ],
+    "correct_options": ["b"],
+    "hint": "A cycle in this graph indicates a specific problem.",
+    "explanation": "A **Wait-for Graph** is used in operating systems for **deadlock detection**. A cycle in the graph indicates that a deadlock exists.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t050",
+    "category": "Technical Ability",
+    "prompt": "Which component in a CPU is responsible for carrying out all arithmetic and logical operations?",
+    "options": [
+      { "id": "a", "text": "Control Unit (CU)" },
+      { "id": "b", "text": "Registers" },
+      { "id": "c", "text": "Arithmetic Logic Unit (ALU)" },
+      { "id": "d", "text": "Memory Management Unit (MMU)" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The name spells out its two primary functions.",
+    "explanation": "The **Arithmetic Logic Unit (ALU)** performs all arithmetic operations (addition, subtraction, etc.) and logical operations (AND, OR, NOT).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t051",
+    "category": "Technical Ability",
+    "prompt": "What is the output of the Java code: `System.out.println(10 + 20 + \"Javatpoint\");`?",
+    "options": [
+      { "id": "a", "text": "30Javatpoint" },
+      { "id": "b", "text": "1020Javatpoint" },
+      { "id": "c", "text": "Javatpoint30" },
+      { "id": "d", "text": "30" }
+    ],
+    "correct_options": ["a"],
+    "hint": "The operations are performed strictly from left to right.",
+    "explanation": "Due to left-to-right evaluation, $10+20$ is calculated first (30). Then, string concatenation occurs: $30 + \"Javatpoint\"$ results in \"30Javatpoint\".",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t052",
+    "category": "Technical Ability",
+    "prompt": "In C++, when is the destructor of an object called?",
+    "options": [
+      { "id": "a", "text": "When the object is created." },
+      { "id": "b", "text": "When the object is accessed." },
+      { "id": "c", "text": "When the object is about to be destroyed or goes out of scope." },
+      { "id": "d", "text": "When the object's parent class is destroyed." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It performs cleanup before the object's memory is released.",
+    "explanation": "The **destructor** is automatically called when the object goes out of scope, or when it is explicitly deleted using the `delete` operator (for dynamically allocated memory).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t053",
+    "category": "Technical Ability",
+    "prompt": "In Python, which of the following data types is mutable?",
+    "options": [
+      { "id": "a", "text": "Tuple" },
+      { "id": "b", "text": "String" },
+      { "id": "c", "text": "List" },
+      { "id": "d", "text": "Integer" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Elements of this sequence type can be changed after creation.",
+    "explanation": "**List** is mutable (changeable) while Tuple, String, and Integer are immutable (cannot be changed after creation).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t054",
+    "category": "Technical Ability",
+    "prompt": "What is the primary characteristic of an **Interface** in Java/OOP?",
+    "options": [
+      { "id": "a", "text": "It can be instantiated." },
+      { "id": "b", "text": "It defines a contract of methods that implementing classes must follow." },
+      { "id": "c", "text": "It contains fully implemented methods only." },
+      { "id": "d", "text": "It is used for single inheritance only." }
+    ],
+    "correct_options": ["b"],
+    "hint": "A class 'implements' this to guarantee a set of behaviors.",
+    "explanation": "An **Interface** is a blueprint of a class. It can have method signatures (abstract methods) that the implementing classes must define and implement.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t055",
+    "category": "Technical Ability",
+    "prompt": "How is a Queue typically implemented using two Stacks?",
+    "options": [
+      { "id": "a", "text": "One for enqueue, one for dequeue." },
+      { "id": "b", "text": "One for storage, one for temporary reversal." },
+      { "id": "c", "d", "text": "One for LIFO, one for FIFO." },
+      { "id": "d", "text": "Two stacks are merged into one queue." }
+    ],
+    "correct_options": ["b"],
+    "hint": "The reversal is needed to change the LIFO order to a FIFO order.",
+    "explanation": "A queue (FIFO) is implemented using two stacks. One stack ($S_1$) is used for the enqueue (push) operation. The second stack ($S_2$) is used to reverse the elements for the dequeue (pop) operation, achieving FIFO.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t056",
+    "category": "Technical Ability",
+    "prompt": "What is the worst-case space complexity of Recursive Depth First Search (DFS) on a skewed tree?",
+    "options": [
+      { "id": "a", "text": "$O(1)$" },
+      { "id": "b", "text": "$O(\log n)$" },
+      { "id": "c", "text": "$O(n)$" },
+      { "id": "d", "text": "$O(n^2)$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The space is used by the function call stack.",
+    "explanation": "In a skewed tree (like a linked list), the recursion depth is equal to the number of nodes ($n$). The space complexity is determined by the maximum depth of the call stack, hence $O(n)$.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t057",
+    "category": "Technical Ability",
+    "prompt": "What is the purpose of the **FOREIGN KEY** constraint in a relational database?",
+    "options": [
+      { "id": "a", "text": "To ensure that a column contains only unique values." },
+      { "id": "b", "text": "To link two tables together and maintain referential integrity." },
+      { "id": "c", "text": "To define an alternate key for the table." },
+      { "id": "d", "text": "To set a default value for a column." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It references the primary key of another table.",
+    "explanation": "A **FOREIGN KEY** in one table points to a PRIMARY KEY in another table, ensuring that the relationships between tables remain consistent (referential integrity).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t058",
+    "category": "Technical Ability",
+    "prompt": "Which SQL statement is used to give permissions to a user to access a specific database object?",
+    "options": [
+      { "id": "a", "text": "ACCESS" },
+      { "id": "b", "text": "GRANT" },
+      { "id": "c", "text": "PERMIT" },
+      { "id": "d", "text": "AUTHORIZE" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This is a DCL command, along with REVOKE.",
+    "explanation": "**GRANT** is the Data Control Language (DCL) command used to provide users with specific access rights (like SELECT, INSERT, UPDATE) to database objects.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t059",
+    "category": "Technical Ability",
+    "prompt": "Which process state transition is caused by an I/O request?",
+    "options": [
+      { "id": "a", "text": "Running $\\to$ Ready" },
+      { "id": "b", "text": "Ready $\\to$ Running" },
+      { "id": "c", "text": "Running $\\to$ Waiting (Block)" },
+      { "id": "d", "text": "Waiting $\\to$ Ready" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The process must pause CPU execution until the I/O operation completes.",
+    "explanation": "When a process needs an I/O operation, it is moved from the **Running** state to the **Waiting (Block)** state until the I/O completion interrupt occurs.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t060",
+    "category": "Technical Ability",
+    "prompt": "Which component is NOT a part of the user view of a file in a file system?",
+    "options": [
+      { "id": "a", "text": "File name" },
+      { "id": "b", "text": "Current position" },
+      { "id": "c", "text": "Access time" },
+      { "id": "d", "text": "Disk block numbers" }
+    ],
+    "correct_options": ["d"],
+    "hint": "This information is relevant to the OS but hidden from the user.",
+    "explanation": "**Disk block numbers** (physical storage location) are managed by the operating system's file system structure and are typically hidden from the user's view of a file.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t061",
+    "category": "Technical Ability",
+    "prompt": "What is the concept of **Data Abstraction** in OOPS?",
+    "options": [
+      { "id": "a", "text": "The implementation of multiple inheritance." },
+      { "id": "b", "text": "Showing only essential information and hiding the complex background details." },
+      { "id": "c", "text": "Combining data and methods into a single unit." },
+      { "id": "d", "text": "The ability of a single variable to store multiple data types." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Think of an abstract class or interface that only shows what it *does*, not *how*.",
+    "explanation": "**Data Abstraction** is the process of hiding the implementation details and showing only the functionality to the user. Interfaces and abstract classes are mechanisms to achieve abstraction.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t062",
+    "category": "Technical Ability",
+    "prompt": "In C++, which of the following provides support for runtime polymorphism?",
+    "options": [
+      { "id": "a", "text": "friend functions" },
+      { "id": "b", "text": "static functions" },
+      { "id": "c", "text": "virtual functions" },
+      { "id": "d", "text": "inline functions" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This keyword enables late binding via the V-table.",
+    "explanation": "**Virtual functions** in C++ enable runtime polymorphism. When a derived class overrides a base class's virtual function, the actual method called is determined at runtime based on the object's type.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t063",
+    "category": "Technical Ability",
+    "prompt": "What is the output of `print(type([]))` in Python?",
+    "options": [
+      { "id": "a", "text": "<class 'array'>" },
+      { "id": "b", "text": "<class 'list'>" },
+      { "id": "c", "text": "<class 'tuple'>" },
+      { "id": "d", "text": "<class 'set'>" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Square brackets define this mutable sequence type.",
+    "explanation": "In Python, square brackets `[]` are used to define a **List**, so the `type()` function returns `<class 'list'>`.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t064",
+    "category": "Technical Ability",
+    "prompt": "What is the primary difference between a complete binary tree and a full binary tree?",
+    "options": [
+      { "id": "a", "text": "Full has $2^k$ nodes at level $k$; Complete fills nodes from top-to-bottom, left-to-right." },
+      { "id": "b", "text": "Full is always balanced; Complete is always skewed." },
+      { "id": "c", "text": "Complete must have every non-leaf node with two children; Full does not." },
+      { "id": "d", "text": "They are the same." }
+    ],
+    "correct_options": ["a"],
+    "hint": "Think about the leaf nodes and how they are filled.",
+    "explanation": "A **Full** binary tree is one where every node has either 0 or 2 children. A **Complete** binary tree is a full tree up to the second-to-last level, and at the last level, nodes are filled from left to right.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t065",
+    "category": "Technical Ability",
+    "prompt": "The total number of edges in a graph with $n$ vertices is $n(n-1)/2$. The graph must be:",
+    "options": [
+      { "id": "a", "text": "A Tree" },
+      { "id": "b", "text": "Disconnected" },
+      { "id": "c", "text": "A Complete Graph" },
+      { "id": "d", "text": "A Directed Graph" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This formula gives the maximum possible number of edges for an undirected graph.",
+    "explanation": "A **Complete Graph** (or $K_n$) is a simple undirected graph in which every pair of distinct vertices is connected by a unique edge. The number of edges is $\\frac{n(n-1)}{2}$.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t066",
+    "category": "Technical Ability",
+    "prompt": "Which Normal Form (NF) eliminates partial dependency?",
+    "options": [
+      { "id": "a", "text": "1NF" },
+      { "id": "b", "text": "2NF" },
+      { "id": "c", "text": "3NF" },
+      { "id": "d", "text": "BCNF" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This form requires that all non-key attributes are fully dependent on the primary key.",
+    "explanation": "A relation is in **Second Normal Form (2NF)** if it is in 1NF and all non-key attributes are fully functionally dependent on the primary key (i.e., no partial dependency exists).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t067",
+    "category": "Technical Ability",
+    "prompt": "What is the key difference between **DELETE** and **TRUNCATE** in SQL?",
+    "options": [
+      { "id": "a", "text": "DELETE is DDL, TRUNCATE is DML." },
+      { "id": "b", "text": "DELETE is faster; TRUNCATE is slower." },
+      { "id": "c", "text": "DELETE can use a WHERE clause; TRUNCATE cannot." },
+      { "id": "d", "text": "TRUNCATE can be rolled back; DELETE cannot." }
+    ],
+    "correct_options": ["c"],
+    "hint": "One operates row-by-row, the other operates on the entire table structure.",
+    "explanation": "**DELETE** is DML, operates row-by-row, can use a WHERE clause, and is generally slower. **TRUNCATE** is DDL, removes all rows at once, cannot use a WHERE clause, and is faster.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t068",
+    "category": "Technical Ability",
+    "prompt": "Which memory allocation strategy in OS results in External Fragmentation?",
+    "options": [
+      { "id": "a", "text": "Paging" },
+      { "id": "b", "text": "Segmentation" },
+      { "id": "c", "text": "Demand Paging" },
+      { "id": "d", "text": "Buddy System" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Fragmentation outside of allocated blocks.",
+    "explanation": "Both **Segmentation** and variable-partition allocation lead to **External Fragmentation**, where free memory is too small to be allocated contiguously, even if the total free space is sufficient.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t069",
+    "category": "Technical Ability",
+    "prompt": "Which scheduling algorithm can lead to the 'starvation' of low-priority processes?",
+    "options": [
+      { "id": "a", "text": "Round Robin" },
+      { "id": "b", "text": "First-Come, First-Served" },
+      { "id": "c", "text": "Priority Scheduling" },
+      { "id": "d", "text": "Shortest Remaining Time First" }
+    ],
+    "correct_options": ["c"],
+    "hint": "If high-priority processes keep arriving, the low-priority ones may never run.",
+    "explanation": "In **Priority Scheduling**, a low-priority process may wait indefinitely if a stream of high-priority processes continuously enters the ready queue. This is known as starvation.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t070",
+    "category": "Technical Ability",
+    "prompt": "What is the main role of the 'Router' in a network?",
+    "options": [
+      { "id": "a", "text": "To filter network traffic based on MAC addresses." },
+      { "id": "b", "text": "To connect devices within a single local network." },
+      { "id": "c", "text": "To forward data packets between different computer networks." },
+      { "id": "d", "text": "To translate IP addresses to domain names." }
+    ],
+    "correct_options": ["c"],
+    "hint": "It operates at the Network Layer and uses IP addresses for its decisions.",
+    "explanation": "A **Router** is a networking device that forwards data packets between computer networks, making decisions based on the destination IP address of the packet.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t071",
+    "category": "Technical Ability",
+    "prompt": "Which concept allows Java to support platform-independence?",
+    "options": [
+      { "id": "a", "text": "The use of the `static` keyword." },
+      { "id": "b", "text": "The compilation into machine code." },
+      { "id": "c", "text": "The compilation into bytecode, executed by the JVM." },
+      { "id": "d", "text": "Automatic garbage collection." }
+    ],
+    "correct_options": ["c"],
+    "hint": "Write once, run anywhere.",
+    "explanation": "Java code is compiled into an intermediate form called **bytecode**. This bytecode is then interpreted by the **Java Virtual Machine (JVM)**, which is platform-specific, allowing the bytecode to run on any OS with a compatible JVM.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t072",
+    "category": "Technical Ability",
+    "prompt": "What is the result of applying the bitwise XOR (^) operator to the numbers 5 (binary 0101) and 3 (binary 0011)?",
+    "options": [
+      { "id": "a", "text": "7 (binary 0111)" },
+      { "id": "b", "text": "6 (binary 0110)" },
+      { "id": "c", "text": "4 (binary 0100)" },
+      { "id": "d", "text": "2 (binary 0010)" }
+    ],
+    "correct_options": ["b"],
+    "hint": "XOR returns 1 if the bits are different, and 0 if they are the same.",
+    "explanation": "Binary XOR: 0101 ^ 0011 = 0110, which is 6 in decimal.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t073",
+    "category": "Technical Ability",
+    "prompt": "Which type of inheritance is NOT supported directly in Java, but is in C++?",
+    "options": [
+      { "id": "a", "text": "Single Inheritance" },
+      { "id": "b", "text": "Multilevel Inheritance" },
+      { "id": "c", "text": "Hierarchical Inheritance" },
+      { "id": "d", "text": "Multiple Inheritance" }
+    ],
+    "correct_options": ["d"],
+    "hint": "Java avoids the 'Deadly Diamond of Death' problem.",
+    "explanation": "Java does not support **Multiple Inheritance** of classes to avoid the ambiguity of the 'Diamond Problem'. It achieves similar functionality through Interfaces.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t074",
+    "category": "Technical Ability",
+    "prompt": "What is a **circular linked list**?",
+    "options": [
+      { "id": "a", "text": "A list where a node can only point to itself." },
+      { "id": "b", "text": "A list where the last node points back to the first (head) node." },
+      { "id": "c", "d", "text": "A list where nodes are stored in a circular array." },
+      { "id": "d", "text": "A list that allows both forward and backward traversal." }
+    ],
+    "correct_options": ["b"],
+    "hint": "The 'circle' is closed by the pointer from the tail.",
+    "explanation": "In a **circular linked list**, the `next` pointer of the last node points to the first node, forming a circle.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t075",
+    "category": "Technical Ability",
+    "prompt": "What is the maximum number of swaps required by Bubble Sort to sort $n$ elements in the worst case?",
+    "options": [
+      { "id": "a", "text": "$O(n)$" },
+      { "id": "b", "text": "$O(n \log n)$" },
+      { "id": "c", "text": "$O(n^2)$" },
+      { "id": "d", "text": "$O(\log n)$" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The number of comparisons and swaps are proportional to the square of the number of elements.",
+    "explanation": "The worst-case scenario for Bubble Sort (e.g., a reverse-sorted array) requires $O(n^2)$ swaps and comparisons.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t076",
+    "category": "Technical Ability",
+    "prompt": "In a DBMS, a transaction that is **durab**le means:",
+    "options": [
+      { "id": "a", "text": "The transaction is always executed immediately." },
+      { "id": "b", "text": "The transaction maintains consistency constraints." },
+      { "id": "c", "text": "Once a transaction commits, its changes are permanent and survive system failures." },
+      { "id": "d", "text": "The transaction must be executed completely or not at all." }
+    ],
+    "correct_options": ["c"],
+    "hint": "This is the 'D' in the ACID properties.",
+    "explanation": "**Durability** is the 'D' in ACID. It ensures that changes made by committed transactions are permanent and survive any subsequent system or hardware failures.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t077",
+    "category": "Technical Ability",
+    "prompt": "Which clause is used in SQL to sort the results of a query?",
+    "options": [
+      { "id": "a", "text": "SORT BY" },
+      { "id": "b", "text": "ORDER BY" },
+      { "id": "c", "text": "GROUP BY" },
+      { "id": "d", "text": "ARRANGE BY" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This clause is typically the last one executed in a SELECT statement.",
+    "explanation": "The **ORDER BY** clause is used to sort the result-set of a query by one or more columns, either in ascending (ASC) or descending (DESC) order.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t078",
+    "category": "Technical Ability",
+    "prompt": "Which scheduling algorithm is non-preemptive?",
+    "options": [
+      { "id": "a", "text": "Shortest Remaining Time First (SRTF)" },
+      { "id": "b", "text": "Round Robin (RR)" },
+      { "id": "c", "text": "First-Come, First-Served (FCFS)" },
+      { "id": "d", "text": "Preemptive Priority" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Once a process starts running, it continues until completion or voluntarily blocks.",
+    "explanation": "**First-Come, First-Served (FCFS)** is a non-preemptive scheduling algorithm. Once a process gets the CPU, it holds it until it terminates or enters the waiting state.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t079",
+    "category": "Technical Ability",
+    "prompt": "What is the main benefit of using a **Multithreaded** process over a single-threaded process?",
+    "options": [
+      { "id": "a", "text": "Threads share the same program counter." },
+      { "id": "b", "text": "Increased throughput and responsiveness." },
+      { "id": "c", "text": "Guaranteed deadlock prevention." },
+      { "id": "d", "text": "Simpler resource management." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Multiple tasks can run concurrently within the same program.",
+    "explanation": "Multithreading allows different parts of the same program (threads) to execute concurrently, leading to improved **throughput** (more work done in less time) and better **responsiveness** for the user.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t080",
+    "category": "Technical Ability",
+    "prompt": "The TCP/IP protocol suite uses which protocol at the Transport Layer to ensure reliable, connection-oriented data transfer?",
+    "options": [
+      { "id": "a", "text": "UDP" },
+      { "id": "b", "text": "IP" },
+      { "id": "c", "text": "TCP" },
+      { "id": "d", "text": "ICMP" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The name of the entire suite includes this protocol.",
+    "explanation": "**TCP (Transmission Control Protocol)** is the connection-oriented protocol that provides reliable, ordered, and error-checked delivery of a stream of bytes between applications.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t081",
+    "category": "Technical Ability",
+    "prompt": "Which of the following is a drawback of using **global variables** in programming?",
+    "options": [
+      { "id": "a", "text": "Reduced memory usage." },
+      { "id": "b", "text": "Increased complexity in debugging due to potential side effects." },
+      { "id": "c", "text": "Faster program execution." },
+      { "id": "d", "text": "Enforced code modularity." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Any part of the program can modify them, making it hard to track changes.",
+    "explanation": "Global variables can be modified by any function, making it difficult to track where a bug was introduced, hence increasing **debugging complexity**.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t082",
+    "category": "Technical Ability",
+    "prompt": "In C++, what is the role of the `explicit` keyword for constructors?",
+    "options": [
+      { "id": "a", "text": "It forces the compiler to use the constructor." },
+      { "id": "b", "text": "It prevents implicit conversion from one type to the class type." },
+      { "id": "c", "d", "text": "It allows the constructor to be called from a derived class." },
+      { "id": "d", "text": "It makes the constructor publicly accessible." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It stops unexpected type coercion.",
+    "explanation": "The **explicit** keyword prevents the C++ compiler from using that constructor for implicit type conversions, requiring the conversion to be done explicitly.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t083",
+    "category": "Technical Ability",
+    "prompt": "What is a **daemon** in a Unix/Linux operating system context?",
+    "options": [
+      { "id": "a", "text": "A user command to execute a program." },
+      { "id": "b", "text": "A background process that runs without requiring user interaction." },
+      { "id": "c", "text": "A program used to manage system security." },
+      { "id": "d", "text": "A device driver." }
+    ],
+    "correct_options": ["b"],
+    "hint": "These processes often have names ending with 'd' (e.g., `sshd`, `httpd`).",
+    "explanation": "A **daemon** is a long-running background process that handles periodic service requests and does not have a controlling terminal.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t084",
+    "category": "Technical Ability",
+    "prompt": "Which algorithm is an example of the **Greedy** approach?",
+    "options": [
+      { "id": "a", "text": "Merge Sort" },
+      { "id": "b", "text": "Dijkstra's Algorithm" },
+      { "id": "c", "text": "Quick Sort" },
+      { "id": "d", "text": "Tower of Hanoi" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This algorithm makes the locally optimal choice at each step.",
+    "explanation": "**Dijkstra's Algorithm** for finding the shortest path is a classic example of a **Greedy** algorithm, as it always selects the unvisited vertex with the minimum known distance from the source.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t085",
+    "category": "Technical Ability",
+    "prompt": "Which data structure is best suited for implementing a recursive function's call management?",
+    "options": [
+      { "id": "a", "text": "Queue" },
+      { "id": "b", "text": "Array" },
+      { "id": "c", "text": "Stack" },
+      { "id": "d", "text": "Hash Table" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Function calls follow a LIFO pattern.",
+    "explanation": "Function calls, including recursive ones, are managed by the **Call Stack**. The LIFO property of the stack ensures that the last function called is the first one to return.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t086",
+    "category": "Technical Ability",
+    "prompt": "In SQL, what is a **View**?",
+    "options": [
+      { "id": "a", "text": "A virtual table based on the result-set of an SQL statement." },
+      { "id": "b", "text": "A stored program used for data manipulation." },
+      { "id": "c", "text": "A physical copy of data used for backup." },
+      { "id": "d", "text": "A column that serves as a foreign key." }
+    ],
+    "correct_options": ["a"],
+    "hint": "It provides a window into the data without storing the data itself.",
+    "explanation": "A **View** is a virtual table whose content is defined by a query. It does not physically store data but presents the data from one or more underlying tables.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t087",
+    "category": "Technical Ability",
+    "prompt": "In DBMS, the property that requires a transaction to be an 'all-or-nothing' operation is called:",
+    "options": [
+      { "id": "a", "text": "Consistency" },
+      { "id": "b", "text": "Isolation" },
+      { "id": "c", "text": "Atomicity" },
+      { "id": "d", "text": "Durability" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This is the 'A' in the ACID properties.",
+    "explanation": "**Atomicity** ensures that a transaction is treated as a single, indivisible unit of work. Either all of its operations are executed, or none of them are.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t088",
+    "category": "Technical Ability",
+    "prompt": "Which memory management technique divides memory into fixed-size contiguous blocks called **frames** and a process into same-sized blocks called **pages**?",
+    "options": [
+      { "id": "a", "text": "Segmentation" },
+      { "id": "b", "text": "Swapping" },
+      { "id": "c", "text": "Paging" },
+      { "id": "d", "text": "Partitioning" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This technique helps avoid external fragmentation.",
+    "explanation": "**Paging** is a memory management scheme that involves dividing physical memory into fixed-size frames and logical memory into same-size pages.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t089",
+    "category": "Technical Ability",
+    "prompt": "In a client-server architecture, what is the layer that handles data presentation and encryption?",
+    "options": [
+      { "id": "a", "text": "Application Layer (OSI 7)" },
+      { "id": "b", "text": "Presentation Layer (OSI 6)" },
+      { "id": "c", "text": "Session Layer (OSI 5)" },
+      { "id": "d", "text": "Data Link Layer (OSI 2)" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It's concerned with the syntax and semantics of the information.",
+    "explanation": "The **Presentation Layer** (Layer 6 of the OSI model) is responsible for translation, compression, and encryption of data.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t090",
+    "category": "Technical Ability",
+    "prompt": "What is the key purpose of the `volatile` keyword in C/C++?",
+    "options": [
+      { "id": "a", "text": "To prevent a variable from being modified." },
+      { "id": "b", "text": "To suggest to the compiler that the variable's value may change unexpectedly." },
+      { "id": "c", "d", "text": "To make a variable static." },
+      { "id": "d", "text": "To ensure thread-safe access." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It prevents the compiler from performing certain optimizations on the variable.",
+    "explanation": "The **volatile** keyword tells the compiler that the variable's value can be changed by external factors (like an interrupt or another thread) and should always be read from memory, preventing aggressive caching optimizations.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "t091",
+    "category": "Technical Ability",
+    "prompt": "What does a **pure virtual function** in C++ imply about its containing class?",
+    "options": [
+      { "id": "a", "text": "The class must be a friend class." },
+      { "id": "b", "text": "The class is a concrete class and can be instantiated." },
+      { "id": "c", "text": "The class is an abstract class and cannot be instantiated." },
+      { "id": "d", "text": "The function must return an object reference." }
+    ],
+    "correct_options": ["c"],
+    "hint": "The function definition is `virtual void func() = 0;`",
+    "explanation": "A pure virtual function is declared with `= 0`. Any class containing one or more pure virtual functions is an **abstract class** and cannot be instantiated.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t092",
+    "category": "Technical Ability",
+    "prompt": "What is the term for a **method that calls itself**?",
+    "options": [
+      { "id": "a", "text": "Overloading" },
+      { "id": "b", "text": "Inheritance" },
+      { "id": "c", "text": "Recursion" },
+      { "id": "d", "text": "Iteration" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It often solves a problem by dividing it into smaller, identical problems.",
+    "explanation": "**Recursion** is a process where a function or method calls itself directly or indirectly. It requires a base case to terminate.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t093",
+    "category": "Technical Ability",
+    "prompt": "What is the time complexity of searching in a well-balanced Binary Search Tree (BST)?",
+    "options": [
+      { "id": "a", "text": "$O(n)$" },
+      { "id": "b", "text": "$O(\log n)$" },
+      { "id": "c", "text": "$O(n \log n)$" },
+      { "id": "d", "text": "$O(1)$" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The search space is halved at each comparison.",
+    "explanation": "In a **well-balanced BST**, the height of the tree is $O(\log n)$, and since the search takes time proportional to the height, the complexity is $O(\log n)$.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t094",
+    "category": "Technical Ability",
+    "prompt": "Which Normal Form (NF) is violated by a **transitive dependency**?",
+    "options": [
+      { "id": "a", "text": "1NF" },
+      { "id": "b", "text": "2NF" },
+      { "id": "c", "text": "3NF" },
+      { "id": "d", "text": "BCNF" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This dependency occurs when a non-key attribute depends on another non-key attribute.",
+    "explanation": "A relation is in **Third Normal Form (3NF)** if it is in 2NF and there are no **transitive dependencies** (where a non-key attribute depends on another non-key attribute, not the primary key).",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t095",
+    "category": "Technical Ability",
+    "prompt": "What is the SQL keyword used to remove a set of duplicate rows from the result set of a SELECT query?",
+    "options": [
+      { "id": "a", "text": "GROUP" },
+      { "id": "b", "text": "UNIQUE" },
+      { "id": "c", "text": "DISTINCT" },
+      { "id": "d", "text": "NO\_DUPLICATE" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word implies a different set of values.",
+    "explanation": "The **DISTINCT** keyword is used immediately after SELECT to retrieve only unique values from the specified column(s).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t096",
+    "category": "Technical Ability",
+    "prompt": "What is a **Semaphore** used for in an Operating System?",
+    "options": [
+      { "id": "a", "text": "A mechanism to speed up I/O operations." },
+      { "id": "b", "text": "A simple integer variable used for signaling and synchronization." },
+      { "id": "c", "d", "text": "A technique for dynamic memory allocation." },
+      { "id": "d", "text": "A high-speed cache for process data." }
+    ],
+    "correct_options": ["b"],
+    "hint": "It's a synchronization tool to solve the Critical Section problem.",
+    "explanation": "A **Semaphore** is a synchronization tool (a variable or abstract data type) that can be used to control access to a common resource by multiple processes in a concurrent system.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t097",
+    "category": "Technical Ability",
+    "prompt": "Which layer of the OSI model segments data into smaller units and handles flow control?",
+    "options": [
+      { "id": "a", "text": "Network Layer" },
+      { "id": "b", "text": "Data Link Layer" },
+      { "id": "c", "text": "Transport Layer" },
+      { "id": "d", "text": "Physical Layer" }
+    ],
+    "correct_options": ["c"],
+    "hint": "TCP and UDP protocols operate here.",
+    "explanation": "The **Transport Layer** (Layer 4) is responsible for segmenting the data from the upper layers and providing end-to-end communication, including flow control and error control.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "t098",
+    "category": "Technical Ability",
+    "prompt": "In C++, which keyword is used to access the members of the current object?",
+    "options": [
+      { "id": "a", "text": "super" },
+      { "id": "b", "text": "parent" },
+      { "id": "c", "text": "this" },
+      { "id": "d", "text": "self" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It's a pointer to the calling object.",
+    "explanation": "The **this** pointer/keyword is a constant pointer that holds the memory address of the current object. It is often used to resolve naming conflicts between local variables and member variables.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t099",
+    "category": "Technical Ability",
+    "prompt": "What is the process of hiding the complexity of the internal workings of a module, exposing only necessary functionality?",
+    "options": [
+      { "id": "a", "text": "Inheritance" },
+      { "id": "b", "text": "Polymorphism" },
+      { "id": "c", "text": "Encapsulation" },
+      { "id": "d", "text": "Abstraction" }
+    ],
+    "correct_options": ["d"],
+    "hint": "This concept is about 'what' the object does, not 'how' it does it.",
+    "explanation": "**Abstraction** involves showing essential features of an entity and hiding the background details. Encapsulation is the mechanism used to enforce abstraction.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "t100",
+    "category": "Technical Ability",
+    "prompt": "Which is the most appropriate data structure to implement a Dictionary or Map, providing efficient key-value lookups?",
+    "options": [
+      { "id": "a", "text": "Linked List" },
+      { "id": "b", "text": "Binary Search Tree" },
+      { "id": "c", "text": "Hash Table" },
+      { "id": "d", "text": "Stack" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It offers average $O(1)$ complexity for insertion and retrieval.",
+    "explanation": "A **Hash Table** (often called HashMap or Dictionary) provides the fastest average-case time complexity, $O(1)$, for key-value pair operations.",
+    "difficulty": "Easy"
   },
 
   // Pseudocode
