@@ -1677,18 +1677,1459 @@ export const questions: Question[] = [
     difficulty: "Easy"
   },
   {
-    id: "v004",
-    category: "Verbal Ability",
-    prompt: "Fill in the blank: He was _____ by the sudden noise.",
-    options: [
-      { id: "a", text: "startled" },
-      { id: "b", text: "starting" },
-      { id: "c", text: "start" }
+    "id": "v004",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Acommodation" },
+      { "id": "b", "text": "Accommodation" },
+      { "id": "c", "text": "Accomodation" },
+      { "id": "d", "text": "Acommodattion" }
     ],
-    correct_options: ["a"],
-    hint: "The sentence needs a past participle form.",
-    explanation: "The passive voice requires the past participle 'startled'.",
-    difficulty: "Medium"
+    "correct_options": ["b"],
+    "hint": "The word has double 'c' and double 'm'.",
+    "explanation": "'Accommodation' is spelled with two 'c's and two 'm's.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v005",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Neccessary" },
+      { "id": "b", "text": "Necessary" },
+      { "id": "c", "text": "Necessery" },
+      { "id": "d", "text": "Neccesary" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Remember: one 'c', two 's's.",
+    "explanation": "'Necessary' is the correct spelling, with one 'c' and two 's's.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v006",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Conscious" },
+      { "id": "b", "text": "Concious" },
+      { "id": "c", "text": "Consious" },
+      { "id": "d", "text": "Consceous" }
+    ],
+    "correct_options": ["a"],
+    "hint": "Look for the 'sc' sequence.",
+    "explanation": "'Conscious' is correctly spelled with 'sc' followed by 'ious'.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v007",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Occurence" },
+      { "id": "b", "text": "Occurance" },
+      { "id": "c", "text": "Occurrence" },
+      { "id": "d", "text": "Ocurrence" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word has double 'c' and double 'r'.",
+    "explanation": "'Occurrence' is the correct spelling, featuring double 'c' and double 'r'.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v008",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Enterprenuer" },
+      { "id": "b", "text": "Entrepreneur" },
+      { "id": "c", "text": "Entrepeneur" },
+      { "id": "d", "text": "Enterpreneur" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It's a French word. Look for the 'eu' sequence.",
+    "explanation": "'Entrepreneur' is the correct French spelling adopted in English.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v009",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Seperate" },
+      { "id": "b", "text": "Separete" },
+      { "id": "c", "text": "Separate" },
+      { "id": "d", "text": "Sepperate" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The difficult part is the vowel between 'p' and 'r'.",
+    "explanation": "'Separate' is correctly spelled with an 'a' in the second syllable, not an 'e'.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v010",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Maintainence" },
+      { "id": "b", "text": "Maintainance" },
+      { "id": "c", "text": "Maintenence" },
+      { "id": "d", "text": "Maintenance" }
+    ],
+    "correct_options": ["d"],
+    "hint": "It comes from the verb 'maintain'.",
+    "explanation": "'Maintenance' is the correct spelling, deriving from 'maintain' but changing the 'a' to an 'e' in the suffix.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v011",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'TRANSIENT':",
+    "options": [
+      { "id": "a", "text": "Permanent" },
+      { "id": "b", "text": "Temporary" },
+      { "id": "c", "text": "Violent" },
+      { "id": "d", "text": "Strong" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word describes something that lasts for only a short time.",
+    "explanation": "Transient means lasting for only a short time; temporary.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v012",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'ERADICATE':",
+    "options": [
+      { "id": "a", "text": "Establish" },
+      { "id": "b", "text": "Abolish" },
+      { "id": "c", "text": "Continue" },
+      { "id": "d", "text": "Preserve" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Think of what it means to completely destroy or put an end to something.",
+    "explanation": "Eradicate means to destroy completely; abolish.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v013",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'ALACRITY':",
+    "options": [
+      { "id": "a", "text": "Sluggishness" },
+      { "id": "b", "text": "Indifference" },
+      { "id": "c", "text": "Eagerness" },
+      { "id": "d", "text": "Laziness" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It describes cheerful readiness or promptness.",
+    "explanation": "Alacrity means brisk and cheerful readiness; eagerness.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v014",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'PERVASIVE':",
+    "options": [
+      { "id": "a", "text": "Restricted" },
+      { "id": "b", "text": "Isolated" },
+      { "id": "c", "text": "Widespread" },
+      { "id": "d", "text": "Scarce" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means spread throughout every part of.",
+    "explanation": "Pervasive means spread throughout; widespread.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v015",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'JUBILANT':",
+    "options": [
+      { "id": "a", "text": "Mournful" },
+      { "id": "b", "text": "Exultant" },
+      { "id": "c", "text": "Sorrowful" },
+      { "id": "d", "text": "Angry" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word describes feeling or expressing great happiness and triumph.",
+    "explanation": "Jubilant means feeling or expressing great happiness and triumph; exultant.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v016",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'LETHARGY':",
+    "options": [
+      { "id": "a", "text": "Vigor" },
+      { "id": "b", "text": "Apathy" },
+      { "id": "c", "text": "Energy" },
+      { "id": "d", "text": "Liveliness" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It refers to a state of being drowsy and unenergetic.",
+    "explanation": "Lethargy means a state of being drowsy and unenergetic; apathy.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v017",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'CANDID':",
+    "options": [
+      { "id": "a", "text": "Deceitful" },
+      { "id": "b", "text": "Frank" },
+      { "id": "c", "text": "Secretive" },
+      { "id": "d", "text": "Biased" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word describes being truthful and straightforward.",
+    "explanation": "Candid means truthful and straightforward; frank.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v018",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'ADVERSITY':",
+    "options": [
+      { "id": "a", "text": "Prosperity" },
+      { "id": "b", "text": "Misfortune" },
+      { "id": "c", "text": "Advantage" },
+      { "id": "d", "text": "Luck" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It describes difficult or unfavorable conditions.",
+    "explanation": "Adversity means difficult or unfavorable conditions; misfortune.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v019",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'VIGILANT':",
+    "options": [
+      { "id": "a", "text": "Careless" },
+      { "id": "b", "text": "Negligent" },
+      { "id": "c", "text": "Watchful" },
+      { "id": "d", "text": "Sleepy" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means keeping careful watch for possible danger or difficulties.",
+    "explanation": "Vigilant means keeping careful watch for possible danger or difficulties; watchful.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v020",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'CONUNDRUM':",
+    "options": [
+      { "id": "a", "text": "Solution" },
+      { "id": "b", "text": "Clarity" },
+      { "id": "c", "text": "Riddle" },
+      { "id": "d", "text": "Certainty" }
+    ],
+    "correct_options": ["c"],
+    "hint": "It refers to a confusing and difficult problem or question.",
+    "explanation": "A conundrum is a confusing or difficult problem; a riddle.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v021",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'CACOPHONY':",
+    "options": [
+      { "id": "a", "text": "Noise" },
+      { "id": "b", "text": "Din" },
+      { "id": "c", "text": "Harmony" },
+      { "id": "d", "text": "Racket" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Cacophony means a harsh mixture of sounds.",
+    "explanation": "Cacophony is a harsh, discordant mixture of sounds; its opposite is harmony.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v022",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'MITIGATE':",
+    "options": [
+      { "id": "a", "text": "Soothe" },
+      { "id": "b", "text": "Lessen" },
+      { "id": "c", "text": "Aggravate" },
+      { "id": "d", "text": "Ease" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Mitigate means to make something less severe or painful.",
+    "explanation": "Mitigate means to make less severe; the antonym is aggravate, meaning to make worse.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v023",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'FERVENT':",
+    "options": [
+      { "id": "a", "text": "Passionate" },
+      { "id": "b", "text": "Ardent" },
+      { "id": "c", "text": "Apathetic" },
+      { "id": "d", "text": "Intense" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Fervent means intensely passionate or enthusiastic.",
+    "explanation": "Fervent means intensely enthusiastic; the antonym is apathetic, meaning showing or feeling no interest.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v024",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'DILIGENT':",
+    "options": [
+      { "id": "a", "text": "Industrious" },
+      { "id": "b", "text": "Lazy" },
+      { "id": "c", "text": "Careful" },
+      { "id": "d", "text": "Hardworking" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Diligent means having or showing care and conscientiousness in one's work.",
+    "explanation": "Diligent means hardworking; the opposite is lazy.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v025",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'PAUCITY':",
+    "options": [
+      { "id": "a", "text": "Scarcity" },
+      { "id": "b", "text": "Shortage" },
+      { "id": "c", "text": "Abundance" },
+      { "id": "d", "text": "Deficiency" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Paucity refers to the presence of something only in small or insufficient quantities.",
+    "explanation": "Paucity means a lack of something; the opposite is abundance, meaning a very large quantity.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v026",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'HUMBLE':",
+    "options": [
+      { "id": "a", "text": "Modest" },
+      { "id": "b", "text": "Polite" },
+      { "id": "c", "text": "Arrogant" },
+      { "id": "d", "text": "Submissive" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Humble means having or showing a modest estimate of one's own importance.",
+    "explanation": "Humble is modest; the antonym is arrogant, showing an exaggerated sense of one's own importance.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v027",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'EXACERBATE':",
+    "options": [
+      { "id": "a", "text": "Intensify" },
+      { "id": "b", "text": "Worsen" },
+      { "id": "c", "text": "Aggravate" },
+      { "id": "d", "text": "Lessen" }
+    ],
+    "correct_options": ["d"],
+    "hint": "Exacerbate means to make a problem, bad situation, or negative feeling worse.",
+    "explanation": "Exacerbate means to make worse; the antonym is lessen, meaning to make less severe.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v028",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'OBLIVIOUS':",
+    "options": [
+      { "id": "a", "text": "Unaware" },
+      { "id": "b", "text": "Aware" },
+      { "id": "c", "text": "Heedless" },
+      { "id": "d", "text": "Forgetful" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Oblivious means not aware of or not concerned about what is happening around one.",
+    "explanation": "Oblivious means unaware; the antonym is aware.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v029",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'BENEVOLENT':",
+    "options": [
+      { "id": "a", "text": "Kind" },
+      { "id": "b", "text": "Generous" },
+      { "id": "c", "text": "Malicious" },
+      { "id": "d", "text": "Good-natured" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Benevolent means well meaning and kindly.",
+    "explanation": "Benevolent means kind and well-meaning; the antonym is malicious, intending to do harm.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v030",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'EPHEMERAL':",
+    "options": [
+      { "id": "a", "text": "Fleeting" },
+      { "id": "b", "text": "Transient" },
+      { "id": "c", "text": "Temporary" },
+      { "id": "d", "text": "Permanent" }
+    ],
+    "correct_options": ["d"],
+    "hint": "Ephemeral means lasting for a very short time.",
+    "explanation": "Ephemeral means short-lived; the opposite is permanent.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v031",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'The study of ancient things and historical remains.'",
+    "options": [
+      { "id": "a", "text": "Zoology" },
+      { "id": "b", "text": "Anthropology" },
+      { "id": "c", "text": "Archaeology" },
+      { "id": "d", "text": "Geology" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Think of the science that studies artifacts.",
+    "explanation": "Archaeology is the study of human history and prehistory through the excavation of sites and the analysis of physical remains.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v032",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'One who is all-powerful.'",
+    "options": [
+      { "id": "a", "text": "Omnipresent" },
+      { "id": "b", "text": "Omniscient" },
+      { "id": "c", "text": "Omnipotent" },
+      { "id": "d", "text": "Infallible" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The prefix 'Omni-' means all, and the root '-potent' relates to power.",
+    "explanation": "Omnipotent means having unlimited power; all-powerful.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v033",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'A person who eats too much.'",
+    "options": [
+      { "id": "a", "text": "Gourmet" },
+      { "id": "b", "text": "Glutton" },
+      { "id": "c", "text": "Cannibal" },
+      { "id": "d", "text": "Carnivore" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This word is often associated with the sin of excessive eating.",
+    "explanation": "A glutton is an excessively greedy eater.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v034",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'Extreme or irrational fear of water.'",
+    "options": [
+      { "id": "a", "text": "Claustrophobia" },
+      { "id": "b", "text": "Agoraphobia" },
+      { "id": "c", "label": "Hydrophobia" },
+      { "id": "d", "text": "Pyrophobia" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The prefix 'Hydro-' refers to water.",
+    "explanation": "Hydrophobia is the fear of water.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v035",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'The art of beautiful handwriting.'",
+    "options": [
+      { "id": "a", "text": "Topography" },
+      { "id": "b", "text": "Calligraphy" },
+      { "id": "c", "text": "Stenography" },
+      { "id": "d", "text": "Lexicography" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The root '-graphy' means writing or drawing.",
+    "explanation": "Calligraphy is decorative handwriting or the art of producing beautiful handwriting.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v036",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'A state of disorder due to absence of authority.'",
+    "options": [
+      { "id": "a", "text": "Monarchy" },
+      { "id": "b", "text": "Plutocracy" },
+      { "id": "c", "text": "Anarchy" },
+      { "id": "d", "text": "Hierarchy" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The prefix 'An-' means without or not.",
+    "explanation": "Anarchy is a state of disorder due to absence or non-recognition of authority.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v037",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'Excessively submissive or subservient.'",
+    "options": [
+      { "id": "a", "text": "Stoic" },
+      { "id": "b", "text": "Servile" },
+      { "id": "c", "text": "Pragmatic" },
+      { "id": "d", "text": "Skeptical" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The root of this word relates to being a slave or servant.",
+    "explanation": "Servile means having or showing an excessive willingness to serve or please others.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v038",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'A remedy for all diseases or troubles.'",
+    "options": [
+      { "id": "a", "text": "Antidote" },
+      { "id": "b", "text": "Panacea" },
+      { "id": "c", "text": "Placebo" },
+      { "id": "d", "text": "Toxin" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word is derived from the Greek for 'all-healing'.",
+    "explanation": "Panacea is a solution or remedy for all difficulties or diseases.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v039",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'Impossible to satisfy.'",
+    "options": [
+      { "id": "a", "text": "Incredible" },
+      { "id": "b", "text": "Insatiable" },
+      { "id": "c", "text": "Insoluble" },
+      { "id": "d", "text": "Indefatigable" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The root relates to the idea of 'enough'.",
+    "explanation": "Insatiable means impossible to satisfy.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v040",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'A person who hates women.'",
+    "options": [
+      { "id": "a", "text": "Philogynist" },
+      { "id": "b", "text": "Misogynist" },
+      { "id": "c", "text": "Misanthrope" },
+      { "id": "d", "text": "Philanthropist" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The prefix 'Miso-' means hate, and '-gynist' relates to women.",
+    "explanation": "A misogynist is a person who dislikes, despises, or is strongly prejudiced against women.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v041",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'Break the ice'",
+    "options": [
+      { "id": "a", "text": "To destroy something valuable" },
+      { "id": "b", "text": "To start a conversation in a social setting" },
+      { "id": "c", "text": "To end a relationship" },
+      { "id": "d", "text": "To perform a difficult task" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It's often used to describe easing tension at the beginning of a meeting or event.",
+    "explanation": "'Break the ice' means to initiate social interaction and conversation, often to relieve tension.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v042",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'Spill the beans'",
+    "options": [
+      { "id": "a", "text": "To cook a meal quickly" },
+      { "id": "b", "text": "To reveal a secret carelessly" },
+      { "id": "c", "text": "To clean up a mess" },
+      { "id": "d", "text": "To accidentally drop something" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Think of what happens when a secret is unexpectedly let out.",
+    "explanation": "'Spill the beans' means to disclose a secret or reveal information prematurely or carelessly.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v043",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'Under the weather'",
+    "options": [
+      { "id": "a", "text": "To be outdoors in bad weather" },
+      { "id": "b", "text": "To feel slightly unwell or ill" },
+      { "id": "c", "text": "To feel relaxed and happy" },
+      { "id": "d", "text": "To be caught in a storm" }
+    ],
+    "correct_options": ["b"],
+    "hint": "You might use this phrase when calling in sick to work.",
+    "explanation": "'Under the weather' means to be slightly unwell or in poor spirits.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v044",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'Bite the bullet'",
+    "options": [
+      { "id": "a", "text": "To chew food quickly" },
+      { "id": "b", "text": "To face and endure a painful or unpleasant situation" },
+      { "id": "c", "text": "To shoot a gun inaccurately" },
+      { "id": "d", "text": "To accept a challenge enthusiastically" }
+    ],
+    "correct_options": ["b"],
+    "hint": "This phrase originates from a time when soldiers would bite down on a bullet during surgery to cope with the pain.",
+    "explanation": "'Bite the bullet' means to face a difficult or unpleasant task with courage and without complaining.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v045",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'A dime a dozen'",
+    "options": [
+      { "id": "a", "text": "Something very expensive" },
+      { "id": "b", "text": "Something extremely rare" },
+      { "id": "c", "text": "Something very common and of little value" },
+      { "id": "d", "text": "A good bargain" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The historical cost suggests it is cheap and easily found.",
+    "explanation": "'A dime a dozen' means very common, inexpensive, and therefore of little value.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v046",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'To call a spade a spade'",
+    "options": [
+      { "id": "a", "text": "To use specialized terminology" },
+      { "id": "b", "text": "To speak plainly and truthfully, even if offensive" },
+      { "id": "c", "text": "To speak in riddles" },
+      { "id": "d", "text": "To misname an object" }
+    ],
+    "correct_options": ["b"],
+    "hint": "It means to be direct and honest about an unpleasant situation.",
+    "explanation": "'To call a spade a spade' means to speak plainly or straightforwardly without mincing words.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v047",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'To turn over a new leaf'",
+    "options": [
+      { "id": "a", "text": "To change the subject" },
+      { "id": "b", "text": "To adopt a completely new lifestyle or behavior for the better" },
+      { "id": "c", "text": "To start a new book" },
+      { "id": "d", "text": "To hide one's true intentions" }
+    ],
+    "correct_options": ["b"],
+    "hint": "Think of starting fresh, like the beginning of a new chapter.",
+    "explanation": "'To turn over a new leaf' means to make a fresh start; to improve one's behavior or conduct.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v048",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'The lion's share'",
+    "options": [
+      { "id": "a", "text": "A very small portion" },
+      { "id": "b", "text": "A fair and equal division" },
+      { "id": "c", "text": "The largest part of something" },
+      { "id": "d", "text": "A dangerous part of a task" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Lions are powerful and naturally take the largest portion of a kill.",
+    "explanation": "'The lion's share' refers to the largest or best part of something.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v049",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'To burn the midnight oil'",
+    "options": [
+      { "id": "a", "text": "To go to bed early" },
+      { "id": "b", "text": "To use expensive fuel" },
+      { "id": "c", "text": "To work or study late into the night" },
+      { "id": "d", "text": "To start a fire" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Oil lamps were once used for light, suggesting working after sunset.",
+    "explanation": "'To burn the midnight oil' means to work or study late at night.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v050",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'Beat around the bush'",
+    "options": [
+      { "id": "a", "text": "To speak directly and frankly" },
+      { "id": "b", "text": "To avoid the main point and delay in coming to the matter" },
+      { "id": "c", "text": "To hunt for small birds" },
+      { "id": "d", "text": "To water a garden" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The image is of someone circling a bush instead of flushing out the game inside.",
+    "explanation": "'Beat around the bush' means to discuss a topic without coming to the point.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v051",
+    "category": "Verbal Ability",
+    "prompt": "Oar : Boat :: Pedal : ?",
+    "options": [
+      { "id": "a", "text": "Car" },
+      { "id": "b", "text": "Bicycle" },
+      { "id": "c", "text": "Engine" },
+      { "id": "d", "text": "Wheel" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The relationship is 'tool used for manual propulsion' : 'vehicle propelled'.",
+    "explanation": "An oar propels a boat, just as a pedal propels a bicycle.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v052",
+    "category": "Verbal Ability",
+    "prompt": "Finger : Hand :: Leaf : ?",
+    "options": [
+      { "id": "a", "text": "Root" },
+      { "id": "b", "text": "Flower" },
+      { "id": "c", "text": "Bark" },
+      { "id": "d", "text": "Tree" }
+    ],
+    "correct_options": ["d"],
+    "hint": "The relationship is 'part of' : 'whole'.",
+    "explanation": "A finger is a part of a hand, and a leaf is a part of a tree.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v053",
+    "category": "Verbal Ability",
+    "prompt": "Doctor : Hospital :: Teacher : ?",
+    "options": [
+      { "id": "a", "text": "Book" },
+      { "id": "b", "text": "Student" },
+      { "id": "c", "text": "School" },
+      { "id": "d", "text": "Classroom" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'professional' : 'primary workplace'.",
+    "explanation": "A doctor works in a hospital, and a teacher works in a school.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v054",
+    "category": "Verbal Ability",
+    "prompt": "Cold : Hot :: Light : ?",
+    "options": [
+      { "id": "a", "text": "Sun" },
+      { "id": "b", "text": "Bright" },
+      { "id": "c", "text": "Dark" },
+      { "id": "d", "text": "Shadow" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'antonyms'.",
+    "explanation": "Cold is the antonym of hot, and light is the antonym of dark.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v055",
+    "category": "Verbal Ability",
+    "prompt": "Mason : Wall :: Weaver : ?",
+    "options": [
+      { "id": "a", "text": "Needle" },
+      { "id": "b", "text": "Thread" },
+      { "id": "c", "text": "Cloth" },
+      { "id": "d", "text": "Loom" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'worker' : 'final product'.",
+    "explanation": "A mason builds a wall, and a weaver creates cloth.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v056",
+    "category": "Verbal Ability",
+    "prompt": "Cow : Calf :: Sheep : ?",
+    "options": [
+      { "id": "a", "text": "Kitten" },
+      { "id": "b", "text": "Pup" },
+      { "id": "c", "text": "Lamb" },
+      { "id": "d", "text": "Kid" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'adult female animal' : 'young animal'.",
+    "explanation": "A calf is a young cow, and a lamb is a young sheep.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v057",
+    "category": "Verbal Ability",
+    "prompt": "Volume : Liter :: Length : ?",
+    "options": [
+      { "id": "a", "text": "Weight" },
+      { "id": "b", "text": "Kilogram" },
+      { "id": "c", "text": "Meter" },
+      { "id": "d", "text": "Area" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'measurement quantity' : 'standard metric unit'.",
+    "explanation": "Liter is the unit of Volume, and Meter is the unit of Length.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v058",
+    "category": "Verbal Ability",
+    "prompt": "Chef : Kitchen :: Pharmacist : ?",
+    "options": [
+      { "id": "a", "text": "Hospital" },
+      { "id": "b", "text": "Office" },
+      { "id": "c", "text": "Laboratory" },
+      { "id": "d", "text": "Pharmacy" }
+    ],
+    "correct_options": ["d"],
+    "hint": "The relationship is 'professional' : 'specific establishment where they work'.",
+    "explanation": "A chef works in a kitchen, and a pharmacist works in a pharmacy.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v059",
+    "category": "Verbal Ability",
+    "prompt": "Solder : Metal :: Glue : ?",
+    "options": [
+      { "id": "a", "text": "Plastic" },
+      { "id": "b", "text": "Wood" },
+      { "id": "c", "text": "Paper" },
+      { "id": "d", "text": "Glass" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'joining agent' : 'material commonly joined'.",
+    "explanation": "Solder is used to join metal, and glue is commonly used to join paper.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v060",
+    "category": "Verbal Ability",
+    "prompt": "Poet : Poem :: Composer : ?",
+    "options": [
+      { "id": "a", "text": "Song" },
+      { "id": "b", "text": "Musician" },
+      { "id": "c", "text": "Symphony" },
+      { "id": "d", "text": "Art" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The relationship is 'creator' : 'major work of creation'.",
+    "explanation": "A poet creates a poem, and a composer creates a symphony.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v061",
+    "category": "Verbal Ability",
+    "prompt": "The politician's speech was so ____ that no one was sure what he promised.",
+    "options": [
+      { "id": "a", "text": "Decisive" },
+      { "id": "b", "text": "Lucid" },
+      { "id": "c", "text": "Ambiguous" },
+      { "id": "d", "text": "Coherent" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word must mean open to more than one interpretation.",
+    "explanation": "Ambiguous means open to more than one interpretation; unclear.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v062",
+    "category": "Verbal Ability",
+    "prompt": "She showed great ____ in finishing the marathon despite her injury.",
+    "options": [
+      { "id": "a", "text": "Lethargy" },
+      { "id": "b", "text": "Tenacity" },
+      { "id": "c", "text": "Apathy" },
+      { "id": "d", "text": "Doubt" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word describes determined persistence.",
+    "explanation": "Tenacity means determined persistence; it fits the context of overcoming injury.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v063",
+    "category": "Verbal Ability",
+    "prompt": "The sudden rainstorm completely ____ our picnic plans.",
+    "options": [
+      { "id": "a", "text": "Facilitated" },
+      { "id": "b", "text": "Thwarted" },
+      { "id": "c", "text": "Aided" },
+      { "id": "d", "text": "Supported" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word means to prevent someone from accomplishing something.",
+    "explanation": "Thwarted means prevented (someone) from accomplishing something.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v064",
+    "category": "Verbal Ability",
+    "prompt": "The detective tried to ____ the truth from the reluctant witness.",
+    "options": [
+      { "id": "a", "text": "Infuse" },
+      { "id": "b", "text": "Induce" },
+      { "id": "c", "text": "Elicit" },
+      { "id": "d", "text": "Propose" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means to draw forth (a response, answer, or fact) from someone.",
+    "explanation": "Elicit means to draw out or evoke (a response, answer, or fact) from someone.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v065",
+    "category": "Verbal Ability",
+    "prompt": "The discovery of penicillin was a ____ moment in medical history.",
+    "options": [
+      { "id": "a", "text": "Insignificant" },
+      { "id": "b", "text": "Trivial" },
+      { "id": "c", "text": "Pivotal" },
+      { "id": "d", "text": "Minor" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word describes something of crucial importance in relation to the development of something else.",
+    "explanation": "Pivotal means of crucial importance in relation to the development or success of something else.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v066",
+    "category": "Verbal Ability",
+    "prompt": "The committee decided to ____ the new rules at the next meeting.",
+    "options": [
+      { "id": "a", "text": "Conceal" },
+      { "id": "b", "text": "Promulgate" },
+      { "id": "c", "text": "Recant" },
+      { "id": "d", "text": "Suppress" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word means to promote or make widely known (an idea or cause).",
+    "explanation": "Promulgate means to promote or make widely known (an idea or cause).",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v067",
+    "category": "Verbal Ability",
+    "prompt": "His ____ knowledge of history impressed the professor.",
+    "options": [
+      { "id": "a", "text": "Superficial" },
+      { "id": "b", "text": "Incoherent" },
+      { "id": "c", "text": "Erudite" },
+      { "id": "d", "text": "Obscure" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means having or showing great knowledge or learning.",
+    "explanation": "Erudite means having or showing great knowledge or learning.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v068",
+    "category": "Verbal Ability",
+    "prompt": "The small mistake had ____ consequences for the entire project.",
+    "options": [
+      { "id": "a", "text": "Innocuous" },
+      { "id": "b", "text": "Benign" },
+      { "id": "c", "text": "Catastrophic" },
+      { "id": "d", "text": "Minor" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means involving or causing sudden great damage or suffering.",
+    "explanation": "Catastrophic means involving or causing sudden great damage or suffering.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v069",
+    "category": "Verbal Ability",
+    "prompt": "The two sides signed a ____ agreement to stop the fighting.",
+    "options": [
+      { "id": "a", "text": "Hostility" },
+      { "id": "b", "text": "Interim" },
+      { "id": "c", "text": "Ceasefire" },
+      { "id": "d", "text": "Conflict" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word describes a temporary agreement to stop fighting.",
+    "explanation": "Ceasefire is a temporary suspension of fighting, especially one during which peace talks take place; a truce.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v070",
+    "category": "Verbal Ability",
+    "prompt": "Many scientists fear that pollution will ____ the delicate ecosystem.",
+    "options": [
+      { "id": "a", "text": "Bolster" },
+      { "id": "b", "text": "Sustain" },
+      { "id": "c", "text": "Imperil" },
+      { "id": "d", "text": "Fortify" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means to put at risk of being harmed, injured, or destroyed.",
+    "explanation": "Imperil means to put at risk of being harmed, injured, or destroyed.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v071",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "He is taller than me." },
+      { "id": "b", "text": "He is taller than I am." },
+      { "id": "c", "text": "He is more taller than me." },
+      { "id": "d", "text": "He is taller then I." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Comparisons often imply a shortened clause (than I am). Option (a) is common but often considered less formal.",
+    "explanation": "When the object of comparison is the subject of an implied clause, the subjective case (I) is required, making 'He is taller than I am' the fully correct sentence.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v072",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "Neither of the students are present." },
+      { "id": "b", "text": "Neither of the students is present." },
+      { "id": "c", "text": "Neither student are present." },
+      { "id": "d", "text": "None of the students is present." }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word 'Neither' acts as a singular subject.",
+    "explanation": "The pronoun 'neither' is singular and requires a singular verb ('is').",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v073",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence (Subjunctive Mood):",
+    "options": [
+      { "id": "a", "text": "If I was a bird, I would fly." },
+      { "id": "b", "text": "If I were a bird, I would fly." },
+      { "id": "c", "text": "If I were a bird, I will fly." },
+      { "id": "d", "text": "If I am a bird, I would fly." }
+    ],
+    "correct_options": ["b"],
+    "hint": "For expressing wishes or hypothetical situations, the subjunctive mood requires 'were' for all persons (I, he, she, it).",
+    "explanation": "This expresses a hypothetical situation contrary to fact, requiring the subjunctive form 'were'.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v074",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "She divided the cake between the three children." },
+      { "id": "b", "text": "She divided the cake among the three children." },
+      { "id": "c", "text": "She divided the cake between three children." },
+      { "id": "d", "text": "She divided the cake among three child." }
+    ],
+    "correct_options": ["b"],
+    "hint": "'Between' is for two items; 'among' is for three or more.",
+    "explanation": "'Among' is used for division or relationship involving three or more items or people.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v075",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "The news are shocking." },
+      { "id": "b", "text": "The news is shocking." },
+      { "id": "c", "text": "A news is shocking." },
+      { "id": "d", "text": "News are shocking." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Despite ending in 's', the noun 'news' is treated as singular.",
+    "explanation": "The word 'news' is always treated as a singular noun and takes a singular verb ('is').",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v076",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "Everyone brought their own lunch." },
+      { "id": "b", "text": "Everyone brought his or her own lunch." },
+      { "id": "c", "text": "Everyone brought our own lunch." },
+      { "id": "d", "text": "Everyone bring their own lunch." }
+    ],
+    "correct_options": ["b"],
+    "hint": "'Everyone' is singular and requires a singular possessive pronoun, though 'their' is common in informal speech.",
+    "explanation": "'Everyone' is a singular indefinite pronoun, requiring the singular possessive 'his or her' for formal correctness.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v077",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct question:",
+    "options": [
+      { "id": "a", "text": "Who did you meet at the party?" },
+      { "id": "b", "text": "Whom did you meet at the party?" },
+      { "id": "c", "text": "Whose did you meet at the party?" },
+      { "id": "d", "text": "Who you met at the party?" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The pronoun is the object of the verb 'meet'. (You met whom?).",
+    "explanation": "'Whom' is the objective case of 'who' and is used when the word functions as the object of a verb or preposition.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v078",
+    "category": "Verbal Ability",
+    "prompt": "Choose the sentence structure with the correct use of a participle phrase:",
+    "options": [
+      { "id": "a", "text": "Having finished the work, he went home." },
+      { "id": "b", "text": "The work being finished, he went home." },
+      { "id": "c", "text": "Finished the work, he went home." },
+      { "id": "d", "text": "Having finished the work, the bell rang." }
+    ],
+    "correct_options": ["a"],
+    "hint": "A participle phrase must clearly modify the subject of the main clause, avoiding a dangling participle.",
+    "explanation": "Option (a) correctly uses the perfect participle 'Having finished' to modify the subject 'he', indicating 'he' finished the work before leaving.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v079",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence using 'prefer':",
+    "options": [
+      { "id": "a", "text": "I prefer coffee than tea." },
+      { "id": "b", "text": "I prefer coffee to tea." },
+      { "id": "c", "text": "I prefer coffee over tea." },
+      { "id": "d", "text": "I prefer coffee more than tea." }
+    ],
+    "correct_options": ["b"],
+    "hint": "The verb 'prefer' takes a specific preposition for comparison.",
+    "explanation": "The verb 'prefer' must be followed by the preposition 'to' when comparing two nouns.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v080",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "He feels badly about the mistake." },
+      { "id": "b", "text": "He feels bad about the mistake." },
+      { "id": "c", "text": "He feel bad about the mistake." },
+      { "id": "d", "text": "He badly feels about the mistake." }
+    ],
+    "correct_options": ["b"],
+    "hint": "Verbs of sensation (feel, look, smell) often take an adjective to describe the subject's state.",
+    "explanation": "'Feel' is a linking verb here, describing the subject's emotional state, so it takes the adjective 'bad', not the adverb 'badly'.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v081",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'SURREPTITIOUS':",
+    "options": [
+      { "id": "a", "text": "Open" },
+      { "id": "b", "text": "Secret" },
+      { "id": "c", "text": "Loud" },
+      { "id": "d", "text": "Obvious" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word means kept secret, especially because it would not be approved of.",
+    "explanation": "Surreptitious means kept secret, especially because it would not be approved of.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v082",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'QUIXOTIC':",
+    "options": [
+      { "id": "a", "text": "Realistic" },
+      { "id": "b", "text": "Practical" },
+      { "id": "c", "text": "Impractical" },
+      { "id": "d", "text": "Cautious" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word is derived from the character Don Quixote, known for his unrealistic idealism.",
+    "explanation": "Quixotic means exceedingly idealistic; unrealistic and impractical.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v083",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'MELLIFLUOUS':",
+    "options": [
+      { "id": "a", "text": "Harsh-sounding" },
+      { "id": "b", "text": "Sweet-sounding" },
+      { "id": "c", "label": "Loud" },
+      { "id": "d", "text": "Silent" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word describes a voice or sound that is smooth and sweet to hear.",
+    "explanation": "Mellifluous means (of a voice or words) sweet or musical; pleasant to hear.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v084",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'CAPRICIOUS':",
+    "options": [
+      { "id": "a", "text": "Predictable" },
+      { "id": "b", "text": "Stable" },
+      { "id": "c", "text": "Fickle" },
+      { "id": "d", "text": "Constant" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word describes sudden and unaccountable changes of mood or behavior.",
+    "explanation": "Capricious means given to sudden and unaccountable changes of mood or behavior; fickle.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v085",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'UBIQUITOUS':",
+    "options": [
+      { "id": "a", "text": "Rare" },
+      { "id": "b", "text": "Scarce" },
+      { "id": "c", "text": "Everywhere" },
+      { "id": "d", "text": "Unique" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word means present, appearing, or found everywhere.",
+    "explanation": "Ubiquitous means present, appearing, or found everywhere.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v086",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'The belief that God is in everything and everything is God.'",
+    "options": [
+      { "id": "a", "text": "Theism" },
+      { "id": "b", "text": "Monotheism" },
+      { "id": "c", "text": "Pantheism" },
+      { "id": "d", "text": "Atheism" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The prefix 'Pan-' means all.",
+    "explanation": "Pantheism is the belief that God is everything and everyone and everything is God, or that God is immanent in nature.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v087",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'To get out of hand'",
+    "options": [
+      { "id": "a", "text": "To be controlled easily" },
+      { "id": "b", "text": "To be given a reward" },
+      { "id": "c", "text": "To become uncontrollable" },
+      { "id": "d", "text": "To give up control" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Think of losing control over a situation.",
+    "explanation": "'To get out of hand' means to become out of control.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v088",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Exilerate" },
+      { "id": "b", "text": "Exhilarate" },
+      { "id": "c", "text": "Exhillarate" },
+      { "id": "d", "text": "Exhillarate" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word has an 'h' after the 'x'.",
+    "explanation": "'Exhilarate' is the correct spelling, meaning to make (someone) feel very happy or elated.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v089",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'VORACIOUS':",
+    "options": [
+      { "id": "a", "text": "Ravenous" },
+      { "id": "b", "text": "Insatiable" },
+      { "id": "c", "text": "Satiated" },
+      { "id": "d", "text": "Greedy" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Voracious means having a huge appetite; the antonym is the state of being fully satisfied.",
+    "explanation": "Voracious means having a very large appetite; satiated means satisfied, typically with food or pleasure.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v090",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'INVECTIVE':",
+    "options": [
+      { "id": "a", "text": "Praise" },
+      { "id": "b", "text": "Compliment" },
+      { "id": "c", "text": "Abuse" },
+      { "id": "d", "text": "Flattery" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word refers to insulting, abusive, or highly critical language.",
+    "explanation": "Invective means insulting, abusive, or highly critical language.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v091",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence:",
+    "options": [
+      { "id": "a", "text": "He is a friend of me." },
+      { "id": "b", "text": "He is my friend." },
+      { "id": "c", "text": "He is a friend of mine." },
+      { "id": "d", "text": "He is friend of mine." }
+    ],
+    "correct_options": ["c"],
+    "hint": "The correct idiomatic form to express possession among a group of friends uses the possessive pronoun.",
+    "explanation": "'A friend of mine' is the correct double possessive construction (meaning one of my friends). 'He is my friend' (b) is also correct, but 'a friend of mine' is the more specific target here.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v092",
+    "category": "Verbal Ability",
+    "prompt": "Fire : Ashes :: Event : ?",
+    "options": [
+      { "id": "a", "text": "History" },
+      { "id": "b", "text": "Memory" },
+      { "id": "c", "text": "Future" },
+      { "id": "d", "text": "Record" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The relationship is 'thing' : 'residue after the thing is over'.",
+    "explanation": "Ashes are the residue after fire burns, and a memory is the residue after an event happens.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v093",
+    "category": "Verbal Ability",
+    "prompt": "He managed to complete the difficult task with minimal ____.",
+    "options": [
+      { "id": "a", "text": "Pomp" },
+      { "id": "b", "text": "Fuss" },
+      { "id": "c", "text": "Ardor" },
+      { "id": "d", "text": "Elation" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word refers to excessive anxiety or an unnecessary display of activity.",
+    "explanation": "Fuss means a display of unnecessary or excessive excitement, activity, or interest; minimal fuss means little trouble.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v094",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'A collection of historical documents or records.'",
+    "options": [
+      { "id": "a", "text": "Museum" },
+      { "id": "b", "text": "Repository" },
+      { "id": "c", "text": "Archives" },
+      { "id": "d", "text": "Library" }
+    ],
+    "correct_options": ["c"],
+    "hint": "This term refers specifically to non-current historical records.",
+    "explanation": "Archives are a collection of historical documents or records providing information about a place, institution, or group of people.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v095",
+    "category": "Verbal Ability",
+    "prompt": "Select the meaning of the idiom: 'A drop in the ocean'",
+    "options": [
+      { "id": "a", "text": "A sudden change in plans" },
+      { "id": "b", "text": "A valuable but hidden object" },
+      { "id": "c", "text": "An extremely small or insignificant amount compared with what is needed" },
+      { "id": "d", "text": "A vast and endless resource" }
+    ],
+    "correct_options": ["c"],
+    "hint": "Imagine the size of one drop compared to the entire ocean.",
+    "explanation": "'A drop in the ocean' means a very small or insignificant amount when compared with what is needed or expected.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v096",
+    "category": "Verbal Ability",
+    "prompt": "Choose the correct spelling:",
+    "options": [
+      { "id": "a", "text": "Millenium" },
+      { "id": "b", "text": "Milenium" },
+      { "id": "c", "text": "Millennium" },
+      { "id": "d", "text": "Millennum" }
+    ],
+    "correct_options": ["c"],
+    "hint": "The word has double 'l' and double 'n'.",
+    "explanation": "'Millennium' is the correct spelling, with double 'l' and double 'n'.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v097",
+    "category": "Verbal Ability",
+    "prompt": "Select the synonym for 'DELINEATE':",
+    "options": [
+      { "id": "a", "text": "Obscure" },
+      { "id": "b", "text": "Describe" },
+      { "id": "c", "text": "Confuse" },
+      { "id": "d", "text": "Compress" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word means to describe or portray something precisely.",
+    "explanation": "Delineate means to describe or portray (something) precisely.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "v098",
+    "category": "Verbal Ability",
+    "prompt": "Choose the antonym for 'GARRULOUS':",
+    "options": [
+      { "id": "a", "text": "Talkative" },
+      { "id": "b", "text": "Chatty" },
+      { "id": "c", "text": "Wordy" },
+      { "id": "d", "text": "Taciturn" }
+    ],
+    "correct_options": ["d"],
+    "hint": "Garrulous means excessively talkative; the opposite is reserved or uncommunicative.",
+    "explanation": "Garrulous means excessively talkative; taciturn means reserved or uncommunicative in speech.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "v099",
+    "category": "Verbal Ability",
+    "prompt": "Choose the grammatically correct sentence (First Conditional):",
+    "options": [
+      { "id": "a", "text": "If you gave him money, he will help you." },
+      { "id": "b", "text": "If you give him money, he would help you." },
+      { "id": "c", "text": "If you give him money, he will help you." },
+      { "id": "d", "text": "If you would give him money, he will help you." }
+    ],
+    "correct_options": ["c"],
+    "hint": "The first conditional uses 'if + present simple' followed by 'will + base verb'.",
+    "explanation": "The first conditional structure requires the present tense in the 'if' clause and 'will' + verb in the main clause for a likely future outcome.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "v100",
+    "category": "Verbal Ability",
+    "prompt": "Choose the one-word substitution for: 'One who is hard to please.'",
+    "options": [
+      { "id": "a", "text": "Credulous" },
+      { "id": "b", "text": "Fastidious" },
+      { "id": "c", "text": "Gregarious" },
+      { "id": "d", "text": "Pliable" }
+    ],
+    "correct_options": ["b"],
+    "hint": "The word means giving careful attention to detail; difficult to satisfy.",
+    "explanation": "Fastidious means very attentive to and concerned about accuracy and detail; hard to please.",
+    "difficulty": "Hard"
   },
 
   // Technical Ability
