@@ -6385,7 +6385,7 @@ export const questions: Question[] = [
       { "id": "a", "text": "1024" },
       { "id": "b", "text": "3125" },
       { "id": "c", "text": "625" },
-      { "id": "d": "text": "4096" }
+      { "id": "d", "text": "4096" }
     ],
     "correct_options": ["b"],
     "hint": "The pattern is $n^n$.",
