@@ -4235,7 +4235,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "A list where a node can only point to itself." },
       { "id": "b", "text": "A list where the last node points back to the first (head) node." },
-      { "id": "c", "d", "text": "A list where nodes are stored in a circular array." },
+      { "id": "c", "text": "A list where nodes are stored in a circular array." },
       { "id": "d", "text": "A list that allows both forward and backward traversal." }
     ],
     "correct_options": ["b"],
