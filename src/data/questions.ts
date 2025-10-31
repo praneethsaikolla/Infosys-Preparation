@@ -5032,7 +5032,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "12" },
       { "id": "b", "text": "24" },
-      { "id": “c”, "text": "48" },
+      { "id": "c", "text": "48" },
       { "id": "d", "text": "6" }
     ],
     "correct_options": ["b"],
@@ -5070,7 +5070,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "3" },
       { "id": "b", "text": "6" },
-      { "id": “c”, "text": "24" },
+      { "id": "c", "text": "24" },
       { "id": "d", "text": "1" }
     ],
     "correct_options": ["b"],
@@ -5085,7 +5085,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "5" },
       { "id": "b", "text": "6" },
-      { "id": “c”, "text": "7" },
+      { "id": "c", "text": "7" },
       { "id": "d", "text": "Error" }
     ],
     "correct_options": ["b"],
@@ -5100,7 +5100,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "15" },
       { "id": "b", "text": "12.5" },
-      { "id": “c”, "text": "20" },
+      { "id": "c", "text": "20" },
       { "id": "d", "text": "10" }
     ],
     "correct_options": ["a"],
@@ -5115,7 +5115,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "1" },
       { "id": "b", "text": "2" },
-      { "id": “c”, "text": "3" },
+      { "id": "c", "text": "3" },
       { "id": "d", "text": "5" }
     ],
     "correct_options": ["b"],
@@ -5130,7 +5130,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "5" },
       { "id": "b", "text": "2" },
-      { "id": “c”, "text": "6" },
+      { "id": "c", "text": "6" },
       { "id": "d", "text": "4" }
     ],
     "correct_options": ["a"],
@@ -5145,7 +5145,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "10 7 4 1" },
       { "id": "b", "text": "10 7 4" },
-      { "id": “c”, "text": "10 9 8 7 6 5 4 3 2 1" },
+      { "id": "c", "text": "10 9 8 7 6 5 4 3 2 1" },
       { "id": "d", "text": "7 4 1" }
     ],
     "correct_options": ["a"],
@@ -5160,7 +5160,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "2" },
       { "id": "b", "text": "4" },
-      { "id": “c”, "text": "3" },
+      { "id": "c", "text": "3" },
       { "id": "d", "text": "1" }
     ],
     "correct_options": ["a"],
@@ -5175,7 +5175,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "12" },
       { "id": "b", "text": "20" },
-      { "id": “c”, "text": "10" },
+      { "id": "c", "text": "10" },
       { "id": "d", "text": "8" }
     ],
     "correct_options": ["b"],
@@ -5190,7 +5190,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "10" },
       { "id": "b", "text": "5" },
-      { "id": “c”, "text": "2" },
+      { "id": "c", "text": "2" },
       { "id": "d", "text": "Error" }
     ],
     "correct_options": ["a"],
@@ -5205,7 +5205,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "10" },
       { "id": "b", "text": "100" },
-      { "id": “c”, "text": "1000" },
+      { "id": "c", "text": "1000" },
       { "id": "d", "text": "10000" }
     ],
     "correct_options": ["c"],
@@ -5220,7 +5220,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "5" },
       { "id": "b", "text": "10" },
-      { "id": “c”, "text": "15" },
+      { "id": "c", "text": "15" },
       { "id": "d", "text": "25" }
     ],
     "correct_options": ["c"],
@@ -5235,7 +5235,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "13" },
       { "id": "b", "text": "18" },
-      { "id": “c”, "text": "10" },
+      { "id": "c", "text": "10" },
       { "id": "d", "text": "28" }
     ],
     "correct_options": ["a"],
@@ -5250,7 +5250,7 @@ export const questions: Question[] = [
     "options": [
       { "id": "a", "text": "Odd" },
       { "id": "b", "text": "Even" },
-      { "id": “c”, "text": "5" },
+      { "id": "c", "text": "5" },
       { "id": "d", "text": "1" }
     ],
     "correct_options": ["a"],
