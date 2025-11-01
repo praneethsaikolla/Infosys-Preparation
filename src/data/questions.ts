@@ -4261,7 +4261,7 @@ export const questions: Question[] = [
   {
     "id": "t076",
     "category": "Technical Ability",
-    "prompt": "In a DBMS, a transaction that is **durab**le means:",
+    "prompt": "In a DBMS, a transaction that is **durable** means:",
     "options": [
       { "id": "a", "text": "The transaction is always executed immediately." },
       { "id": "b", "text": "The transaction maintains consistency constraints." },
